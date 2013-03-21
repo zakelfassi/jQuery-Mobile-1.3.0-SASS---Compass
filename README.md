@@ -1,6 +1,4 @@
-# [jQuery Mobile 1.3.0 SASS / Compass : Beta](http://zakelfassi.com/2013/03/21/jquery-mobile-1-3-0-sass-compass-github)
-
-Note : This is a WIP and not fully stable yet; still testing/improving. Will be production ready in a day.
+# [jQuery Mobile 1.3.0 SASS / Compass](http://zakelfassi.com/2013/03/21/jquery-mobile-1-3-0-sass-compass-github)
 
 If you're new to Compass/SASS, check'em out. It's the way to go. Otherwise, read on.
 
