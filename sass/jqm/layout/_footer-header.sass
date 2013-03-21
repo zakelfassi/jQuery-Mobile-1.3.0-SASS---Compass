@@ -1,0 +1,115 @@
+// File : jqm/layout/_footer-header.sass
+
+.ui-bar, .ui-body
+  position: relative
+  padding: .4em 15px
+  overflow: hidden
+  display: block
+  clear: both
+
+.ui-bar
+  font-size: 16px
+  margin: 0
+
+  h1, h2, h3, h4, h5, h6
+    margin: 0
+    padding: 0
+    font-size: 16px
+    display: inline-block
+
+.ui-header, .ui-footer
+  position: relative
+  zoom: 1
+
+.ui-mobile
+  .ui-header, .ui-footer
+    border-left-width: 0
+    border-right-width: 0
+
+.ui-header , .ui-footer, .ui-header-fixed.ui-fixed-hidden, .ui-header-fixed.ui-fixed-hidden
+  .ui-btn-left, .ui-btn-right
+    position: absolute
+    top: 3px
+
+.ui-header-fixed
+  .ui-btn-left, .ui-btn-right
+    top: 4px
+
+  & > .ui-btn-icon-notext
+    top: 7px
+
+.ui-header, .ui-footer
+  .ui-btn-left
+    left: 5px
+
+.ui-header, .ui-footer
+  .ui-btn-right
+    right: 5px
+
+.ui-footer, .ui-header, .ui-header-fixed.ui-fixed-hidden
+  & > .ui-btn-icon-notext
+    top: 6px
+
+.ui-header, .ui-footer
+  .ui-title
+    min-height: 1.1em
+    text-align: center
+    font-size: 16px
+    display: block
+    margin: .6em 30% .8em
+    padding: 0
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+    outline: 0 !important
+
+.ui-footer .ui-title
+  margin: .6em 15px .8em
+
+/* fixed page header & footer configuration */
+.ui-header-fixed, .ui-footer-fixed
+  left: 0
+  right: 0
+  width: 100%
+  position: fixed
+  z-index: 1000
+
+  .ui-btn 
+    z-index: 10
+
+.ui-header-fixed
+  top: -1px
+  padding-top: 1px
+
+  &.ui-fixed-hidden
+    top: 0
+    padding-top: 0
+
+.ui-footer-fixed
+  bottom: -1px
+  padding-bottom: 1px
+
+  &.ui-fixed-hidden
+    bottom: 0
+    padding-bottom: 0
+
+.ui-header-fullscreen, .ui-footer-fullscreen
+  filter: Alpha(Opacity=90)
+  opacity: .9
+
+.ui-page-header-fixed
+  padding-top: 2.6875em
+
+.ui-page-footer-fixed
+  padding-bottom: 2.6875em
+
+.ui-page-header-fullscreen, .ui-page-footer-fullscreen
+  &> .ui-content
+    padding: 0
+
+  .ui-fixed-hidden
+    left: -9999px
+
+.ui-fixed-hidden
+  position: absolute
+

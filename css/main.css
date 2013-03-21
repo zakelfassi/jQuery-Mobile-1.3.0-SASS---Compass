@@ -1,0 +1,5911 @@
+/* line 3, ../sass/jqm/layout/_footer-header.sass */
+.ui-bar, .ui-body {
+  position: relative;
+  padding: 0.4em 15px;
+  overflow: hidden;
+  display: block;
+  clear: both;
+}
+
+/* line 10, ../sass/jqm/layout/_footer-header.sass */
+.ui-bar {
+  font-size: 16px;
+  margin: 0;
+}
+/* line 14, ../sass/jqm/layout/_footer-header.sass */
+.ui-bar h1, .ui-bar h2, .ui-bar h3, .ui-bar h4, .ui-bar h5, .ui-bar h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  display: inline-block;
+}
+
+/* line 20, ../sass/jqm/layout/_footer-header.sass */
+.ui-header, .ui-footer {
+  position: relative;
+  zoom: 1;
+}
+
+/* line 25, ../sass/jqm/layout/_footer-header.sass */
+.ui-mobile .ui-header, .ui-mobile .ui-footer {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+/* line 30, ../sass/jqm/layout/_footer-header.sass */
+.ui-header .ui-btn-left, .ui-header .ui-btn-right, .ui-footer .ui-btn-left, .ui-footer .ui-btn-right, .ui-header-fixed.ui-fixed-hidden .ui-btn-left, .ui-header-fixed.ui-fixed-hidden .ui-btn-right, .ui-header-fixed.ui-fixed-hidden .ui-btn-left, .ui-header-fixed.ui-fixed-hidden .ui-btn-right {
+  position: absolute;
+  top: 3px;
+}
+
+/* line 35, ../sass/jqm/layout/_footer-header.sass */
+.ui-header-fixed .ui-btn-left, .ui-header-fixed .ui-btn-right {
+  top: 4px;
+}
+/* line 38, ../sass/jqm/layout/_footer-header.sass */
+.ui-header-fixed > .ui-btn-icon-notext {
+  top: 7px;
+}
+
+/* line 42, ../sass/jqm/layout/_footer-header.sass */
+.ui-header .ui-btn-left, .ui-footer .ui-btn-left {
+  left: 5px;
+}
+
+/* line 46, ../sass/jqm/layout/_footer-header.sass */
+.ui-header .ui-btn-right, .ui-footer .ui-btn-right {
+  right: 5px;
+}
+
+/* line 50, ../sass/jqm/layout/_footer-header.sass */
+.ui-footer > .ui-btn-icon-notext, .ui-header > .ui-btn-icon-notext, .ui-header-fixed.ui-fixed-hidden > .ui-btn-icon-notext {
+  top: 6px;
+}
+
+/* line 54, ../sass/jqm/layout/_footer-header.sass */
+.ui-header .ui-title, .ui-footer .ui-title {
+  min-height: 1.1em;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  margin: 0.6em 30% 0.8em;
+  padding: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  outline: 0 !important;
+}
+
+/* line 66, ../sass/jqm/layout/_footer-header.sass */
+.ui-footer .ui-title {
+  margin: 0.6em 15px 0.8em;
+}
+
+/* fixed page header & footer configuration */
+/* line 70, ../sass/jqm/layout/_footer-header.sass */
+.ui-header-fixed, .ui-footer-fixed {
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+/* line 77, ../sass/jqm/layout/_footer-header.sass */
+.ui-header-fixed .ui-btn, .ui-footer-fixed .ui-btn {
+  z-index: 10;
+}
+
+/* line 80, ../sass/jqm/layout/_footer-header.sass */
+.ui-header-fixed {
+  top: -1px;
+  padding-top: 1px;
+}
+/* line 84, ../sass/jqm/layout/_footer-header.sass */
+.ui-header-fixed.ui-fixed-hidden {
+  top: 0;
+  padding-top: 0;
+}
+
+/* line 88, ../sass/jqm/layout/_footer-header.sass */
+.ui-footer-fixed {
+  bottom: -1px;
+  padding-bottom: 1px;
+}
+/* line 92, ../sass/jqm/layout/_footer-header.sass */
+.ui-footer-fixed.ui-fixed-hidden {
+  bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 96, ../sass/jqm/layout/_footer-header.sass */
+.ui-header-fullscreen, .ui-footer-fullscreen {
+  filter: Alpha(Opacity=90);
+  opacity: 0.9;
+}
+
+/* line 100, ../sass/jqm/layout/_footer-header.sass */
+.ui-page-header-fixed {
+  padding-top: 2.6875em;
+}
+
+/* line 103, ../sass/jqm/layout/_footer-header.sass */
+.ui-page-footer-fixed {
+  padding-bottom: 2.6875em;
+}
+
+/* line 107, ../sass/jqm/layout/_footer-header.sass */
+.ui-page-header-fullscreen > .ui-content, .ui-page-footer-fullscreen > .ui-content {
+  padding: 0;
+}
+/* line 110, ../sass/jqm/layout/_footer-header.sass */
+.ui-page-header-fullscreen .ui-fixed-hidden, .ui-page-footer-fullscreen .ui-fixed-hidden {
+  left: -9999px;
+}
+
+/* line 113, ../sass/jqm/layout/_footer-header.sass */
+.ui-fixed-hidden {
+  position: absolute;
+}
+
+/* content area */
+/* line 4, ../sass/jqm/layout/_content.sass */
+.ui-content {
+  border-width: 0;
+  overflow: visible;
+  overflow-x: hidden;
+  padding: 15px;
+}
+
+/* non-js content hiding */
+/* line 11, ../sass/jqm/layout/_content.sass */
+.ui-nojs {
+  position: absolute;
+  left: -9999px;
+}
+
+/* accessible content hiding */
+/* line 17, ../sass/jqm/layout/_content.sass */
+.ui-hide-label label.ui-input-text, .ui-hide-label label.ui-select, .ui-hide-label label.ui-slider, .ui-hide-label label.ui-submit, .ui-hide-label .ui-controlgroup-label, .ui-hide-label .ui-hidden-accessible {
+  position: absolute !important;
+  left: -9999px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* content configurations. */
+/* line 24, ../sass/jqm/layout/_content.sass */
+.ui-grid-a, .ui-grid-b, .ui-grid-c, .ui-grid-d {
+  overflow: hidden;
+}
+
+/* line 27, ../sass/jqm/layout/_content.sass */
+.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d, .ui-block-e {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  float: left;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* grid solo: 100 - single item fallback */
+/* line 39, ../sass/jqm/layout/_content.sass */
+.ui-grid-solo .ui-block-a {
+  display: block;
+  float: none;
+}
+
+/* Lower percentages for older browsers (i.e. IE7) to prevent wrapping. -.5px to fix BB5 wrap issue. */
+/* grid a: 50/50 */
+/* line 46, ../sass/jqm/layout/_content.sass */
+.ui-grid-a .ui-block-a, .ui-grid-a .ui-block-b {
+  width: 49.95%;
+}
+/* line 49, ../sass/jqm/layout/_content.sass */
+.ui-grid-a > :nth-child(n) {
+  width: 50%;
+  margin-right: -0.5px;
+}
+/* line 53, ../sass/jqm/layout/_content.sass */
+.ui-grid-a .ui-block-a {
+  clear: left;
+}
+
+/* grid b: 33/33/33 */
+/* line 58, ../sass/jqm/layout/_content.sass */
+.ui-grid-b .ui-block-a, .ui-grid-b .ui-block-b, .ui-grid-b .ui-block-c {
+  width: 33.25%;
+}
+/* line 61, ../sass/jqm/layout/_content.sass */
+.ui-grid-b > :nth-child(n) {
+  width: 33.333%;
+  margin-right: -0.5px;
+}
+/* line 65, ../sass/jqm/layout/_content.sass */
+.ui-grid-b .ui-block-a {
+  clear: left;
+}
+
+/* grid c: 25/25/25/25 */
+/* line 70, ../sass/jqm/layout/_content.sass */
+.ui-grid-c .ui-block-a, .ui-grid-c .ui-block-b, .ui-grid-c .ui-block-c, .ui-grid-c .ui-block-d {
+  width: 24.925%;
+}
+/* line 73, ../sass/jqm/layout/_content.sass */
+.ui-grid-c > :nth-child(n) {
+  width: 25%;
+  margin-right: -0.5px;
+}
+/* line 77, ../sass/jqm/layout/_content.sass */
+.ui-grid-c .ui-block-a {
+  clear: left;
+}
+
+/* grid d: 20/20/20/20/20 */
+/* line 82, ../sass/jqm/layout/_content.sass */
+.ui-grid-d .ui-block-a, .ui-grid-d .ui-block-b, .ui-grid-d .ui-block-c, .ui-grid-d .ui-block-d, .ui-grid-d .ui-block-e {
+  width: 19.925%;
+}
+/* line 85, ../sass/jqm/layout/_content.sass */
+.ui-grid-d > :nth-child(n) {
+  width: 20%;
+}
+/* line 88, ../sass/jqm/layout/_content.sass */
+.ui-grid-d .ui-block-a {
+  clear: left;
+}
+
+/* preset breakpoint to switch to stacked grid styles below 35em (560px) */
+@media all and (max-width: 35em) {
+  /* line 94, ../sass/jqm/layout/_content.sass */
+  .ui-responsive .ui-block-a, .ui-responsive .ui-block-b, .ui-responsive .ui-block-c, .ui-responsive .ui-block-d, .ui-responsive .ui-block-e {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 5, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-a {
+  border: 1px solid #333333;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px -1px 0px black;
+  background: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#111111));
+  background-image: -webkit-linear-gradient(#3c3c3c, #111111);
+  background-image: -moz-linear-gradient(#3c3c3c, #111111);
+  background-image: -ms-linear-gradient(#3c3c3c, #111111);
+  background-image: -o-linear-gradient(#3c3c3c, #111111);
+  background-image: linear-gradient(#3c3c3c, #111111);
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 13, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 16, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-a .ui-link-inherit {
+  color: white;
+}
+/* line 19, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-a a.ui-link {
+  color: #7cc4e7;
+  font-weight: bold;
+}
+/* line 22, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-a a.ui-link:visited {
+  color: #2489ce;
+}
+/* line 24, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-a a.ui-link:hover {
+  color: #2489ce;
+}
+/* line 26, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-a a.ui-link:active {
+  color: #2489ce;
+}
+
+/* line 30, ../sass/jqm/swatches/_generator.sass */
+.ui-overlay-a {
+  border: 1px solid #444444;
+  color: white;
+  font-weight: normal;
+  text-shadow: 0px 1px 0px #111111;
+  background: #222222;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(#444444, #222222);
+  background-image: -moz-linear-gradient(#444444, #222222);
+  background-image: -ms-linear-gradient(#444444, #222222);
+  background-image: -o-linear-gradient(#444444, #222222);
+  background-image: linear-gradient(#444444, #222222);
+  background-image: none;
+  border-width: 0;
+}
+
+/* line 39, ../sass/jqm/swatches/_generator.sass */
+.ui-body-a {
+  border: 1px solid #444444;
+  color: white;
+  font-weight: normal;
+  text-shadow: 0px 1px 0px #111111;
+  background: #222222;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(#444444, #222222);
+  background-image: -moz-linear-gradient(#444444, #222222);
+  background-image: -ms-linear-gradient(#444444, #222222);
+  background-image: -o-linear-gradient(#444444, #222222);
+  background-image: linear-gradient(#444444, #222222);
+}
+/* line 46, ../sass/jqm/swatches/_generator.sass */
+.ui-body-a input, .ui-body-a select, .ui-body-a textarea, .ui-body-a button {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 49, ../sass/jqm/swatches/_generator.sass */
+.ui-body-a .ui-link-inherit {
+  color: white;
+}
+/* line 52, ../sass/jqm/swatches/_generator.sass */
+.ui-body-a .ui-link {
+  color: #2489ce;
+  font-weight: bold;
+}
+/* line 55, ../sass/jqm/swatches/_generator.sass */
+.ui-body-a .ui-link:visited {
+  color: #2489ce;
+}
+/* line 57, ../sass/jqm/swatches/_generator.sass */
+.ui-body-a .ui-link:hover {
+  color: #2489ce;
+}
+/* line 59, ../sass/jqm/swatches/_generator.sass */
+.ui-body-a .ui-link:active {
+  color: #2489ce;
+}
+
+/* line 63, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-up-a {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #111111;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 1px 0 #111111;
+  background: #333333;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#2d2d2d));
+  background-image: -webkit-linear-gradient(#444444, #2d2d2d);
+  background-image: -moz-linear-gradient(#444444, #2d2d2d);
+  background-image: -ms-linear-gradient(#444444, #2d2d2d);
+  background-image: -o-linear-gradient(#444444, #2d2d2d);
+  background-image: linear-gradient(#444444, #2d2d2d);
+}
+/* line 72, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-up-a:visited, .ui-btn-up-a a.ui-link-inherit {
+  color: white;
+}
+
+/* line 75, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-hover-a {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid black;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 1px 0px #111111;
+  background: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#555555), to(#383838));
+  background-image: -webkit-linear-gradient(#555555, #383838);
+  background-image: -moz-linear-gradient(#555555, #383838);
+  background-image: -ms-linear-gradient(#555555, #383838);
+  background-image: -o-linear-gradient(#555555, #383838);
+  background-image: linear-gradient(#555555, #383838);
+}
+/* line 84, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-hover-a:visited, .ui-btn-hover-a:hover, .ui-btn-hover-a a.ui-link-inherit {
+  color: white;
+}
+
+/* line 87, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-down-a {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid black;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 1px 0px #111111;
+  background: #222222;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#202020), to(#2c2c2c));
+  background-image: -webkit-linear-gradient(#202020, #2c2c2c);
+  background-image: -moz-linear-gradient(#202020, #2c2c2c);
+  background-image: -ms-linear-gradient(#202020, #2c2c2c);
+  background-image: -o-linear-gradient(#202020, #2c2c2c);
+  background-image: linear-gradient(#202020, #2c2c2c);
+}
+/* line 96, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-down-a:visited, .ui-btn-down-a:hover, .ui-btn-down-a a.ui-link-inherit {
+  color: white;
+}
+
+/* line 5, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-b {
+  border: 1px solid #456f9a;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px #3e6790;
+  background: #5e87b0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6facd5), to(#497bae));
+  background-image: -webkit-linear-gradient(#6facd5, #497bae);
+  background-image: -moz-linear-gradient(#6facd5, #497bae);
+  background-image: -ms-linear-gradient(#6facd5, #497bae);
+  background-image: -o-linear-gradient(#6facd5, #497bae);
+  background-image: linear-gradient(#6facd5, #497bae);
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 13, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-b input, .ui-bar-b select, .ui-bar-b textarea, .ui-bar-b button {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 16, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-b .ui-link-inherit {
+  color: white;
+}
+/* line 19, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-b a.ui-link {
+  color: #ddf0f8;
+  font-weight: bold;
+}
+/* line 22, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-b a.ui-link:visited {
+  color: #ddf0f8;
+}
+/* line 24, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-b a.ui-link:hover {
+  color: #ddf0f8;
+}
+/* line 26, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-b a.ui-link:active {
+  color: #ddf0f8;
+}
+
+/* line 30, ../sass/jqm/swatches/_generator.sass */
+.ui-overlay-b {
+  border: 1px solid #999999;
+  color: #222222;
+  font-weight: normal;
+  text-shadow: 0px 1px 0px white;
+  background: #f3f3f3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#cccccc));
+  background-image: -webkit-linear-gradient(#dddddd, #cccccc);
+  background-image: -moz-linear-gradient(#dddddd, #cccccc);
+  background-image: -ms-linear-gradient(#dddddd, #cccccc);
+  background-image: -o-linear-gradient(#dddddd, #cccccc);
+  background-image: linear-gradient(#dddddd, #cccccc);
+  background-image: none;
+  border-width: 0;
+}
+
+/* line 39, ../sass/jqm/swatches/_generator.sass */
+.ui-body-b {
+  border: 1px solid #999999;
+  color: #222222;
+  font-weight: normal;
+  text-shadow: 0px 1px 0px white;
+  background: #f3f3f3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#cccccc));
+  background-image: -webkit-linear-gradient(#dddddd, #cccccc);
+  background-image: -moz-linear-gradient(#dddddd, #cccccc);
+  background-image: -ms-linear-gradient(#dddddd, #cccccc);
+  background-image: -o-linear-gradient(#dddddd, #cccccc);
+  background-image: linear-gradient(#dddddd, #cccccc);
+}
+/* line 46, ../sass/jqm/swatches/_generator.sass */
+.ui-body-b input, .ui-body-b select, .ui-body-b textarea, .ui-body-b button {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 49, ../sass/jqm/swatches/_generator.sass */
+.ui-body-b .ui-link-inherit {
+  color: #222222;
+}
+/* line 52, ../sass/jqm/swatches/_generator.sass */
+.ui-body-b .ui-link {
+  color: #2489ce;
+  font-weight: bold;
+}
+/* line 55, ../sass/jqm/swatches/_generator.sass */
+.ui-body-b .ui-link:visited {
+  color: #2489ce;
+}
+/* line 57, ../sass/jqm/swatches/_generator.sass */
+.ui-body-b .ui-link:hover {
+  color: #2489ce;
+}
+/* line 59, ../sass/jqm/swatches/_generator.sass */
+.ui-body-b .ui-link:active {
+  color: #2489ce;
+}
+
+/* line 63, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-up-b {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #044062;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 1px 0 #194b7e;
+  background: #396b9e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5f9cc5), to(#396b9e));
+  background-image: -webkit-linear-gradient(#5f9cc5, #396b9e);
+  background-image: -moz-linear-gradient(#5f9cc5, #396b9e);
+  background-image: -ms-linear-gradient(#5f9cc5, #396b9e);
+  background-image: -o-linear-gradient(#5f9cc5, #396b9e);
+  background-image: linear-gradient(#5f9cc5, #396b9e);
+}
+/* line 72, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-up-b:visited, .ui-btn-up-b a.ui-link-inherit {
+  color: white;
+}
+
+/* line 75, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-hover-b {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #00415e;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 1px 0px #194b7e;
+  background: #4b88b6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6facd5), to(#4272a4));
+  background-image: -webkit-linear-gradient(#6facd5, #4272a4);
+  background-image: -moz-linear-gradient(#6facd5, #4272a4);
+  background-image: -ms-linear-gradient(#6facd5, #4272a4);
+  background-image: -o-linear-gradient(#6facd5, #4272a4);
+  background-image: linear-gradient(#6facd5, #4272a4);
+}
+/* line 84, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-hover-b:visited, .ui-btn-hover-b:hover, .ui-btn-hover-b a.ui-link-inherit {
+  color: white;
+}
+
+/* line 87, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-down-b {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #225377;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 1px 0px #194b7e;
+  background: #4e89c5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#295b8e), to(#3e79b5));
+  background-image: -webkit-linear-gradient(#295b8e, #3e79b5);
+  background-image: -moz-linear-gradient(#295b8e, #3e79b5);
+  background-image: -ms-linear-gradient(#295b8e, #3e79b5);
+  background-image: -o-linear-gradient(#295b8e, #3e79b5);
+  background-image: linear-gradient(#295b8e, #3e79b5);
+}
+/* line 96, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-down-b:visited, .ui-btn-down-b:hover, .ui-btn-down-b a.ui-link-inherit {
+  color: white;
+}
+
+/* line 5, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-c {
+  border: 1px solid #b3b3b3;
+  color: #3e3e3e;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px white;
+  background: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#dddddd));
+  background-image: -webkit-linear-gradient(#f0f0f0, #dddddd);
+  background-image: -moz-linear-gradient(#f0f0f0, #dddddd);
+  background-image: -ms-linear-gradient(#f0f0f0, #dddddd);
+  background-image: -o-linear-gradient(#f0f0f0, #dddddd);
+  background-image: linear-gradient(#f0f0f0, #dddddd);
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 13, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-c input, .ui-bar-c select, .ui-bar-c textarea, .ui-bar-c button {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 16, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-c .ui-link-inherit {
+  color: #3e3e3e;
+}
+/* line 19, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-c a.ui-link {
+  color: #7cc4e7;
+  font-weight: bold;
+}
+/* line 22, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-c a.ui-link:visited {
+  color: #2489ce;
+}
+/* line 24, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-c a.ui-link:hover {
+  color: #2489ce;
+}
+/* line 26, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-c a.ui-link:active {
+  color: #2489ce;
+}
+
+/* line 30, ../sass/jqm/swatches/_generator.sass */
+.ui-overlay-c {
+  border: 1px solid #aaaaaa;
+  color: #333333;
+  font-weight: normal;
+  text-shadow: 0px 1px 0px white;
+  background: #f9f9f9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#eeeeee));
+  background-image: -webkit-linear-gradient(#f9f9f9, #eeeeee);
+  background-image: -moz-linear-gradient(#f9f9f9, #eeeeee);
+  background-image: -ms-linear-gradient(#f9f9f9, #eeeeee);
+  background-image: -o-linear-gradient(#f9f9f9, #eeeeee);
+  background-image: linear-gradient(#f9f9f9, #eeeeee);
+  background-image: none;
+  border-width: 0;
+}
+
+/* line 39, ../sass/jqm/swatches/_generator.sass */
+.ui-body-c {
+  border: 1px solid #aaaaaa;
+  color: #333333;
+  font-weight: normal;
+  text-shadow: 0px 1px 0px white;
+  background: #f9f9f9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#eeeeee));
+  background-image: -webkit-linear-gradient(#f9f9f9, #eeeeee);
+  background-image: -moz-linear-gradient(#f9f9f9, #eeeeee);
+  background-image: -ms-linear-gradient(#f9f9f9, #eeeeee);
+  background-image: -o-linear-gradient(#f9f9f9, #eeeeee);
+  background-image: linear-gradient(#f9f9f9, #eeeeee);
+}
+/* line 46, ../sass/jqm/swatches/_generator.sass */
+.ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 49, ../sass/jqm/swatches/_generator.sass */
+.ui-body-c .ui-link-inherit {
+  color: #333333;
+}
+/* line 52, ../sass/jqm/swatches/_generator.sass */
+.ui-body-c .ui-link {
+  color: #2489ce;
+  font-weight: bold;
+}
+/* line 55, ../sass/jqm/swatches/_generator.sass */
+.ui-body-c .ui-link:visited {
+  color: #2489ce;
+}
+/* line 57, ../sass/jqm/swatches/_generator.sass */
+.ui-body-c .ui-link:hover {
+  color: #2489ce;
+}
+/* line 59, ../sass/jqm/swatches/_generator.sass */
+.ui-body-c .ui-link:active {
+  color: #2489ce;
+}
+
+/* line 63, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-up-c {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #cccccc;
+  font-weight: bold;
+  color: #222222;
+  text-shadow: 0px 1px 0 white;
+  background: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(white, #f1f1f1);
+  background-image: -moz-linear-gradient(white, #f1f1f1);
+  background-image: -ms-linear-gradient(white, #f1f1f1);
+  background-image: -o-linear-gradient(white, #f1f1f1);
+  background-image: linear-gradient(#ffffff, #f1f1f1);
+}
+/* line 72, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-up-c:visited, .ui-btn-up-c a.ui-link-inherit {
+  color: #222222;
+}
+
+/* line 75, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-hover-c {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #bbbbbb;
+  font-weight: bold;
+  color: #222222;
+  text-shadow: 0px 1px 0px white;
+  background: #dfdfdf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e0e0e0));
+  background-image: -webkit-linear-gradient(#f6f6f6, #e0e0e0);
+  background-image: -moz-linear-gradient(#f6f6f6, #e0e0e0);
+  background-image: -ms-linear-gradient(#f6f6f6, #e0e0e0);
+  background-image: -o-linear-gradient(#f6f6f6, #e0e0e0);
+  background-image: linear-gradient(#f6f6f6, #e0e0e0);
+}
+/* line 84, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-hover-c:visited, .ui-btn-hover-c:hover, .ui-btn-hover-c a.ui-link-inherit {
+  color: #222222;
+}
+
+/* line 87, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-down-c {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #bbbbbb;
+  font-weight: bold;
+  color: #222222;
+  text-shadow: 0px 1px 0px white;
+  background: #d6d6d6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d0d0d0), to(#dfdfdf));
+  background-image: -webkit-linear-gradient(#d0d0d0, #dfdfdf);
+  background-image: -moz-linear-gradient(#d0d0d0, #dfdfdf);
+  background-image: -ms-linear-gradient(#d0d0d0, #dfdfdf);
+  background-image: -o-linear-gradient(#d0d0d0, #dfdfdf);
+  background-image: linear-gradient(#d0d0d0, #dfdfdf);
+}
+/* line 96, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-down-c:visited, .ui-btn-down-c:hover, .ui-btn-down-c a.ui-link-inherit {
+  color: #222222;
+}
+
+/* line 5, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-d {
+  border: 1px solid #bbbbbb;
+  color: #333333;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px #eeeeee;
+  background: #bbbbbb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#bbbbbb));
+  background-image: -webkit-linear-gradient(#dddddd, #bbbbbb);
+  background-image: -moz-linear-gradient(#dddddd, #bbbbbb);
+  background-image: -ms-linear-gradient(#dddddd, #bbbbbb);
+  background-image: -o-linear-gradient(#dddddd, #bbbbbb);
+  background-image: linear-gradient(#dddddd, #bbbbbb);
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 13, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-d input, .ui-bar-d select, .ui-bar-d textarea, .ui-bar-d button {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 16, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-d .ui-link-inherit {
+  color: #333333;
+}
+/* line 19, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-d a.ui-link {
+  color: #2489ce;
+  font-weight: bold;
+}
+/* line 22, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-d a.ui-link:visited {
+  color: #2489ce;
+}
+/* line 24, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-d a.ui-link:hover {
+  color: #2489ce;
+}
+/* line 26, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-d a.ui-link:active {
+  color: #2489ce;
+}
+
+/* line 30, ../sass/jqm/swatches/_generator.sass */
+.ui-overlay-d {
+  border: 1px solid #bbbbbb;
+  color: #333333;
+  font-weight: normal;
+  text-shadow: 0px 1px 0px white;
+  background: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: -webkit-linear-gradient(white, white);
+  background-image: -moz-linear-gradient(white, white);
+  background-image: -ms-linear-gradient(white, white);
+  background-image: -o-linear-gradient(white, white);
+  background-image: linear-gradient(#ffffff, #ffffff);
+  background-image: none;
+  border-width: 0;
+}
+
+/* line 39, ../sass/jqm/swatches/_generator.sass */
+.ui-body-d {
+  border: 1px solid #bbbbbb;
+  color: #333333;
+  font-weight: normal;
+  text-shadow: 0px 1px 0px white;
+  background: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: -webkit-linear-gradient(white, white);
+  background-image: -moz-linear-gradient(white, white);
+  background-image: -ms-linear-gradient(white, white);
+  background-image: -o-linear-gradient(white, white);
+  background-image: linear-gradient(#ffffff, #ffffff);
+}
+/* line 46, ../sass/jqm/swatches/_generator.sass */
+.ui-body-d input, .ui-body-d select, .ui-body-d textarea, .ui-body-d button {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 49, ../sass/jqm/swatches/_generator.sass */
+.ui-body-d .ui-link-inherit {
+  color: #333333;
+}
+/* line 52, ../sass/jqm/swatches/_generator.sass */
+.ui-body-d .ui-link {
+  color: #2489ce;
+  font-weight: bold;
+}
+/* line 55, ../sass/jqm/swatches/_generator.sass */
+.ui-body-d .ui-link:visited {
+  color: #2489ce;
+}
+/* line 57, ../sass/jqm/swatches/_generator.sass */
+.ui-body-d .ui-link:hover {
+  color: #2489ce;
+}
+/* line 59, ../sass/jqm/swatches/_generator.sass */
+.ui-body-d .ui-link:active {
+  color: #2489ce;
+}
+
+/* line 63, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-up-d {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #bbbbbb;
+  font-weight: bold;
+  color: #333333;
+  text-shadow: 0px 1px 0 white;
+  background: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#f6f6f6));
+  background-image: -webkit-linear-gradient(#fafafa, #f6f6f6);
+  background-image: -moz-linear-gradient(#fafafa, #f6f6f6);
+  background-image: -ms-linear-gradient(#fafafa, #f6f6f6);
+  background-image: -o-linear-gradient(#fafafa, #f6f6f6);
+  background-image: linear-gradient(#fafafa, #f6f6f6);
+}
+/* line 72, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-up-d:visited, .ui-btn-up-d a.ui-link-inherit {
+  color: #333333;
+}
+
+/* line 75, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-hover-d {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #aaaaaa;
+  font-weight: bold;
+  color: #333333;
+  text-shadow: 0px 1px 0px white;
+  background: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(white));
+  background-image: -webkit-linear-gradient(#eeeeee, white);
+  background-image: -moz-linear-gradient(#eeeeee, white);
+  background-image: -ms-linear-gradient(#eeeeee, white);
+  background-image: -o-linear-gradient(#eeeeee, white);
+  background-image: linear-gradient(#eeeeee, #ffffff);
+}
+/* line 84, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-hover-d:visited, .ui-btn-hover-d:hover, .ui-btn-hover-d a.ui-link-inherit {
+  color: #333333;
+}
+
+/* line 87, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-down-d {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #aaaaaa;
+  font-weight: bold;
+  color: #333333;
+  text-shadow: 0px 1px 0px white;
+  background: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(#e5e5e5, #f2f2f2);
+  background-image: -moz-linear-gradient(#e5e5e5, #f2f2f2);
+  background-image: -ms-linear-gradient(#e5e5e5, #f2f2f2);
+  background-image: -o-linear-gradient(#e5e5e5, #f2f2f2);
+  background-image: linear-gradient(#e5e5e5, #f2f2f2);
+}
+/* line 96, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-down-d:visited, .ui-btn-down-d:hover, .ui-btn-down-d a.ui-link-inherit {
+  color: #333333;
+}
+
+/* line 5, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-e {
+  border: 1px solid #f7c942;
+  color: #333333;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px white;
+  background: #fadb4e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fceda7), to(#fbef7e));
+  background-image: -webkit-linear-gradient(#fceda7, #fbef7e);
+  background-image: -moz-linear-gradient(#fceda7, #fbef7e);
+  background-image: -ms-linear-gradient(#fceda7, #fbef7e);
+  background-image: -o-linear-gradient(#fceda7, #fbef7e);
+  background-image: linear-gradient(#fceda7, #fbef7e);
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 13, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-e input, .ui-bar-e select, .ui-bar-e textarea, .ui-bar-e button {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 16, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-e .ui-link-inherit {
+  color: #333333;
+}
+/* line 19, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-e a.ui-link {
+  color: #2489ce;
+  font-weight: bold;
+}
+/* line 22, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-e a.ui-link:visited {
+  color: #2489ce;
+}
+/* line 24, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-e a.ui-link:hover {
+  color: #2489ce;
+}
+/* line 26, ../sass/jqm/swatches/_generator.sass */
+.ui-bar-e a.ui-link:active {
+  color: #2489ce;
+}
+
+/* line 30, ../sass/jqm/swatches/_generator.sass */
+.ui-overlay-e {
+  border: 1px solid #f7c942;
+  color: #222222;
+  font-weight: normal;
+  text-shadow: 0px 1px 0px white;
+  background: #fff9df;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fffadf), to(#fff3a5));
+  background-image: -webkit-linear-gradient(#fffadf, #fff3a5);
+  background-image: -moz-linear-gradient(#fffadf, #fff3a5);
+  background-image: -ms-linear-gradient(#fffadf, #fff3a5);
+  background-image: -o-linear-gradient(#fffadf, #fff3a5);
+  background-image: linear-gradient(#fffadf, #fff3a5);
+  background-image: none;
+  border-width: 0;
+}
+
+/* line 39, ../sass/jqm/swatches/_generator.sass */
+.ui-body-e {
+  border: 1px solid #f7c942;
+  color: #222222;
+  font-weight: normal;
+  text-shadow: 0px 1px 0px white;
+  background: #fff9df;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fffadf), to(#fff3a5));
+  background-image: -webkit-linear-gradient(#fffadf, #fff3a5);
+  background-image: -moz-linear-gradient(#fffadf, #fff3a5);
+  background-image: -ms-linear-gradient(#fffadf, #fff3a5);
+  background-image: -o-linear-gradient(#fffadf, #fff3a5);
+  background-image: linear-gradient(#fffadf, #fff3a5);
+}
+/* line 46, ../sass/jqm/swatches/_generator.sass */
+.ui-body-e input, .ui-body-e select, .ui-body-e textarea, .ui-body-e button {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 49, ../sass/jqm/swatches/_generator.sass */
+.ui-body-e .ui-link-inherit {
+  color: #222222;
+}
+/* line 52, ../sass/jqm/swatches/_generator.sass */
+.ui-body-e .ui-link {
+  color: #2489ce;
+  font-weight: bold;
+}
+/* line 55, ../sass/jqm/swatches/_generator.sass */
+.ui-body-e .ui-link:visited {
+  color: #2489ce;
+}
+/* line 57, ../sass/jqm/swatches/_generator.sass */
+.ui-body-e .ui-link:hover {
+  color: #2489ce;
+}
+/* line 59, ../sass/jqm/swatches/_generator.sass */
+.ui-body-e .ui-link:active {
+  color: #2489ce;
+}
+
+/* line 63, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-up-e {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #f4c63f;
+  font-weight: bold;
+  color: #222222;
+  text-shadow: 0px 1px 0 white;
+  background: #fadb4e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffefaa), to(#ffe155));
+  background-image: -webkit-linear-gradient(#ffefaa, #ffe155);
+  background-image: -moz-linear-gradient(#ffefaa, #ffe155);
+  background-image: -ms-linear-gradient(#ffefaa, #ffe155);
+  background-image: -o-linear-gradient(#ffefaa, #ffe155);
+  background-image: linear-gradient(#ffefaa, #ffe155);
+}
+/* line 72, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-up-e:visited, .ui-btn-up-e a.ui-link-inherit {
+  color: #222222;
+}
+
+/* line 75, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-hover-e {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #f2c43d;
+  font-weight: bold;
+  color: #111111;
+  text-shadow: 0px 1px 0px white;
+  background: #fbe26f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff5ba), to(#fbdd52));
+  background-image: -webkit-linear-gradient(#fff5ba, #fbdd52);
+  background-image: -moz-linear-gradient(#fff5ba, #fbdd52);
+  background-image: -ms-linear-gradient(#fff5ba, #fbdd52);
+  background-image: -o-linear-gradient(#fff5ba, #fbdd52);
+  background-image: linear-gradient(#fff5ba, #fbdd52);
+}
+/* line 84, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-hover-e:visited, .ui-btn-hover-e:hover, .ui-btn-hover-e a.ui-link-inherit {
+  color: #111111;
+}
+
+/* line 87, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-down-e {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid #f2c43d;
+  font-weight: bold;
+  color: #111111;
+  text-shadow: 0px 1px 0px white;
+  background: #fceda7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8d94c), to(#fadb4e));
+  background-image: -webkit-linear-gradient(#f8d94c, #fadb4e);
+  background-image: -moz-linear-gradient(#f8d94c, #fadb4e);
+  background-image: -ms-linear-gradient(#f8d94c, #fadb4e);
+  background-image: -o-linear-gradient(#f8d94c, #fadb4e);
+  background-image: linear-gradient(#f8d94c, #fadb4e);
+}
+/* line 96, ../sass/jqm/swatches/_generator.sass */
+.ui-btn-down-e:visited, .ui-btn-down-e:hover, .ui-btn-down-e a.ui-link-inherit {
+  color: #111111;
+}
+
+/* line 3, ../sass/jqm/ui/_structure.sass */
+a.ui-link-inherit {
+  text-decoration: none !important;
+}
+
+/* Active class used as the "on" state across all themes */
+/* line 7, ../sass/jqm/ui/_structure.sass */
+.ui-btn-active {
+  border: 1px solid #2373a5;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+  text-shadow: 0px 1px 0px #3373a5;
+  background: #5393c5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5393c5), to(#6facd5));
+  background-image: -webkit-linear-gradient(#5393c5, #6facd5);
+  background-image: -moz-linear-gradient(#5393c5, #6facd5);
+  background-image: -ms-linear-gradient(#5393c5, #6facd5);
+  background-image: -o-linear-gradient(#5393c5, #6facd5);
+  background-image: linear-gradient(#5393c5, #6facd5);
+}
+/* line 17, ../sass/jqm/ui/_structure.sass */
+.ui-btn-active:visited, .ui-btn-active:hover, .ui-btn-active a.ui-link-inherit {
+  color: white;
+}
+
+/* button inner top highlight */
+/* line 21, ../sass/jqm/ui/_structure.sass */
+.ui-btn-inner {
+  border-top: 1px solid white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* corner rounding classes */
+/* line 26, ../sass/jqm/ui/_structure.sass */
+.ui-corner-all {
+  -webkit-border-radius: 0.6em;
+  -moz-border-radius: 0.6em;
+  border-radius: 0.6em;
+}
+
+/* radius clip workaround for cleaning up corner trapping */
+/* line 30, ../sass/jqm/ui/_structure.sass */
+.ui-corner-all, .ui-btn-corner-all {
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+/* Form field separator */
+/* line 35, ../sass/jqm/ui/_structure.sass */
+.ui-br {
+  border-color: #828282;
+  border-color: rgba(130, 130, 130, 0.3);
+  border-style: solid;
+}
+
+/* Interaction cues */
+/* line 41, ../sass/jqm/ui/_structure.sass */
+.ui-disabled {
+  filter: Alpha(Opacity=30);
+  opacity: 0.3;
+  zoom: 1;
+}
+/* line 46, ../sass/jqm/ui/_structure.sass */
+.ui-disabled .ui-disabled a {
+  cursor: default !important;
+  pointer-events: none;
+}
+
+/* Icons */
+/* icons sizing */
+/* line 6, ../sass/jqm/ui/_icons.sass */
+.ui-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* line 10, ../sass/jqm/ui/_icons.sass */
+.ui-icon, .ui-icon-searchfield:after {
+  background-color: #666666;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../images/icons-18-white.png);
+  background-repeat: no-repeat;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+/* Alt icon color */
+/* line 18, ../sass/jqm/ui/_icons.sass */
+.ui-icon-alt .ui-icon, .ui-icon-alt .ui-icon-searchfield:after {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-image: url(../images/icons-18-black.png);
+  background-repeat: no-repeat;
+}
+
+/* No disc */
+/* line 25, ../sass/jqm/ui/_icons.sass */
+.ui-icon-nodisc .ui-icon, .ui-icon-nodisc .ui-icon-searchfield:after, .ui-icon-nodisc .ui-icon-alt .ui-icon, .ui-icon-nodisc .ui-icon-alt .ui-icon-searchfield:after {
+  background-color: transparent;
+}
+
+/* Icon sprite */
+/* plus minus */
+/* line 30, ../sass/jqm/ui/_icons.sass */
+.ui-icon-plus {
+  background-position: -1px -1px;
+}
+
+/* line 33, ../sass/jqm/ui/_icons.sass */
+.ui-icon-minus {
+  background-position: -37px -1px;
+}
+
+/* delete/close */
+/* line 37, ../sass/jqm/ui/_icons.sass */
+.ui-icon-delete {
+  background-position: -73px -1px;
+}
+
+/* arrows */
+/* line 41, ../sass/jqm/ui/_icons.sass */
+.ui-icon-arrow-r {
+  background-position: -108px -1px;
+}
+
+/* line 44, ../sass/jqm/ui/_icons.sass */
+.ui-icon-arrow-l {
+  background-position: -144px -1px;
+}
+
+/* line 47, ../sass/jqm/ui/_icons.sass */
+.ui-icon-arrow-u {
+  background-position: -180px -1px;
+}
+
+/* line 50, ../sass/jqm/ui/_icons.sass */
+.ui-icon-arrow-d {
+  background-position: -216px -1px;
+}
+
+/* misc */
+/* line 54, ../sass/jqm/ui/_icons.sass */
+.ui-icon-check {
+  background-position: -252px -1px;
+}
+
+/* line 57, ../sass/jqm/ui/_icons.sass */
+.ui-icon-gear {
+  background-position: -288px -1px;
+}
+
+/* line 60, ../sass/jqm/ui/_icons.sass */
+.ui-icon-refresh {
+  background-position: -323px -1px;
+}
+
+/* line 63, ../sass/jqm/ui/_icons.sass */
+.ui-icon-forward {
+  background-position: -360px -1px;
+}
+
+/* line 66, ../sass/jqm/ui/_icons.sass */
+.ui-icon-back {
+  background-position: -396px -1px;
+}
+
+/* line 69, ../sass/jqm/ui/_icons.sass */
+.ui-icon-grid {
+  background-position: -432px -1px;
+}
+
+/* line 72, ../sass/jqm/ui/_icons.sass */
+.ui-icon-star {
+  background-position: -467px -1px;
+}
+
+/* line 75, ../sass/jqm/ui/_icons.sass */
+.ui-icon-alert {
+  background-position: -503px -1px;
+}
+
+/* line 78, ../sass/jqm/ui/_icons.sass */
+.ui-icon-info {
+  background-position: -539px -1px;
+}
+
+/* line 81, ../sass/jqm/ui/_icons.sass */
+.ui-icon-home {
+  background-position: -575px -1px;
+}
+
+/* search */
+/* line 85, ../sass/jqm/ui/_icons.sass */
+.ui-icon-search, .ui-icon-searchfield:after {
+  background-position: -611px -1px;
+}
+
+/* checkbox radio */
+/* line 89, ../sass/jqm/ui/_icons.sass */
+.ui-icon-checkbox-on {
+  background-position: -647px -1px;
+}
+
+/* line 92, ../sass/jqm/ui/_icons.sass */
+.ui-icon-checkbox-off {
+  background-position: -683px -1px;
+}
+
+/* line 95, ../sass/jqm/ui/_icons.sass */
+.ui-icon-radio-on {
+  background-position: -718px -1px;
+}
+
+/* line 98, ../sass/jqm/ui/_icons.sass */
+.ui-icon-radio-off {
+  background-position: -754px -1px;
+}
+
+/* menu edit */
+/* line 102, ../sass/jqm/ui/_icons.sass */
+.ui-icon-bars {
+  background-position: -788px -1px;
+}
+
+/* line 105, ../sass/jqm/ui/_icons.sass */
+.ui-icon-edit {
+  background-position: -824px -1px;
+}
+
+/* HD/"retina" sprite */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-resolution: 200dpi) {
+  /* line 110, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-plus, .ui-icon-minus, .ui-icon-delete, .ui-icon-arrow-r, .ui-icon-arrow-l, .ui-icon-arrow-u, .ui-icon-arrow-d, .ui-icon-check, .ui-icon-gear, .ui-icon-refresh, .ui-icon-forward, .ui-icon-back, .ui-icon-grid, .ui-icon-star, .ui-icon-alert, .ui-icon-info, .ui-icon-home, .ui-icon-bars, .ui-icon-edit, .ui-icon-search, .ui-icon-searchfield:after, .ui-icon-checkbox-off, .ui-icon-checkbox-on, .ui-icon-radio-off, .ui-icon-radio-on {
+    background-image: url(../images/icons-36-white.png);
+    -moz-background-size: 864px 18px;
+    -o-background-size: 864px 18px;
+    -webkit-background-size: 864px 18px;
+    background-size: 864px 18px;
+  }
+
+  /* line 114, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-alt .ui-icon {
+    background-image: url(../images/icons-36-black.png);
+  }
+
+  /* line 117, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-plus {
+    background-position: 0px 50%;
+  }
+
+  /* line 120, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-minus {
+    background-position: -36px 50%;
+  }
+
+  /* line 123, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-delete {
+    background-position: -72px 50%;
+  }
+
+  /* line 126, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-arrow-r {
+    background-position: -108px 50%;
+  }
+
+  /* line 129, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-arrow-l {
+    background-position: -144px 50%;
+  }
+
+  /* line 132, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-arrow-u {
+    background-position: -179px 50%;
+  }
+
+  /* line 135, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-arrow-d {
+    background-position: -215px 50%;
+  }
+
+  /* line 138, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-check {
+    background-position: -252px 50%;
+  }
+
+  /* line 141, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-gear {
+    background-position: -287px 50%;
+  }
+
+  /* line 144, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-refresh {
+    background-position: -323px 50%;
+  }
+
+  /* line 147, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-forward {
+    background-position: -360px 50%;
+  }
+
+  /* line 150, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-back {
+    background-position: -395px 50%;
+  }
+
+  /* line 153, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-grid {
+    background-position: -431px 50%;
+  }
+
+  /* line 156, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-star {
+    background-position: -467px 50%;
+  }
+
+  /* line 159, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-alert {
+    background-position: -503px 50%;
+  }
+
+  /* line 162, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-info {
+    background-position: -538px 50%;
+  }
+
+  /* line 165, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-home {
+    background-position: -575px 50%;
+  }
+
+  /* line 168, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-search,
+  .ui-icon-searchfield:after {
+    background-position: -611px 50%;
+  }
+
+  /* line 172, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-checkbox-on {
+    background-position: -647px 50%;
+  }
+
+  /* line 175, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-checkbox-off {
+    background-position: -683px 50%;
+  }
+
+  /* line 178, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-radio-on {
+    background-position: -718px 50%;
+  }
+
+  /* line 181, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-radio-off {
+    background-position: -754px 50%;
+  }
+
+  /* line 184, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-bars {
+    background-position: -788px 50%;
+  }
+
+  /* line 187, ../sass/jqm/ui/_icons.sass */
+  .ui-icon-edit {
+    background-position: -824px 50%;
+  }
+}
+/* checks,radios */
+/* line 192, ../sass/jqm/ui/_icons.sass */
+.ui-checkbox .ui-icon, .ui-selectmenu-list .ui-icon {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 196, ../sass/jqm/ui/_icons.sass */
+.ui-icon-checkbox-off, .ui-icon-radio-off {
+  background-color: transparent;
+}
+
+/* line 199, ../sass/jqm/ui/_icons.sass */
+.ui-checkbox-on .ui-icon, .ui-radio-on .ui-icon {
+  background-color: #5393c5;
+}
+
+/* loading icon */
+/* line 203, ../sass/jqm/ui/_icons.sass */
+.ui-icon-loading {
+  background: url(images/ajax-loader.gif);
+  background-size: 46px 46px;
+}
+
+/*btn icon positioning */
+/* line 209, ../sass/jqm/ui/_icons.sass */
+.ui-btn-icon-notext .ui-icon {
+  display: block;
+  z-index: 0;
+}
+
+/* line 214, ../sass/jqm/ui/_icons.sass */
+.ui-btn-icon-left > .ui-btn-inner > .ui-icon, .ui-btn-icon-right > .ui-btn-inner > .ui-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+}
+
+/* line 221, ../sass/jqm/ui/_icons.sass */
+.ui-btn-icon-top .ui-btn-inner .ui-icon, .ui-btn-icon-bottom .ui-btn-inner .ui-icon {
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+}
+
+/* line 227, ../sass/jqm/ui/_icons.sass */
+.ui-btn-icon-left .ui-icon {
+  left: 10px;
+}
+
+/* line 231, ../sass/jqm/ui/_icons.sass */
+.ui-btn-icon-right .ui-icon {
+  right: 10px;
+}
+
+/* line 235, ../sass/jqm/ui/_icons.sass */
+.ui-btn-icon-top .ui-icon {
+  top: 10px;
+}
+
+/* line 239, ../sass/jqm/ui/_icons.sass */
+.ui-btn-icon-bottom .ui-icon {
+  top: auto;
+  bottom: 10px;
+}
+
+/* line 245, ../sass/jqm/ui/_icons.sass */
+.ui-header .ui-btn-icon-left .ui-icon, .ui-footer .ui-btn-icon-left .ui-icon, .ui-mini .ui-btn-icon-left .ui-icon {
+  left: 5px;
+}
+
+/* line 250, ../sass/jqm/ui/_icons.sass */
+.ui-header .ui-btn-icon-right .ui-icon, .ui-footer .ui-btn-icon-right .ui-icon, .ui-mini .ui-btn-icon-right .ui-icon {
+  right: 5px;
+}
+
+/* line 255, ../sass/jqm/ui/_icons.sass */
+.ui-header .ui-btn-icon-top .ui-icon, .ui-footer .ui-btn-icon-top .ui-icon, .ui-mini .ui-btn-icon-top .ui-icon {
+  top: 5px;
+}
+
+/* line 260, ../sass/jqm/ui/_icons.sass */
+.ui-header .ui-btn-icon-bottom .ui-icon, .ui-footer .ui-btn-icon-bottom .ui-icon, .ui-mini .ui-btn-icon-bottom .ui-icon {
+  bottom: 5px;
+}
+
+/* Button corner class */
+/* line 4, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-corner-all {
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+}
+
+/* Corner styling inheritance */
+/* line 8, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-inner, .ui-btn-text {
+  -webkit-border-radius: inherit;
+  border-radius: inherit;
+}
+
+/* line 12, ../sass/jqm/ui/_buttons.sass */
+.ui-btn {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  margin: 0.5em 0;
+  padding: 0;
+}
+/* line 20, ../sass/jqm/ui/_buttons.sass */
+.ui-btn input, .ui-btn button {
+  z-index: 2;
+}
+
+/* line 23, ../sass/jqm/ui/_buttons.sass */
+.ui-mini {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+/* line 27, ../sass/jqm/ui/_buttons.sass */
+.ui-mini .ui-btn-inner {
+  font-size: 12.5px;
+  padding: 0.55em 11px 0.5em;
+}
+/* line 32, ../sass/jqm/ui/_buttons.sass */
+.ui-mini.ui-btn-icon-left .ui-btn-inner, .ui-mini .ui-btn-icon-left .ui-btn-inner {
+  padding-left: 30px;
+}
+/* line 36, ../sass/jqm/ui/_buttons.sass */
+.ui-mini.ui-btn-icon-right .ui-btn-inner, .ui-mini .ui-btn-icon-right .ui-btn-inner {
+  padding-right: 30px;
+}
+/* line 40, ../sass/jqm/ui/_buttons.sass */
+.ui-mini.ui-btn-icon-top .ui-btn-inner, .ui-mini .ui-btn-icon-top .ui-btn-inner {
+  padding-top: 30px;
+}
+/* line 44, ../sass/jqm/ui/_buttons.sass */
+.ui-mini.ui-btn-icon-bottom .ui-btn-inner, .ui-mini .ui-btn-icon-bottom .ui-btn-inner {
+  padding-bottom: 30px;
+}
+
+/* line 47, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-left, .ui-btn-right, .ui-btn-inline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* line 53, ../sass/jqm/ui/_buttons.sass */
+.ui-input-clear {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* line 58, ../sass/jqm/ui/_buttons.sass */
+.ui-grid-a .ui-btn, .ui-grid-b .ui-btn, .ui-grid-c .ui-btn, .ui-grid-d .ui-btn, .ui-grid-e .ui-btn, .ui-grid-solo .ui-btn {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* line 62, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-inner {
+  font-size: 16px;
+  padding: 0.6em 20px;
+  min-width: 0.75em;
+  display: block;
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+/* line 73, ../sass/jqm/ui/_buttons.sass */
+.ui-mobile .ui-btn-left, .ui-mobile .ui-btn-right, .ui-btn-left > .ui-btn, .ui-btn-right > .ui-btn {
+  margin: 0;
+}
+
+/* .ui-mobile to increase specificity level */
+/* line 77, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-block {
+  display: block;
+}
+
+/* line 81, ../sass/jqm/ui/_buttons.sass */
+.ui-header > .ui-btn, .ui-footer > .ui-btn {
+  display: inline-block;
+  margin: 0;
+}
+/* line 85, ../sass/jqm/ui/_buttons.sass */
+.ui-header .ui-btn-block, .ui-footer .ui-btn-block {
+  display: block;
+}
+/* line 88, ../sass/jqm/ui/_buttons.sass */
+.ui-header .ui-btn-inner, .ui-footer .ui-btn-inner {
+  font-size: 12.5px;
+  padding: 0.55em 11px 0.5em;
+}
+/* line 93, ../sass/jqm/ui/_buttons.sass */
+.ui-header .ui-btn-icon-left .ui-btn-inner, .ui-footer .ui-btn-icon-left .ui-btn-inner {
+  padding-left: 30px;
+}
+/* line 97, ../sass/jqm/ui/_buttons.sass */
+.ui-header .ui-btn-icon-right .ui-btn-inner, .ui-footer .ui-btn-icon-right .ui-btn-inner {
+  padding-right: 30px;
+}
+/* line 101, ../sass/jqm/ui/_buttons.sass */
+.ui-header .ui-btn-icon-top .ui-btn-inner, .ui-footer .ui-btn-icon-top .ui-btn-inner {
+  padding: 30px 3px 0.5em 3px;
+}
+/* line 105, ../sass/jqm/ui/_buttons.sass */
+.ui-header .ui-btn-icon-bottom .ui-btn-inner, .ui-footer .ui-btn-icon-bottom .ui-btn-inner {
+  padding: 0.55em 3px 30px 3px;
+}
+
+/* line 109, ../sass/jqm/ui/_buttons.sass */
+.ui-fullsize .ui-btn-inner {
+  font-size: 16px;
+  padding: 0.6em 20px;
+}
+
+/* line 113, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-icon-notext {
+  width: 24px;
+  height: 24px;
+}
+/* line 117, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-icon-notext .ui-btn-inner {
+  padding: 0;
+  height: 100%;
+}
+/* line 121, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-icon-notext .ui-btn-inner .ui-icon {
+  margin: 2px 1px 2px 3px;
+  float: left;
+}
+/* line 125, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-icon-notext .ui-btn-text {
+  position: absolute;
+  left: -9999px;
+}
+
+/* line 129, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-text {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* line 136, ../sass/jqm/ui/_buttons.sass */
+div.ui-btn-text {
+  width: auto;
+}
+
+/* line 140, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-icon-left .ui-btn-inner {
+  padding-left: 40px;
+}
+
+/* line 144, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-icon-right .ui-btn-inner {
+  padding-right: 40px;
+}
+
+/* line 148, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-icon-top .ui-btn-inner {
+  padding-top: 40px;
+}
+
+/* line 152, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-icon-bottom .ui-btn-inner {
+  padding-bottom: 40px;
+}
+
+/*hiding native button,inputs */
+/* line 156, ../sass/jqm/ui/_buttons.sass */
+.ui-btn-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: white;
+  background: rgba(255, 255, 255, 0);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  font-size: 1px;
+  border: none;
+  text-indent: -9999px;
+}
+
+/* line 171, ../sass/jqm/ui/_buttons.sass */
+.ui-disabled {
+  z-index: 1;
+  /* Fixes IE/WP filter alpha opacity bugs */
+}
+/* line 175, ../sass/jqm/ui/_buttons.sass */
+.ui-disabled .ui-btn-hidden {
+  display: none;
+}
+
+/* line 179, ../sass/jqm/ui/_buttons.sass */
+.ui-field-contain .ui-btn.ui-submit {
+  margin: 0;
+}
+
+/* line 183, ../sass/jqm/ui/_buttons.sass */
+label.ui-submit {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 0 0 0.3em;
+  display: block;
+}
+
+@media all and (min-width: 28em) {
+  /* line 193, ../sass/jqm/ui/_buttons.sass */
+  .ui-field-contain label.ui-submit {
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    margin: 0 2% 0 0;
+  }
+  /* line 199, ../sass/jqm/ui/_buttons.sass */
+  .ui-field-contain .ui-btn.ui-submit {
+    width: 78%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 205, ../sass/jqm/ui/_buttons.sass */
+  .ui-hide-label .ui-btn.ui-submit {
+    width: auto;
+    display: block;
+  }
+}
+/* Focus state - set here for specificity (note: these classes are added by JavaScript) */
+/* line 4, ../sass/jqm/ui/_focus.sass */
+.ui-btn:focus, .ui-link-inherit:focus {
+  outline: 0;
+}
+
+/* line 7, ../sass/jqm/ui/_focus.sass */
+.ui-btn.ui-focus {
+  z-index: 1;
+}
+
+/* line 10, ../sass/jqm/ui/_focus.sass */
+.ui-focus, .ui-btn:focus {
+  -moz-box-shadow: inset 0px 0px 3px #5393c5;
+  -webkit-box-shadow: inset 0px 0px 3px #5393c5;
+  box-shadow: inset 0px 0px 3px #5393c5;
+}
+
+/* line 14, ../sass/jqm/ui/_focus.sass */
+.ui-input-text.ui-focus, .ui-input-search.ui-focus {
+  -moz-box-shadow: 0px 0px 12px #5393c5;
+  -webkit-box-shadow: 0px 0px 12px #5393c5;
+  box-shadow: 0px 0px 12px #5393c5;
+}
+
+/* line 3, ../sass/jqm/ui/_modal.sass */
+.ui-overlay {
+  background: #666666;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 10, ../sass/jqm/ui/_modal.sass */
+.ui-overlay-shadow {
+  -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* line 13, ../sass/jqm/ui/_modal.sass */
+.ui-shadow {
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* line 16, ../sass/jqm/ui/_modal.sass */
+.ui-bar-a .ui-shadow, .ui-bar-b .ui-shadow, .ui-bar-c .ui-shadow {
+  -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+/* line 19, ../sass/jqm/ui/_modal.sass */
+.ui-shadow-inset {
+  -moz-box-shadow: inset 0px 1px 4px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0px 1px 4px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 1px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* line 22, ../sass/jqm/ui/_modal.sass */
+.ui-icon-shadow {
+  -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+
+/* corner styling for dialogs and popups */
+/* line 27, ../sass/jqm/ui/_modal.sass */
+.ui-corner-all > .ui-header:first-child, .ui-corner-all > .ui-content:first-child, .ui-corner-all > .ui-footer:first-child {
+  -webkit-border-top-left-radius: inherit;
+  border-top-left-radius: inherit;
+  -webkit-border-top-right-radius: inherit;
+  border-top-right-radius: inherit;
+}
+/* line 33, ../sass/jqm/ui/_modal.sass */
+.ui-corner-all > .ui-header:last-child, .ui-corner-all > .ui-content:last-child, .ui-corner-all > .ui-footer:last-child {
+  -webkit-border-bottom-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  -webkit-border-bottom-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+/* loading screen */
+/* line 4, ../sass/jqm/ui/_loader.sass */
+.ui-loading .ui-loader {
+  display: block;
+}
+
+/* line 7, ../sass/jqm/ui/_loader.sass */
+.ui-loader {
+  display: none;
+  z-index: 9999999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: 0;
+}
+/* line 15, ../sass/jqm/ui/_loader.sass */
+.ui-loader .ui-icon {
+  background-color: black;
+  display: block;
+  margin: 0;
+  width: 44px;
+  height: 44px;
+  padding: 1px;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  border-radius: 36px;
+}
+
+/* line 24, ../sass/jqm/ui/_loader.sass */
+.ui-loader-default {
+  background: none;
+  opacity: 0.18;
+  filter: alpha(opacity=18);
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  margin-top: -23px;
+}
+/* line 32, ../sass/jqm/ui/_loader.sass */
+.ui-loader-default h1 {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 38, ../sass/jqm/ui/_loader.sass */
+.ui-loader-verbose {
+  opacity: 0.88;
+  filter: alpha(opacity=88);
+  -moz-box-shadow: 0px 1px 1px white;
+  -webkit-box-shadow: 0px 1px 1px white;
+  box-shadow: 0px 1px 1px white;
+  width: 200px;
+  height: auto;
+  margin-left: -110px;
+  margin-top: -43px;
+  padding: 10px;
+}
+/* line 47, ../sass/jqm/ui/_loader.sass */
+.ui-loader-verbose h1 {
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+/* line 52, ../sass/jqm/ui/_loader.sass */
+.ui-loader-verbose .ui-icon {
+  margin: 0 auto 10px;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+}
+
+/* line 57, ../sass/jqm/ui/_loader.sass */
+.ui-loader-textonly {
+  padding: 15px;
+  margin-left: -115px;
+}
+/* line 61, ../sass/jqm/ui/_loader.sass */
+.ui-loader-textonly .ui-icon {
+  display: none;
+}
+
+/* line 64, ../sass/jqm/ui/_loader.sass */
+.ui-loader-fakefix {
+  position: absolute;
+}
+
+/* line 3, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar {
+  max-width: 100%;
+  /* add border if not in header/footer (full width) */
+}
+/* line 6, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar.ui-mini {
+  margin: 0;
+}
+/* line 9, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar ul:before, .ui-navbar ul:after {
+  content: " ";
+  display: table;
+}
+/* line 13, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar ul:after {
+  clear: both;
+}
+/* line 16, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+  border: 0;
+  max-width: 100%;
+  overflow: visible;
+  zoom: 1;
+}
+/* line 28, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar li .ui-btn {
+  display: block;
+  text-align: center;
+  margin: 0 -1px 0 0;
+  border-right-width: 0;
+}
+/* line 35, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar li .ui-btn-icon-right .ui-icon {
+  right: 6px;
+}
+/* line 39, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar li .ui-btn .ui-btn-inner {
+  padding-top: 0.7em;
+  padding-bottom: 0.8em;
+}
+/* line 44, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar li .ui-btn-icon-top .ui-btn-inner {
+  padding-top: 30px;
+}
+/* line 48, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar li .ui-btn-icon-bottom .ui-btn-inner {
+  padding-bottom: 30px;
+}
+/* line 52, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar li:last-child .ui-btn, .ui-navbar .ui-grid-duo .ui-block-b .ui-btn {
+  margin-right: 0;
+  border-right-width: 1px;
+}
+/* line 56, ../sass/jqm/ui/_navbar.sass */
+.ui-navbar .ui-grid-duo li.ui-block-a:last-child .ui-btn {
+  margin-right: -1px;
+  border-right-width: 1px;
+}
+
+/* line 61, ../sass/jqm/ui/_navbar.sass */
+.ui-header .ui-navbar li:last-child .ui-btn, .ui-footer .ui-navbar li:last-child .ui-btn {
+  margin-right: -1px;
+  border-right-width: 0;
+}
+/* line 65, ../sass/jqm/ui/_navbar.sass */
+.ui-header .ui-navbar, .ui-footer .ui-navbar {
+  /* fixing gaps caused by subpixel problem */
+}
+/* line 68, ../sass/jqm/ui/_navbar.sass */
+.ui-header .ui-navbar .ui-grid-duo .ui-block-b .ui-btn, .ui-footer .ui-navbar .ui-grid-duo .ui-block-b .ui-btn {
+  margin-right: -1px;
+  border-right-width: 0;
+}
+/* line 73, ../sass/jqm/ui/_navbar.sass */
+.ui-header .ui-navbar li .ui-btn, .ui-footer .ui-navbar li .ui-btn {
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+/* line 80, ../sass/jqm/ui/_navbar.sass */
+.ui-header .ui-navbar .ui-grid-b li.ui-block-c .ui-btn, .ui-footer .ui-navbar .ui-grid-b li.ui-block-c .ui-btn {
+  margin-right: -5px;
+}
+
+/* line 85, ../sass/jqm/ui/_navbar.sass */
+.ui-header .ui-navbar .ui-grid-c li.ui-block-d .ui-btn, .ui-footer .ui-navbar .ui-grid-c li.ui-block-d .ui-btn, .ui-header .ui-navbar .ui-grid-d li.ui-block-e .ui-btn, .ui-footer .ui-navbar .ui-grid-d li.ui-block-e .ui-btn {
+  margin-right: -4px;
+}
+
+/* line 88, ../sass/jqm/ui/_navbar.sass */
+.ui-header .ui-navbar .ui-grid-b li.ui-block-c .ui-btn-icon-right .ui-icon, .ui-footer .ui-navbar .ui-grid-b li.ui-block-c .ui-btn-icon-right .ui-icon, .ui-header .ui-navbar .ui-grid-c li.ui-block-d .ui-btn-icon-right .ui-icon, .ui-footer .ui-navbar .ui-grid-c li.ui-block-d .ui-btn-icon-right .ui-icon, .ui-header .ui-navbar .ui-grid-d li.ui-block-e .ui-btn-icon-right .ui-icon, .ui-footer .ui-navbar .ui-grid-d li.ui-block-e .ui-btn-icon-right .ui-icon {
+  right: 8px;
+}
+
+/* line 3, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-inset {
+  margin: 0.5em 0;
+}
+/* line 6, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-inset .ui-collapsible-heading {
+  margin: 0;
+}
+/* line 9, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-inset .ui-collapsible-heading .ui-btn {
+  border-right-width: 1px;
+  border-left-width: 1px;
+}
+
+/* line 13, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading {
+  font-size: 16px;
+  display: block;
+  margin: 0 -15px;
+  padding: 0;
+  position: relative;
+}
+/* line 20, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading .ui-btn {
+  text-align: left;
+  margin: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+/* line 26, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading .ui-btn span.ui-btn {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin: -12px 0 0 0;
+  width: 20px;
+  height: 20px;
+  padding: 1px 0px 1px 2px;
+  text-indent: -9999px;
+}
+/* line 36, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading .ui-btn span.ui-btn .ui-icon {
+  left: 0;
+  margin-top: -10px;
+}
+/* line 40, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading .ui-btn span.ui-btn .ui-btn-inner {
+  padding: 10px 0;
+}
+/* line 43, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading .ui-btn-inner {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+/* line 48, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading .ui-btn-icon-left .ui-btn-inner {
+  padding-left: 40px;
+}
+/* line 52, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading .ui-btn-icon-right .ui-btn-inner {
+  padding-right: 40px;
+}
+/* line 56, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading .ui-btn-icon-top .ui-btn-inner, .ui-collapsible-heading .ui-btn-icon-top .ui-btn-icon-bottom .ui-btn-inner {
+  text-align: center;
+}
+/* line 60, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading .ui-btn-icon-left.ui-mini .ui-btn-inner {
+  padding-left: 30px;
+}
+/* line 64, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading .ui-btn-icon-right.ui-mini .ui-btn-inner {
+  padding-right: 30px;
+}
+/* line 67, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading, .ui-collapsible-heading > .ui-btn {
+  -webkit-border-radius: inherit;
+  border-radius: inherit;
+}
+
+/* line 73, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-collapsed + .ui-collapsible:not(.ui-collapsible-inset) .ui-collapsible-heading .ui-btn {
+  border-top-width: 0;
+}
+
+/* line 76, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-set .ui-collapsible:not(.ui-collapsible-inset) .ui-collapsible-heading .ui-btn {
+  border-top-width: 1px;
+}
+
+/* line 80, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-heading-status {
+  position: absolute;
+  top: -9999px;
+  left: 0px;
+}
+
+/* line 85, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-content {
+  display: block;
+  margin: 0 -15px;
+  padding: 10px 15px;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top: none;
+  background-image: none;
+}
+
+/* line 94, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-inset .ui-collapsible-content {
+  margin: 0;
+  border-right-width: 1px;
+  border-left-width: 1px;
+}
+
+/* line 99, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-content-collapsed {
+  display: none;
+}
+
+/* line 102, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-set > .ui-collapsible.ui-corner-all {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 106, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-content, .ui-collapsible-set .ui-collapsible.ui-last-child {
+  -webkit-border-bottom-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  -webkit-border-bottom-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+/* line 112, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-themed-content:not(.ui-collapsible-collapsed) > .ui-collapsible-heading {
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 118, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-set {
+  margin: 0.5em 0;
+}
+/* line 121, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-set .ui-collapsible {
+  margin: -1px 0 0;
+}
+/* line 124, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-set .ui-collapsible.ui-first-child {
+  margin-top: 0;
+}
+/* line 127, ../sass/jqm/ui/_collapsible.sass */
+.ui-collapsible-set .ui-collapsible.ui-first-child {
+  -webkit-border-top-right-radius: inherit;
+  border-top-right-radius: inherit;
+  -webkit-border-top-left-radius: inherit;
+  border-top-left-radius: inherit;
+}
+
+/* line 3, ../sass/jqm/ui/_list.sass */
+.ui-listview {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  /* to avoid chance of duplication */
+}
+/* line 8, ../sass/jqm/ui/_list.sass */
+.ui-listview * .ui-btn-inner > .ui-btn > .ui-btn-inner {
+  border-top: 0px;
+}
+/* line 12, ../sass/jqm/ui/_list.sass */
+.ui-listview > .ui-li.ui-first-child, .ui-listview .ui-btn.ui-first-child > .ui-li > .ui-btn-text > .ui-link-inherit {
+  -webkit-border-top-right-radius: inherit;
+  border-top-right-radius: inherit;
+  -webkit-border-top-left-radius: inherit;
+  border-top-left-radius: inherit;
+}
+
+/* line 19, ../sass/jqm/ui/_list.sass */
+ol.ui-listview, ol.ui-listview .ui-li-divider {
+  counter-reset: listnumbering;
+}
+
+/* line 22, ../sass/jqm/ui/_list.sass */
+.ui-content .ui-listview, .ui-panel-inner > .ui-listview {
+  margin: -15px;
+}
+
+/* line 25, ../sass/jqm/ui/_list.sass */
+.ui-collapsible-content > .ui-listview {
+  margin: -10px -15px;
+}
+
+/* line 28, ../sass/jqm/ui/_list.sass */
+.ui-content .ui-listview-inset, .ui-panel-inner .ui-listview-inset {
+  margin: 1em 0;
+}
+
+/* line 31, ../sass/jqm/ui/_list.sass */
+.ui-collapsible-content .ui-listview-inset {
+  margin: 0.5em 0;
+}
+
+/* line 34, ../sass/jqm/ui/_list.sass */
+.ui-li {
+  list-style: none;
+  padding: 0;
+}
+/* line 38, ../sass/jqm/ui/_list.sass */
+.ui-li, .ui-li .ui-li.ui-field-contain {
+  display: block;
+  margin: 0;
+  position: relative;
+  overflow: visible;
+  text-align: left;
+  border-width: 0;
+  border-top-width: 1px;
+}
+/* line 47, ../sass/jqm/ui/_list.sass */
+.ui-li.ui-btn, .ui-li.ui-field-contain {
+  margin: 0;
+}
+/* line 50, ../sass/jqm/ui/_list.sass */
+.ui-li.ui-last-child, .ui-li.ui-field-contain.ui-last-child {
+  border-bottom-width: 1px;
+}
+/* line 55, ../sass/jqm/ui/_list.sass */
+.ui-li .ui-btn-text a.ui-link-inherit {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 61, ../sass/jqm/ui/_list.sass */
+.ui-li-divider, .ui-li-static {
+  margin: 0;
+}
+
+/* line 65, ../sass/jqm/ui/_list.sass */
+.ui-listview-inset .ui-li {
+  border-right-width: 1px;
+  border-left-width: 1px;
+}
+
+/* line 69, ../sass/jqm/ui/_list.sass */
+.ui-collapsible-content > .ui-listview:not(.ui-listview-inset) > .ui-li.ui-first-child {
+  border-top-width: 0;
+}
+
+/* line 72, ../sass/jqm/ui/_list.sass */
+.ui-collapsible-themed-content .ui-listview:not(.ui-listview-inset) > .ui-li.ui-last-child {
+  border-bottom-width: 0;
+}
+
+/* line 75, ../sass/jqm/ui/_list.sass */
+.ui-li-static {
+  background-image: none;
+}
+
+/* line 78, ../sass/jqm/ui/_list.sass */
+.ui-li-divider {
+  padding: 0.5em 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 83, ../sass/jqm/ui/_list.sass */
+ol.ui-listview .ui-link-inherit:before, ol.ui-listview .ui-li-static:before, .ui-li-dec {
+  font-size: 0.8em;
+  display: inline-block;
+  padding-right: 0.3em;
+  font-weight: normal;
+  counter-increment: listnumbering;
+  content: counter(listnumbering) ". ";
+}
+
+/* line 91, ../sass/jqm/ui/_list.sass */
+ol.ui-listview .ui-li-jsnumbering:before {
+  content: "" !important;
+}
+
+/* line 95, ../sass/jqm/ui/_list.sass */
+.ui-listview > .ui-li.ui-last-child,
+.ui-listview .ui-btn.ui-last-child > .ui-li > .ui-btn-text > .ui-link-inherit,
+.ui-collapsible-content > .ui-listview:not(.ui-listview-inset),
+.ui-collapsible-content > .ui-listview:not(.ui-listview-inset) .ui-li.ui-last-child {
+  -webkit-border-bottom-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  -webkit-border-bottom-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+/* line 104, ../sass/jqm/ui/_list.sass */
+.ui-listview > .ui-li.ui-first-child .ui-li-link-alt {
+  -webkit-border-top-right-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+/* line 110, ../sass/jqm/ui/_list.sass */
+.ui-listview > .ui-li.ui-last-child .ui-li-link-alt {
+  -webkit-border-bottom-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+/* line 115, ../sass/jqm/ui/_list.sass */
+.ui-listview > .ui-li.ui-first-child .ui-li-thumb:not(.ui-li-icon) {
+  -webkit-border-top-left-radius: inherit;
+  border-top-left-radius: inherit;
+}
+
+/* line 120, ../sass/jqm/ui/_list.sass */
+.ui-listview > .ui-li.ui-last-child .ui-li-thumb:not(.ui-li-icon) {
+  -webkit-border-bottom-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+/* line 124, ../sass/jqm/ui/_list.sass */
+.ui-li > .ui-btn-inner {
+  display: block;
+  position: relative;
+  padding: 0;
+}
+
+/* line 129, ../sass/jqm/ui/_list.sass */
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+  padding: 0.7em 15px;
+  display: block;
+}
+
+/* line 133, ../sass/jqm/ui/_list.sass */
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+  min-height: 59px;
+  padding-left: 100px;
+}
+
+/* line 137, ../sass/jqm/ui/_list.sass */
+.ui-li-has-icon .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-icon {
+  min-height: 20px;
+  padding-left: 40px;
+}
+
+/* line 141, ../sass/jqm/ui/_list.sass */
+.ui-li-has-count .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-count, .ui-li-divider.ui-li-has-count {
+  padding-right: 45px;
+}
+
+/* line 144, ../sass/jqm/ui/_list.sass */
+.ui-li-has-arrow .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow {
+  padding-right: 40px;
+}
+
+/* line 147, ../sass/jqm/ui/_list.sass */
+.ui-li-has-arrow.ui-li-has-count .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow.ui-li-has-count {
+  padding-right: 75px;
+}
+
+/* line 150, ../sass/jqm/ui/_list.sass */
+.ui-li-heading {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin: 0.6em 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 159, ../sass/jqm/ui/_list.sass */
+.ui-li-desc {
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  margin: -0.5em 0 0.6em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 168, ../sass/jqm/ui/_list.sass */
+.ui-li-thumb, .ui-listview .ui-li-icon {
+  position: absolute;
+  left: 1px;
+  top: 0;
+  max-height: 80px;
+  max-width: 80px;
+}
+
+/* line 175, ../sass/jqm/ui/_list.sass */
+.ui-listview .ui-li-icon {
+  max-height: 16px;
+  max-width: 16px;
+  left: 10px;
+  top: 0.9em;
+}
+
+/* line 181, ../sass/jqm/ui/_list.sass */
+.ui-li-thumb, .ui-listview .ui-li-icon, .ui-li-content {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 185, ../sass/jqm/ui/_list.sass */
+.ui-li-aside {
+  float: right;
+  width: 50%;
+  text-align: right;
+  margin: 0.3em 0;
+}
+
+/* line 191, ../sass/jqm/ui/_list.sass */
+.ui-li-divider {
+  cursor: default;
+}
+
+/* line 194, ../sass/jqm/ui/_list.sass */
+.ui-li-has-alt .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-alt {
+  padding-right: 53px;
+}
+
+/* line 197, ../sass/jqm/ui/_list.sass */
+.ui-li-has-alt.ui-li-has-count .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-alt.ui-li-has-count {
+  padding-right: 88px;
+}
+
+/* line 200, ../sass/jqm/ui/_list.sass */
+.ui-li-has-count .ui-li-count {
+  position: absolute;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  top: 50%;
+  margin-top: -0.9em;
+  right: 10px;
+}
+
+/* line 209, ../sass/jqm/ui/_list.sass */
+.ui-li-has-count.ui-li-divider .ui-li-count, .ui-li-has-count .ui-link-inherit .ui-li-count {
+  margin-top: -0.95em;
+}
+
+/* line 212, ../sass/jqm/ui/_list.sass */
+.ui-li-has-arrow.ui-li-has-count .ui-li-count {
+  right: 40px;
+}
+
+/* line 215, ../sass/jqm/ui/_list.sass */
+.ui-li-has-alt.ui-li-has-count .ui-li-count {
+  right: 53px;
+}
+
+/* line 218, ../sass/jqm/ui/_list.sass */
+.ui-li-link-alt {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  border-width: 0;
+  border-left-width: 1px;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+/* line 231, ../sass/jqm/ui/_list.sass */
+.ui-li-link-alt .ui-btn {
+  overflow: hidden;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  margin: -13px 0 0 0;
+  border-bottom-width: 1px;
+  z-index: -1;
+}
+/* line 240, ../sass/jqm/ui/_list.sass */
+.ui-li-link-alt .ui-btn .ui-icon {
+  right: 50%;
+  margin-right: -9px;
+}
+/* line 244, ../sass/jqm/ui/_list.sass */
+.ui-li-link-alt .ui-btn-inner {
+  padding: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 254, ../sass/jqm/ui/_list.sass */
+.ui-li-link-alt .ui-btn-icon-notext .ui-btn-inner .ui-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+}
+
+/* line 259, ../sass/jqm/ui/_list.sass */
+.ui-listview-filter {
+  border-width: 0;
+  overflow: hidden;
+  margin: -15px -15px 15px -15px;
+}
+/* line 264, ../sass/jqm/ui/_list.sass */
+.ui-listview-filter .ui-input-search {
+  margin: 5px;
+  width: auto;
+  display: block;
+}
+
+/* line 269, ../sass/jqm/ui/_list.sass */
+.ui-listview-filter-inset {
+  margin: -15px -5px;
+  background: transparent;
+}
+
+/* line 274, ../sass/jqm/ui/_list.sass */
+.ui-collapsible-content .ui-listview-filter {
+  margin: -10px -15px 10px -15px;
+  border-bottom: inherit;
+}
+/* line 278, ../sass/jqm/ui/_list.sass */
+.ui-collapsible-content .ui-listview-filter-inset {
+  margin: -5px;
+  border-bottom-width: 0;
+}
+
+/* line 282, ../sass/jqm/ui/_list.sass */
+.ui-li.ui-screen-hidden {
+  display: none;
+}
+
+@media all and (min-width: 480px) {
+  /* line 286, ../sass/jqm/ui/_list.sass */
+  .ui-li-aside {
+    width: 45%;
+  }
+}
+/* Odd iPad positioning issue. */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 292, ../sass/jqm/ui/_list.sass */
+  .ui-li .ui-btn-text {
+    overflow: visible;
+  }
+}
+/* line 3, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup, fieldset.ui-controlgroup {
+  padding: 0;
+  margin: 0.5em 0;
+  zoom: 1;
+}
+
+/* line 8, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup.ui-mini, fieldset.ui-controlgroup.ui-mini {
+  margin: 0.25em 0;
+}
+
+/* line 11, ../sass/jqm/ui/_controlgroup.sass */
+.ui-field-contain .ui-controlgroup, .ui-field-contain fieldset.ui-controlgroup {
+  margin: 0;
+}
+
+/* line 14, ../sass/jqm/ui/_controlgroup.sass */
+.ui-bar .ui-controlgroup {
+  margin: 0 5px;
+}
+
+/* line 17, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-label {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 0 0 0.4em;
+}
+
+/* line 23, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-controls label.ui-select, .ui-controlgroup-controls label.ui-submit {
+  position: absolute;
+  left: -9999px;
+}
+
+/* line 28, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup li {
+  list-style: none;
+}
+/* line 31, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup .ui-btn {
+  margin: 0;
+}
+/* line 34, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup .ui-btn-icon-notext {
+  width: auto;
+  height: auto;
+  top: auto;
+}
+/* line 39, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup .ui-btn-icon-notext .ui-btn-inner {
+  height: 20px;
+  padding: 0.6em 20px 0.6em 20px;
+}
+/* line 43, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup .ui-btn-corner-all {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/* line 47, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup .ui-controlgroup-controls, .ui-controlgroup .ui-radio, .ui-controlgroup .ui-checkbox, .ui-controlgroup .ui-select, .ui-controlgroup li {
+  -webkit-border-radius: inherit;
+  border-radius: inherit;
+}
+/* line 51, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup .ui-btn-icon-notext .ui-btn-inner .ui-icon {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin: -9px -9px 0 0;
+}
+/* line 57, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup .ui-checkbox label, .ui-controlgroup .ui-radio label {
+  font-size: 16px;
+}
+/* line 60, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup .ui-shadow:not(.ui-focus) {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* line 64, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup.ui-mini .ui-btn-icon-notext .ui-btn-inner, .ui-header .ui-controlgroup .ui-btn-icon-notext .ui-btn-inner, .ui-footer .ui-controlgroup .ui-btn-icon-notext .ui-btn-inner {
+  height: 16px;
+  padding: 0.55em 11px 0.5em 11px;
+}
+
+/* line 69, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal {
+  /* On IE7 the floating selects will be displayed as block if .ui-btn-text has width 100% */
+}
+/* line 71, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-btn-icon-notext .ui-btn-inner {
+  width: 18px;
+}
+/* line 74, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-btn-inner {
+  text-align: center;
+}
+/* line 77, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal.ui-mini .ui-btn-inner {
+  height: 16px;
+  line-height: 16px;
+}
+/* line 81, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-controlgroup-controls {
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+}
+/* line 86, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-controlgroup-controls:before, .ui-controlgroup-horizontal .ui-controlgroup-controls:after {
+  content: "";
+  display: table;
+}
+/* line 90, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-controlgroup-controls:after {
+  clear: both;
+}
+/* line 93, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-controlgroup-controls > .ui-btn, .ui-controlgroup-horizontal .ui-controlgroup-controls li > .ui-btn {
+  float: left;
+  clear: none;
+  margin: 0;
+}
+/* line 98, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-checkbox, .ui-controlgroup-horizontal .ui-radio, .ui-controlgroup-horizontal .ui-select {
+  float: left;
+  clear: none;
+  margin: 0;
+}
+/* line 105, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-select .ui-btn-text {
+  width: auto;
+}
+/* line 108, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-btn {
+  border-right-width: 0;
+}
+/* line 111, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-btn.ui-first-child {
+  -webkit-border-top-left-radius: inherit;
+  border-top-left-radius: inherit;
+  -webkit-border-bottom-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+/* line 117, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-btn.ui-last-child {
+  -webkit-border-top-right-radius: inherit;
+  border-top-right-radius: inherit;
+  -webkit-border-bottom-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+/* line 123, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-horizontal .ui-btn.ui-last-child {
+  border-right-width: 1px;
+}
+
+/* line 128, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-vertical .ui-btn {
+  border-bottom-width: 0;
+}
+/* line 131, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-vertical .ui-btn.ui-last-child {
+  border-bottom-width: 1px;
+}
+/* line 134, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-vertical .ui-btn.ui-first-child {
+  -webkit-border-top-left-radius: inherit;
+  border-top-left-radius: inherit;
+  -webkit-border-top-right-radius: inherit;
+  border-top-right-radius: inherit;
+}
+/* line 140, ../sass/jqm/ui/_controlgroup.sass */
+.ui-controlgroup-vertical .ui-btn.ui-last-child {
+  -webkit-border-bottom-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  -webkit-border-bottom-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+@media all and (min-width: 28em) {
+  /* line 149, ../sass/jqm/ui/_controlgroup.sass */
+  .ui-field-contain .ui-controlgroup-label {
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    margin: 0 2% 0 0;
+  }
+  /* line 155, ../sass/jqm/ui/_controlgroup.sass */
+  .ui-field-contain .ui-controlgroup-controls {
+    width: 78%;
+    display: inline-block;
+  }
+  /* line 160, ../sass/jqm/ui/_controlgroup.sass */
+  .ui-field-contain .ui-controlgroup .ui-select {
+    width: 100%;
+    display: block;
+  }
+  /* line 165, ../sass/jqm/ui/_controlgroup.sass */
+  .ui-field-contain .ui-controlgroup-horizontal .ui-select {
+    width: auto;
+  }
+
+  /* line 169, ../sass/jqm/ui/_controlgroup.sass */
+  .ui-hide-label .ui-controlgroup-controls {
+    width: 100%;
+  }
+}
+/* line 3, ../sass/jqm/ui/_dialog.sass */
+.ui-dialog {
+  background: none !important;
+}
+
+/* line 6, ../sass/jqm/ui/_dialog.sass */
+.ui-dialog-contain {
+  width: 92.5%;
+  max-width: 500px;
+  margin: 10% auto 15px auto;
+  padding: 0;
+  position: relative;
+  top: -15px;
+}
+/* line 14, ../sass/jqm/ui/_dialog.sass */
+.ui-dialog-contain > .ui-header, .ui-dialog-contain > .ui-content, .ui-dialog-contain > .ui-footer {
+  display: block;
+  position: relative;
+  width: auto;
+  margin: 0;
+}
+/* line 20, ../sass/jqm/ui/_dialog.sass */
+.ui-dialog-contain > .ui-header {
+  border: none;
+  overflow: hidden;
+  z-index: 10;
+  padding: 0;
+}
+/* line 26, ../sass/jqm/ui/_dialog.sass */
+.ui-dialog-contain > .ui-content {
+  padding: 15px;
+}
+/* line 29, ../sass/jqm/ui/_dialog.sass */
+.ui-dialog-contain > .ui-footer {
+  z-index: 10;
+  padding: 0 15px;
+}
+
+/* line 4, ../sass/jqm/ui/_popup.sass */
+.ui-popup-open .ui-header-fixed, .ui-popup-open .ui-footer-fixed {
+  position: absolute !important;
+}
+
+/* line 7, ../sass/jqm/ui/_popup.sass */
+.ui-popup-screen {
+  background-image: url(data:image/gifbase64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 1px;
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 1099;
+}
+/* line 17, ../sass/jqm/ui/_popup.sass */
+.ui-popup-screen.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+/* line 20, ../sass/jqm/ui/_popup.sass */
+.ui-popup-screen.out {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* line 23, ../sass/jqm/ui/_popup.sass */
+.ui-popup-container {
+  z-index: 1100;
+  display: inline-block;
+  position: absolute;
+  padding: 0;
+  outline: 0;
+}
+/* line 31, ../sass/jqm/ui/_popup.sass */
+.ui-popup-container .ui-content > p, .ui-popup-container .ui-content > h1, .ui-popup-container .ui-content > h2, .ui-popup-container .ui-content > h3, .ui-popup-container .ui-content > h4, .ui-popup-container .ui-content > h5, .ui-popup-container .ui-content > h6 {
+  margin: 0.5em 0;
+}
+/* line 34, ../sass/jqm/ui/_popup.sass */
+.ui-popup-container .ui-content > span {
+  margin: 0;
+}
+/* line 37, ../sass/jqm/ui/_popup.sass */
+.ui-popup-container .ui-content > p:first-child, .ui-popup-container .ui-content > h1:first-child, .ui-popup-container .ui-content > h2:first-child, .ui-popup-container .ui-content > h3:first-child, .ui-popup-container .ui-content > h4:first-child, .ui-popup-container .ui-content > h5:first-child, .ui-popup-container .ui-content > h6:first-child {
+  margin-top: 0;
+}
+/* line 40, ../sass/jqm/ui/_popup.sass */
+.ui-popup-container .ui-content > p:last-child, .ui-popup-container .ui-content > h1:last-child, .ui-popup-container .ui-content > h2:last-child, .ui-popup-container .ui-content > h3:last-child, .ui-popup-container .ui-content > h4:last-child, .ui-popup-container .ui-content > h5:last-child, .ui-popup-container .ui-content > h6:last-child {
+  margin-bottom: 0;
+}
+
+/* line 43, ../sass/jqm/ui/_popup.sass */
+.ui-popup {
+  position: relative;
+}
+/* line 46, ../sass/jqm/ui/_popup.sass */
+.ui-popup.ui-content, .ui-popup .ui-content {
+  overflow: visible;
+}
+/* line 49, ../sass/jqm/ui/_popup.sass */
+.ui-popup > p, .ui-popup > h1, .ui-popup > h2, .ui-popup > h3, .ui-popup > h4, .ui-popup > h5, .ui-popup > h6 {
+  margin: 0.5em 7px;
+}
+/* line 52, ../sass/jqm/ui/_popup.sass */
+.ui-popup > span {
+  display: block;
+  margin: 0.5em 7px;
+}
+/* line 56, ../sass/jqm/ui/_popup.sass */
+.ui-popup .ui-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+/* line 62, ../sass/jqm/ui/_popup.sass */
+.ui-popup > img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+/* line 69, ../sass/jqm/ui/_popup.sass */
+.ui-popup:not(.ui-content) > img:only-child, .ui-popup:not(.ui-content) > .ui-btn-left:first-child + img:last-child, .ui-popup:not(.ui-content) > .ui-btn-right:first-child + img:last-child {
+  -webkit-border-radius: inherit;
+  border-radius: inherit;
+}
+/* line 73, ../sass/jqm/ui/_popup.sass */
+.ui-popup iframe {
+  vertical-align: middle;
+}
+/* line 76, ../sass/jqm/ui/_popup.sass */
+.ui-popup > .ui-btn-left {
+  left: -9px;
+}
+/* line 79, ../sass/jqm/ui/_popup.sass */
+.ui-popup > .ui-btn-right {
+  right: -9px;
+}
+
+/* line 82, ../sass/jqm/ui/_popup.sass */
+.ui-popup-hidden {
+  top: -99999px;
+  left: -9999px;
+}
+
+@media all and (min-width: 28em) {
+  /* line 90, ../sass/jqm/ui/_popup.sass */
+  .ui-popup .ui-field-contain label.ui-submit, .ui-popup .ui-field-contain .ui-controlgroup-label, .ui-popup .ui-field-contain label.ui-select, .ui-popup .ui-field-contain label.ui-input-text {
+    font-size: 16px;
+    line-height: 1.4;
+    display: block;
+    font-weight: normal;
+    margin: 0 0 0.3em;
+  }
+  /* line 97, ../sass/jqm/ui/_popup.sass */
+  .ui-popup .ui-field-contain .ui-btn.ui-submit, .ui-popup .ui-field-contain .ui-controlgroup-controls, .ui-popup .ui-field-contain .ui-select, .ui-popup .ui-field-contain input.ui-input-text, .ui-popup .ui-field-contain textarea.ui-input-text, .ui-popup .ui-field-contain .ui-input-search {
+    width: 100%;
+    display: block;
+  }
+  /* line 102, ../sass/jqm/ui/_popup.sass */
+  .ui-popup > .ui-btn-left, .ui-popup > .ui-btn-right {
+    position: absolute;
+    top: -9px;
+    margin: 0;
+    z-index: 1101;
+  }
+}
+/* line 3, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox, .ui-radio {
+  position: relative;
+  clear: both;
+  margin: 0;
+  z-index: 1;
+}
+
+/* line 10, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-btn, .ui-radio .ui-btn {
+  text-align: left;
+  z-index: 2;
+}
+/* line 14, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-btn-inner, .ui-radio .ui-btn-inner {
+  white-space: normal;
+}
+/* line 18, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-btn-icon-left .ui-btn-inner, .ui-radio .ui-btn-icon-left .ui-btn-inner {
+  padding-left: 45px;
+}
+/* line 21, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-btn-icon-left .ui-icon, .ui-radio .ui-btn-icon-left .ui-icon {
+  left: 15px;
+}
+/* line 25, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-btn-icon-right .ui-btn-inner, .ui-radio .ui-btn-icon-right .ui-btn-inner {
+  padding-right: 45px;
+}
+/* line 28, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-btn-icon-right .ui-icon, .ui-radio .ui-btn-icon-right .ui-icon {
+  right: 15px;
+}
+/* line 32, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-btn-icon-top .ui-btn-inner, .ui-radio .ui-btn-icon-top .ui-btn-inner {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+}
+/* line 38, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-btn-icon-bottom .ui-btn-inner, .ui-radio .ui-btn-icon-bottom .ui-btn-inner {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+}
+/* line 43, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-btn-icon-bottom .ui-icon, .ui-radio .ui-btn-icon-bottom .ui-icon {
+  top: 10px;
+  bottom: 10px;
+}
+/* line 47, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox input, .ui-radio input {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 0;
+  outline: 0 !important;
+  z-index: 1;
+}
+/* line 59, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-mini.ui-btn-icon-left .ui-btn-inner, .ui-radio .ui-mini.ui-btn-icon-left .ui-btn-inner {
+  padding-left: 36px;
+}
+/* line 62, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-mini.ui-btn-icon-left .ui-icon, .ui-radio .ui-mini.ui-btn-icon-left .ui-icon {
+  left: 9px;
+}
+/* line 66, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-mini.ui-btn-icon-right .ui-btn-inner, .ui-radio .ui-mini.ui-btn-icon-right .ui-btn-inner {
+  padding-right: 36px;
+}
+/* line 69, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-mini.ui-btn-icon-right .ui-icon, .ui-radio .ui-mini.ui-btn-icon-right .ui-icon {
+  right: 9px;
+}
+/* line 72, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-checkbox .ui-icon, .ui-radio .ui-icon {
+  top: 1.1em;
+}
+
+/* line 79, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-controlgroup .ui-checkbox .ui-btn, .ui-controlgroup .ui-radio .ui-btn {
+  margin: 0;
+}
+
+/* line 85, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-controlgroup-horizontal .ui-checkbox .ui-icon, .ui-controlgroup-horizontal .ui-radio .ui-icon {
+  display: none;
+}
+/* line 88, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-controlgroup-horizontal .ui-checkbox .ui-btn-inner, .ui-controlgroup-horizontal .ui-radio .ui-btn-inner {
+  padding: 0.6em 20px;
+}
+/* line 92, ../sass/jqm/ui/_checkbox-radio.sass */
+.ui-controlgroup-horizontal .ui-checkbox .ui-mini .ui-btn-inner, .ui-controlgroup-horizontal .ui-radio .ui-mini .ui-btn-inner {
+  padding: 0.55em 11px 0.5em;
+}
+
+/* line 3, ../sass/jqm/ui/_select.sass */
+.ui-select {
+  display: block;
+  position: relative;
+  /*listbox */
+  /* This !important is required for iPad Safari specifically. See https://github.com/jquery/jquery-mobile/issues/2647 */ } */
+}
+/* line 7, ../sass/jqm/ui/_select.sass */
+.ui-select select {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+/* line 12, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-btn {
+  opacity: 1;
+  /* Fixes #2588: When Windows Phone 7.5 (Mango) tries to calculate a numeric opacity for a select (including "inherit") without explicitly specifying an opacity on the parent to give it context, a bug appears where clicking elsewhere on the page after opening the select will open the select again. */
+}
+/* line 16, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-btn select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 1.5em;
+  min-height: 100%;
+  height: 3em;
+  max-height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 2;
+}
+/* line 29, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-btn.ui-select-nativeonly {
+  border-radius: 0;
+  border: 0;
+}
+/* line 33, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-btn.ui-select-nativeonly select {
+  opacity: 1;
+  text-indent: 0;
+  display: block;
+}
+/* line 38, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-disabled {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  /* Display none because of issues with IE/WP's filter alpha opacity */
+}
+/* line 42, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-disabled select {
+  display: none;
+}
+/* line 46, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-disabled.ui-select-nativeonly .ui-btn-inner {
+  opacity: 0;
+}
+/* line 50, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-btn-icon-right .ui-btn-inner, .ui-select .ui-li-has-count .ui-btn-inner {
+  padding-right: 45px;
+}
+/* line 55, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-mini.ui-btn-icon-right .ui-btn-inner {
+  padding-right: 32px;
+}
+/* line 58, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-mini.ui-btn-icon-right .ui-icon {
+  right: 7px;
+}
+/* line 62, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-mini.ui-btn-icon-right.ui-li-has-count .ui-btn-inner {
+  padding-right: 67px;
+}
+/* line 65, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-mini.ui-btn-icon-right.ui-li-has-count .ui-li-count {
+  right: 32px;
+}
+/* line 70, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-btn-icon-right.ui-li-has-count .ui-btn-inner {
+  padding-right: 80px;
+}
+/* line 73, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-btn-icon-right.ui-li-has-count .ui-li-count {
+  right: 45px;
+}
+/* line 76, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-btn-icon-right .ui-icon {
+  right: 15px;
+}
+/* line 81, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-btn-text, .ui-select .ui-selectmenu .ui-btn-text {
+  display: block;
+  min-height: 1em;
+  overflow: hidden !important;
+}
+/* line 87, ../sass/jqm/ui/_select.sass */
+.ui-select .ui-btn-text {
+  text-overflow: ellipsis;
+}
+
+/* line 91, ../sass/jqm/ui/_select.sass */
+.ui-selectmenu {
+  padding: 6px;
+  min-width: 160px;
+  /* when no placeholder is defined in a multiple select, the header height doesn't even extend past the close button.  this shim's content in there */
+}
+/* line 95, ../sass/jqm/ui/_select.sass */
+.ui-selectmenu .ui-listview {
+  margin: 0;
+}
+/* line 99, ../sass/jqm/ui/_select.sass */
+.ui-selectmenu .ui-btn.ui-li-divider {
+  cursor: default;
+}
+/* line 102, ../sass/jqm/ui/_select.sass */
+.ui-selectmenu .ui-header {
+  margin: 0;
+  padding: 0;
+}
+/* line 107, ../sass/jqm/ui/_select.sass */
+.ui-selectmenu.ui-popup .ui-header {
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 114, ../sass/jqm/ui/_select.sass */
+.ui-selectmenu .ui-header .ui-title {
+  margin: 0.6em 46px 0.8em;
+}
+/* line 120, ../sass/jqm/ui/_select.sass */
+.ui-selectmenu .ui-header h1:after {
+  content: ".";
+  visibility: hidden;
+}
+
+/* line 126, ../sass/jqm/ui/_select.sass */
+.ui-screen-hidden .ui-li .ui-icon, .ui-selectmenu-list .ui-li .ui-icon {
+  display: none;
+}
+
+/* line 131, ../sass/jqm/ui/_select.sass */
+.ui-selectmenu-list .ui-li .ui-icon {
+  display: block;
+}
+
+/* line 135, ../sass/jqm/ui/_select.sass */
+.ui-li.ui-selectmenu-placeholder {
+  display: none;
+}
+
+/* labels */
+/* line 140, ../sass/jqm/ui/_select.sass */
+label.ui-select {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 0 0 0.3em;
+  display: block;
+}
+
+@-moz-document url-prefix() {
+  /* line 150, ../sass/jqm/ui/_select.sass */
+  .ui-select .ui-btn select {
+    opacity: 0.0001;
+  }
+}
+
+/* line 155, ../sass/jqm/ui/_select.sass */
+.ui-field-contain .ui-select .ui-btn {
+  margin: 0;
+}
+
+@media all and (min-width: 28em) {
+  /* line 161, ../sass/jqm/ui/_select.sass */
+  .ui-field-contain label.ui-select {
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    margin: 0 2% 0 0;
+  }
+  /* line 167, ../sass/jqm/ui/_select.sass */
+  .ui-field-contain .ui-select {
+    width: 78%;
+    display: inline-block;
+  }
+
+  /* line 172, ../sass/jqm/ui/_select.sass */
+  .ui-hide-label .ui-select {
+    width: 100%;
+  }
+}
+/* line 3, ../sass/jqm/ui/_input.sass */
+.ui-field-contain {
+  max-width: 100%;
+}
+/* line 6, ../sass/jqm/ui/_input.sass */
+.ui-field-contain, .ui-field-contain fieldset.ui-field-contain {
+  padding: 0.8em 0;
+  margin: 0;
+  border-width: 0 0 1px 0;
+  overflow: visible;
+}
+/* line 12, ../sass/jqm/ui/_input.sass */
+.ui-field-contain:last-child {
+  border-bottom-width: 0;
+}
+
+/* line 17, ../sass/jqm/ui/_input.sass */
+label.ui-input-text {
+  font-size: 16px;
+  line-height: 1.4;
+  display: block;
+  font-weight: normal;
+  margin: 0 0 0.3em;
+}
+
+/* line 25, ../sass/jqm/ui/_input.sass */
+input.ui-input-text, textarea.ui-input-text {
+  background-image: none;
+  padding: 0.4em;
+  margin: 0.5em 0;
+  min-height: 1.4em;
+  line-height: 1.4em;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  outline: 0;
+}
+/* line 36, ../sass/jqm/ui/_input.sass */
+input .ui-mini, textarea .ui-mini {
+  font-size: 14px;
+}
+
+/* line 40, ../sass/jqm/ui/_input.sass */
+div.ui-input-text {
+  padding: 0 0.4em;
+}
+/* line 44, ../sass/jqm/ui/_input.sass */
+div.ui-input-text input.ui-input-text, div.ui-input-text textarea.ui-input-text {
+  border: none;
+  width: 100%;
+  padding: 0.4em 0;
+  margin: 0;
+  display: block;
+  background: transparent none;
+  outline: 0 !important;
+}
+/* line 53, ../sass/jqm/ui/_input.sass */
+div.ui-input-has-clear {
+  padding: 0 30px 0 0.4em;
+}
+
+/* line 58, ../sass/jqm/ui/_input.sass */
+input.ui-input-text.ui-mini, textarea.ui-input-text.ui-mini, div.ui-input-text.ui-mini {
+  margin: 0.25em 0;
+}
+
+/* line 63, ../sass/jqm/ui/_input.sass */
+.ui-field-contain input.ui-input-text, .ui-field-contain textarea.ui-input-text, .ui-field-contain div.ui-input-text {
+  margin: 0;
+}
+/* line 66, ../sass/jqm/ui/_input.sass */
+.ui-field-contain .ui-input-search {
+  margin: 0;
+}
+
+/* line 70, ../sass/jqm/ui/_input.sass */
+input.ui-input-text {
+  -webkit-appearance: none;
+}
+
+/* line 74, ../sass/jqm/ui/_input.sass */
+.ui-mini input {
+  font-size: 14px;
+}
+
+/* line 78, ../sass/jqm/ui/_input.sass */
+textarea.ui-input-text {
+  height: 50px;
+  -webkit-transition: height 200ms linear;
+  -moz-transition: height 200ms linear;
+  -o-transition: height 200ms linear;
+  transition: height 200ms linear;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 83, ../sass/jqm/ui/_input.sass */
+textarea.ui-mini {
+  height: 45px;
+}
+
+/* line 86, ../sass/jqm/ui/_input.sass */
+.ui-input-search {
+  padding: 0 30px;
+}
+/* line 90, ../sass/jqm/ui/_input.sass */
+.ui-input-search input.ui-input-text {
+  border: none;
+  width: 100%;
+  padding: 0.4em 0;
+  margin: 0;
+  display: block;
+  background: transparent none;
+  outline: 0 !important;
+}
+/* line 99, ../sass/jqm/ui/_input.sass */
+.ui-input-search, .ui-input-search div.ui-input-text {
+  margin: 0.5em 0;
+  background-image: none;
+  position: relative;
+}
+/* line 104, ../sass/jqm/ui/_input.sass */
+.ui-input-search.ui-mini {
+  margin: 0.25em 0;
+}
+
+/* line 108, ../sass/jqm/ui/_input.sass */
+.ui-icon-searchfield:after {
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  margin-top: -9px;
+  content: "";
+  width: 18px;
+  height: 18px;
+  opacity: 0.5;
+}
+
+/* line 119, ../sass/jqm/ui/_input.sass */
+.ui-input-search .ui-input-clear, .ui-input-text .ui-input-clear {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -13px;
+}
+/* line 125, ../sass/jqm/ui/_input.sass */
+.ui-input-search .ui-input-clear-hidden, .ui-input-text .ui-input-clear-hidden {
+  display: none;
+}
+
+/* line 129, ../sass/jqm/ui/_input.sass */
+.ui-mini .ui-input-clear {
+  margin-top: -14px;
+  right: -3px;
+}
+
+/* Resolves issue #5166: Added to support issue introduced in Firefox 15. We can likely remove this in the future. */
+/* line 136, ../sass/jqm/ui/_input.sass */
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aaaaaa;
+}
+
+/* Resolves issue #5131: Width of textinput depends on its type, for Android 4.1 */
+/* line 140, ../sass/jqm/ui/_input.sass */
+input[type=number]::-webkit-outer-spin-button {
+  margin: 0;
+}
+
+@media all and (min-width: 28em) {
+  /* line 147, ../sass/jqm/ui/_input.sass */
+  .ui-mobile fieldset.ui-field-contain {
+    border-width: 0;
+    padding: 0;
+    margin: 1em 0;
+  }
+
+  /* line 152, ../sass/jqm/ui/_input.sass */
+  .ui-field-contain {
+    border-width: 0;
+    padding: 0;
+    margin: 1em 0;
+  }
+  /* line 158, ../sass/jqm/ui/_input.sass */
+  .ui-field-contain label.ui-input-text {
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    margin: 0 2% 0 0;
+  }
+
+  /* line 165, ../sass/jqm/ui/_input.sass */
+  input.ui-input-text, textarea.ui-input-text, div.ui-input-text {
+    width: 78%;
+    display: inline-block;
+  }
+
+  /* line 169, ../sass/jqm/ui/_input.sass */
+  .ui-input-search {
+    width: 78%;
+    display: inline-block;
+  }
+  /* line 173, ../sass/jqm/ui/_input.sass */
+  .ui-input-search .ui-input-search, .ui-input-search div.ui-input-text {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 177, ../sass/jqm/ui/_input.sass */
+  .ui-input-search .ui-input-search input.ui-input-text, .ui-input-search div.ui-input-text input.ui-input-text {
+    width: 100%;
+  }
+
+  /* line 182, ../sass/jqm/ui/_input.sass */
+  .ui-hide-label input.ui-input-text, .ui-hide-label textarea.ui-input-text, .ui-hide-label div.ui-input-text {
+    width: 100%;
+  }
+  /* line 185, ../sass/jqm/ui/_input.sass */
+  .ui-hide-label .ui-input-search {
+    width: 100%;
+  }
+}
+/* line 3, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider {
+  zoom: 1;
+  margin: 0;
+  /* Margin-top/bottom: .5em * 16px/14px to make it equal to ui-rangeslider-sliders margin (input font-size is 14px) */
+}
+/* line 7, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider:before, .ui-rangeslider:after {
+  content: "";
+  display: table;
+}
+/* line 11, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider:after {
+  clear: both;
+}
+/* line 17, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider input.ui-input-text.ui-slider-input {
+  margin: 0.57143em 0;
+}
+/* line 21, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider input.ui-slider-input.ui-rangeslider-last {
+  float: right;
+}
+/* line 26, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider.ui-mini input.ui-slider-input {
+  margin: 0.28571em 0;
+}
+/* line 29, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider.ui-mini .ui-rangeslider-sliders {
+  margin: 0.25em 68px;
+}
+/* line 32, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider.ui-mini .ui-rangeslider-sliders .ui-slider-track {
+  top: 8px;
+}
+/* line 35, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider .ui-rangeslider-sliders {
+  position: relative;
+  overflow: visible;
+  height: 30px;
+  margin: 0.5em 68px;
+}
+/* line 42, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider .ui-rangeslider-sliders .ui-slider-track:first-child {
+  background-color: transparent;
+  background: none;
+  border-width: 0;
+  height: 0;
+}
+/* line 48, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider .ui-rangeslider-sliders .ui-slider-track {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  left: 0;
+  margin: 0;
+}
+/* line 57, ../sass/jqm/ui/_rangeslider.sass */
+.ui-rangeslider .ui-slider-track:first-child .ui-slider-bg {
+  display: none;
+}
+
+/* line 65, ../sass/jqm/ui/_rangeslider.sass */
+.ui-field-contain .ui-rangeslider.ui-mini input.ui-slider-input {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 69, ../sass/jqm/ui/_rangeslider.sass */
+.ui-field-contain .ui-rangeslider.ui-mini .ui-rangeslider-sliders {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 74, ../sass/jqm/ui/_rangeslider.sass */
+.ui-field-contain .ui-rangeslider input.ui-slider-input {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 78, ../sass/jqm/ui/_rangeslider.sass */
+.ui-field-contain .ui-rangeslider .ui-rangeslider-sliders {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* this makes ie6 and ie7 set height to 0 to fix z-index problem */
+/* line 89, ../sass/jqm/ui/_rangeslider.sass */
+html > body .ui-rangeslider .ui-rangeslider-sliders .ui-slider-track:first-child {
+  height: 15px;
+  border-width: 1px;
+}
+/* line 96, ../sass/jqm/ui/_rangeslider.sass */
+html > body .ui-rangeslider.ui-mini .ui-rangeslider-sliders .ui-slider-track:first-child {
+  height: 12px;
+}
+
+@media all and (min-width: 28em) {
+  /* line 103, ../sass/jqm/ui/_rangeslider.sass */
+  .ui-field-contain .ui-rangeslider label.ui-slider {
+    float: left;
+  }
+  /* line 107, ../sass/jqm/ui/_rangeslider.sass */
+  .ui-field-contain .ui-rangeslider input.ui-slider-input {
+    position: relative;
+    z-index: 1;
+  }
+  /* line 113, ../sass/jqm/ui/_rangeslider.sass */
+  .ui-field-contain .ui-rangeslider input.ui-slider-input.ui-rangeslider-first, .ui-field-contain .ui-rangeslider.ui-mini input.ui-slider-input.ui-rangeslider-first {
+    margin-right: 17px;
+  }
+  /* line 116, ../sass/jqm/ui/_rangeslider.sass */
+  .ui-field-contain .ui-rangeslider .ui-rangeslider-sliders, .ui-field-contain .ui-rangeslider.ui-mini .ui-rangeslider-sliders {
+    float: left;
+    width: 78%;
+    margin: 0 -68px;
+  }
+  /* line 121, ../sass/jqm/ui/_rangeslider.sass */
+  .ui-field-contain .ui-rangeslider .ui-slider-track, .ui-field-contain .ui-rangeslider.ui-mini .ui-slider-track {
+    right: 68px;
+    left: 68px;
+  }
+  /* line 129, ../sass/jqm/ui/_rangeslider.sass */
+  .ui-field-contain.ui-hide-label .ui-rangeslider input.ui-slider-input.ui-rangeslider-first {
+    margin: 0;
+  }
+  /* line 132, ../sass/jqm/ui/_rangeslider.sass */
+  .ui-field-contain.ui-hide-label .ui-rangeslider .ui-rangeslider-sliders, .ui-field-contain.ui-hide-label .ui-rangeslider.ui-mini .ui-rangeslider-sliders {
+    width: auto;
+    float: none;
+    margin: 0 68px;
+  }
+  /* line 137, ../sass/jqm/ui/_rangeslider.sass */
+  .ui-field-contain.ui-hide-label .ui-rangeslider .ui-slider-track, .ui-field-contain.ui-hide-label .ui-rangeslider.ui-mini .ui-slider-track {
+    right: 0;
+    left: 0;
+  }
+}
+/* line 4, ../sass/jqm/ui/_slider.sass */
+label.ui-slider {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 0;
+  display: block;
+}
+
+/* line 12, ../sass/jqm/ui/_slider.sass */
+select.ui-slider-switch {
+  display: none;
+}
+
+/* line 16, ../sass/jqm/ui/_slider.sass */
+div.ui-slider {
+  height: 30px;
+  margin: 0.5em 0;
+  zoom: 1;
+}
+/* line 21, ../sass/jqm/ui/_slider.sass */
+div.ui-slider.ui-mini {
+  margin: 0.25em 0;
+}
+/* line 24, ../sass/jqm/ui/_slider.sass */
+div.ui-slider:before, div.ui-slider:after {
+  content: "";
+  display: table;
+}
+/* line 28, ../sass/jqm/ui/_slider.sass */
+div.ui-slider:after {
+  clear: both;
+}
+/* line 31, ../sass/jqm/ui/_slider.sass */
+div.ui-slider-switch {
+  display: inline-block;
+  height: 32px;
+  width: 5.8em;
+  margin: 0.5em 0;
+  top: 0;
+}
+/* line 38, ../sass/jqm/ui/_slider.sass */
+div.ui-mini {
+  width: 5em;
+  height: 29px;
+  margin: 0.25em 0;
+  top: 0;
+}
+
+/* High level of specificity to override Textinput CSS. */
+/* line 47, ../sass/jqm/ui/_slider.sass */
+input.ui-input-text.ui-slider-input {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 4px;
+  width: 40px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  border: none;
+  background-image: none;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: text-bottom;
+  outline: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 65, ../sass/jqm/ui/_slider.sass */
+.ui-slider-input::-webkit-outer-spin-button, .ui-slider-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* line 69, ../sass/jqm/ui/_slider.sass */
+.ui-slider-track, .ui-slider-switch {
+  position: relative;
+  overflow: visible;
+  height: 15px;
+  margin: 0 15px 0 68px;
+  top: 6px;
+}
+
+/* line 77, ../sass/jqm/ui/_slider.sass */
+.ui-slider-track.ui-mini {
+  height: 12px;
+  top: 8px;
+}
+/* line 81, ../sass/jqm/ui/_slider.sass */
+.ui-slider-track.ui-mini .ui-slider-handle {
+  height: 14px;
+  width: 14px;
+  margin: -8px 0 0 -7px;
+}
+/* line 86, ../sass/jqm/ui/_slider.sass */
+.ui-slider-track.ui-mini .ui-slider-handle .ui-btn-inner {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin: -9px 0 0 -9px;
+  border-top: none;
+}
+
+/* line 93, ../sass/jqm/ui/_slider.sass */
+.ui-slider-bg {
+  border: none;
+  height: 100%;
+}
+
+/* High level of specificity to override button margins in grids */
+/* line 99, ../sass/jqm/ui/_slider.sass */
+.ui-slider-track .ui-btn.ui-slider-handle, .ui-slider-switch .ui-btn.ui-slider-handle {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  margin: -15px 0 0 -15px;
+  outline: 0;
+}
+
+/* line 110, ../sass/jqm/ui/_slider.sass */
+.ui-slider-handle .ui-btn-inner {
+  padding: 0;
+  height: 100%;
+}
+
+/* line 117, ../sass/jqm/ui/_slider.sass */
+.ui-field-contain div.ui-slider, .ui-field-contain div.ui-slider.ui-mini {
+  margin: 0;
+}
+/* line 121, ../sass/jqm/ui/_slider.sass */
+.ui-field-contain label.ui-slider {
+  margin-bottom: 0.4em;
+}
+/* line 125, ../sass/jqm/ui/_slider.sass */
+.ui-field-contain .ui-slider-switch, .ui-field-contain .ui-slider-switch.ui-mini {
+  margin: 0;
+}
+
+/* line 128, ../sass/jqm/ui/_slider.sass */
+.ui-slider-inneroffset {
+  margin: 0 16px;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 135, ../sass/jqm/ui/_slider.sass */
+.ui-slider-switch.ui-mini .ui-slider-inneroffset {
+  margin: 0 15px 0 14px;
+}
+/* line 138, ../sass/jqm/ui/_slider.sass */
+.ui-slider-switch.ui-mini .ui-slider-handle {
+  width: 25px;
+  height: 25px;
+  margin: 1px 0 0 -13px;
+  padding: 0;
+}
+/* line 144, ../sass/jqm/ui/_slider.sass */
+.ui-slider-switch.ui-mini .ui-slider-handle .ui-btn-inner {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin: 0;
+  border-top: none;
+}
+/* line 151, ../sass/jqm/ui/_slider.sass */
+.ui-slider-switch.ui-mini .ui-slider-label {
+  font-size: 14px;
+}
+/* line 155, ../sass/jqm/ui/_slider.sass */
+.ui-slider-switch .ui-btn.ui-slider-handle {
+  margin: 1px 0 0 -15px;
+}
+/* line 158, ../sass/jqm/ui/_slider.sass */
+.ui-slider-switch .ui-slider-label {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  top: 0;
+  line-height: 2;
+  min-height: 100%;
+  border-width: 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+/* line 171, ../sass/jqm/ui/_slider.sass */
+.ui-slider-switch .ui-slider-label-a {
+  z-index: 1;
+  left: 0;
+  text-indent: -1.5em;
+}
+/* line 176, ../sass/jqm/ui/_slider.sass */
+.ui-slider-switch .ui-slider-label-b {
+  z-index: 0;
+  right: 0;
+  text-indent: 1.5em;
+}
+
+/* line 182, ../sass/jqm/ui/_slider.sass */
+.ui-slider-handle-snapping {
+  -webkit-transition: left 70ms linear;
+  -moz-transition: left 70ms linear;
+  -o-transition: left 70ms linear;
+  transition: left 70ms linear;
+}
+
+@media all and (min-width: 28em) {
+  /* line 188, ../sass/jqm/ui/_slider.sass */
+  .ui-field-contain label.ui-slider {
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    margin: 0 2% 0 0;
+  }
+  /* line 195, ../sass/jqm/ui/_slider.sass */
+  .ui-field-contain div.ui-slider {
+    display: inline-block;
+    width: 78%;
+  }
+  /* line 199, ../sass/jqm/ui/_slider.sass */
+  .ui-field-contain div.ui-slider-switch.ui-mini {
+    width: 5em;
+  }
+  /* line 204, ../sass/jqm/ui/_slider.sass */
+  .ui-field-contain.ui-hide-label div.ui-slider {
+    display: block;
+    width: auto;
+  }
+  /* line 209, ../sass/jqm/ui/_slider.sass */
+  .ui-field-contain div.ui-slider-switch, .ui-field-contain.ui-hide-label div.ui-slider-switch {
+    display: inline-block;
+    width: 5.8em;
+  }
+}
+/* line 3, ../sass/jqm/ui/_table.sass */
+.ui-table {
+  border: 0;
+  border-collapse: collapse;
+  padding: 0;
+  width: 100%;
+}
+/* line 9, ../sass/jqm/ui/_table.sass */
+.ui-table th, .ui-table td {
+  line-height: 1.5em;
+  text-align: left;
+  padding: 0.4em 0.5em;
+  vertical-align: top;
+}
+/* line 15, ../sass/jqm/ui/_table.sass */
+.ui-table th .ui-btn, .ui-table td .ui-btn {
+  line-height: normal;
+}
+/* line 18, ../sass/jqm/ui/_table.sass */
+.ui-table th {
+  font-weight: bold;
+}
+/* line 21, ../sass/jqm/ui/_table.sass */
+.ui-table caption {
+  text-align: left;
+  margin-bottom: 1.4em;
+  opacity: 0.5;
+}
+
+/* Add strokes between each row */
+/* line 29, ../sass/jqm/ui/_table.sass */
+.table-stroke thead th {
+  border-bottom: 1px solid #d6d6d6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 34, ../sass/jqm/ui/_table.sass */
+.table-stroke tbody th, .table-stroke tbody td {
+  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Add alternating row stripes */
+/* line 39, ../sass/jqm/ui/_table.sass */
+.table-stripe {
+  /* Add stroke to the header and last item */
+}
+/* line 43, ../sass/jqm/ui/_table.sass */
+.table-stripe tbody tr:nth-child(odd) td, .table-stripe tbody tr:nth-child(odd) th {
+  background-color: #eeeeee;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+/* line 48, ../sass/jqm/ui/_table.sass */
+.table-stripe thead th, .table-stripe tbody tr:last-child {
+  border-bottom: 1px solid #d6d6d6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the table columntoggle mode */
+/* line 53, ../sass/jqm/ui/_table.sass */
+.ui-table-columntoggle-btn {
+  float: right;
+  margin-bottom: 0.8em;
+}
+
+/* Remove top/bottom margins around the fieldcontain on check list */
+/* line 59, ../sass/jqm/ui/_table.sass */
+.ui-table-columntoggle-popup fieldset {
+  margin: 0;
+}
+
+/* Unchecked manually: Always hide */
+/* line 63, ../sass/jqm/ui/_table.sass */
+.ui-table-columntoggle {
+  /* Checked manually: Always show */
+}
+/* line 65, ../sass/jqm/ui/_table.sass */
+.ui-table-columntoggle th.ui-table-cell-hidden, .ui-table-columntoggle td.ui-table-cell-hidden, .ui-table-columntoggle.ui-responsive th.ui-table-cell-hidden, .ui-table-columntoggle.ui-responsive td.ui-table-cell-hidden {
+  display: none;
+}
+/* line 70, ../sass/jqm/ui/_table.sass */
+.ui-table-columntoggle th.ui-table-cell-visible, .ui-table-columntoggle td.ui-table-cell-visible, .ui-table-columntoggle.ui-responsive th.ui-table-cell-visible, .ui-table-columntoggle.ui-responsive td.ui-table-cell-visible {
+  display: table-cell;
+}
+
+/* Styles for the table columntoggle mode */
+/* line 76, ../sass/jqm/ui/_table.sass */
+.ui-table-reflow td .ui-table-cell-label, .ui-table-reflow th .ui-table-cell-label {
+  display: none;
+}
+
+/* Preset breakpoints if ".ui-responsive" class added to table */
+/* Show priority 1 at 320px (20em x 16px) */
+@media screen and (min-width: 20em) {
+  /* line 129, ../sass/jqm/_mixins.sass */
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-1, .ui-table-columntoggle.ui-responsive td.ui-table-priority-1 {
+    display: table-cell;
+  }
+}
+/* Show priority 2 at 480px (30em x 16px) */
+@media screen and (min-width: 30em) {
+  /* line 129, ../sass/jqm/_mixins.sass */
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-2, .ui-table-columntoggle.ui-responsive td.ui-table-priority-2 {
+    display: table-cell;
+  }
+}
+/* Show priority 3 at 640px (40em x 16px) */
+@media screen and (min-width: 40em) {
+  /* line 129, ../sass/jqm/_mixins.sass */
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-3, .ui-table-columntoggle.ui-responsive td.ui-table-priority-3 {
+    display: table-cell;
+  }
+}
+/* Show priority 4 at 800px (50em x 16px) */
+@media screen and (min-width: 50em) {
+  /* line 129, ../sass/jqm/_mixins.sass */
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-4, .ui-table-columntoggle.ui-responsive td.ui-table-priority-4 {
+    display: table-cell;
+  }
+}
+/* Show priority 5 at 960px (60em x 16px) */
+@media screen and (min-width: 60em) {
+  /* line 129, ../sass/jqm/_mixins.sass */
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-5, .ui-table-columntoggle.ui-responsive td.ui-table-priority-5 {
+    display: table-cell;
+  }
+}
+/* Show priority 6 at 1,120px (70em x 16px) */
+@media screen and (min-width: 70em) {
+  /* line 129, ../sass/jqm/_mixins.sass */
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-6, .ui-table-columntoggle.ui-responsive td.ui-table-priority-6 {
+    display: table-cell;
+  }
+}
+/* Mobile first styles: Begin with the stacked presentation at narrow widths */
+@media only all {
+  /* Hide all prioritized columns by default */
+  /* line 102, ../sass/jqm/ui/_table.sass */
+  th.ui-table-priority-6, th.ui-table-priority-5, th.ui-table-priority-4, th.ui-table-priority-3, th.ui-table-priority-2, th.ui-table-priority-1, td.ui-table-priority-6, td.ui-table-priority-5, td.ui-table-priority-4, td.ui-table-priority-3, td.ui-table-priority-2, td.ui-table-priority-1 {
+    display: none;
+  }
+
+  /* Hide the table headers */
+  /* line 106, ../sass/jqm/ui/_table.sass */
+  .ui-table-reflow {
+    /* Add a fair amount of top margin to visually separate each row when stacked */
+  }
+  /* line 108, ../sass/jqm/ui/_table.sass */
+  .ui-table-reflow thead td, .ui-table-reflow thead th {
+    display: none;
+  }
+  /* line 111, ../sass/jqm/ui/_table.sass */
+  .ui-table-reflow td, .ui-table-reflow th {
+    /* Show the table cells as a block level element */
+    text-align: left;
+    display: block;
+    /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+  }
+  /* line 117, ../sass/jqm/ui/_table.sass */
+  .ui-table-reflow td .ui-table-cell-label-top, .ui-table-reflow th .ui-table-cell-label-top {
+    display: block;
+    padding: 0.4em 0;
+    margin: 0.4em 0;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: normal;
+  }
+  /* line 125, ../sass/jqm/ui/_table.sass */
+  .ui-table-reflow td .ui-table-cell-label, .ui-table-reflow th .ui-table-cell-label {
+    /* Make the label elements a percentage width */
+    display: block;
+    padding: 0.4em;
+    min-width: 30%;
+    display: inline-block;
+    margin: -0.4em 1em -0.4em -0.4em;
+  }
+  /* line 135, ../sass/jqm/ui/_table.sass */
+  .ui-table-reflow tbody th {
+    margin-top: 3em;
+  }
+}
+/* Breakpoint to show as a standard table at 560px (35em x 16px) or wider */
+@media (min-width: 35em) {
+  /* Fixes table rendering when switching between breakpoints in Safari <= 5. See https://github.com/jquery/jquery-mobile/issues/5380 */
+  /* line 142, ../sass/jqm/ui/_table.sass */
+  .ui-table-reflow.ui-responsive {
+    display: table-row-group;
+  }
+
+  /* Show the table header rows */
+  /* line 147, ../sass/jqm/ui/_table.sass */
+  .ui-table-reflow.ui-responsive {
+    /* Hide the labels in each cell */
+  }
+  /* line 148, ../sass/jqm/ui/_table.sass */
+  .ui-table-reflow.ui-responsive td, .ui-table-reflow.ui-responsive th, .ui-table-reflow.ui-responsive tbody th, .ui-table-reflow.ui-responsive tbody td, .ui-table-reflow.ui-responsive thead td, .ui-table-reflow.ui-responsive thead th {
+    display: table-cell;
+    margin: 0;
+  }
+  /* line 154, ../sass/jqm/ui/_table.sass */
+  .ui-table-reflow.ui-responsive td .ui-table-cell-label, .ui-table-reflow.ui-responsive th .ui-table-cell-label {
+    display: none;
+  }
+}
+/* Hack to make IE9 and WP7.5 treat cells like block level elements, scoped to ui-responsive class */
+/* Applied in a max-width media query up to the table layout breakpoint so we don't need to negate this */
+@media (max-width: 35em) {
+  /* line 163, ../sass/jqm/ui/_table.sass */
+  .ui-table-reflow.ui-responsive td, .ui-table-reflow.ui-responsive th {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    clear: left;
+  }
+}
+/* panel */
+/* line 4, ../sass/jqm/ui/_panel.sass */
+.ui-panel {
+  width: 17em;
+  min-height: 100%;
+  border-width: 0;
+  position: absolute;
+  top: 0;
+  display: block;
+}
+
+/* line 12, ../sass/jqm/ui/_panel.sass */
+.ui-panel-closed {
+  width: 0;
+  overflow: hidden;
+}
+
+/* line 16, ../sass/jqm/ui/_panel.sass */
+.ui-panel-fixed {
+  position: fixed;
+  bottom: -1px;
+  padding-bottom: 1px;
+}
+
+/* line 21, ../sass/jqm/ui/_panel.sass */
+.ui-panel-display-overlay {
+  z-index: 1001;
+}
+
+/* line 24, ../sass/jqm/ui/_panel.sass */
+.ui-panel-display-reveal {
+  z-index: 0;
+}
+
+/* line 27, ../sass/jqm/ui/_panel.sass */
+.ui-panel-display-push {
+  z-index: 999;
+}
+
+/* line 30, ../sass/jqm/ui/_panel.sass */
+.ui-panel-inner {
+  padding: 15px;
+}
+
+/* content-wrap */
+/* line 34, ../sass/jqm/ui/_panel.sass */
+.ui-panel-content-wrap {
+  position: relative;
+  left: 0;
+  min-height: inherit;
+  border: none;
+  z-index: 999;
+}
+
+/* line 41, ../sass/jqm/ui/_panel.sass */
+.ui-panel-content-wrap-display-overlay, .ui-panel-animate.ui-panel-content-wrap > .ui-header, .ui-panel-content-wrap-closed {
+  position: static;
+}
+
+/* dismiss */
+/* line 45, ../sass/jqm/ui/_panel.sass */
+.ui-panel-dismiss {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1002;
+  display: none;
+}
+
+/* line 54, ../sass/jqm/ui/_panel.sass */
+.ui-panel-dismiss-open {
+  display: block;
+}
+
+/* animate class is added to panel, wrapper and fixed toolbars */
+/* line 58, ../sass/jqm/ui/_panel.sass */
+.ui-panel-animate {
+  -webkit-transition: -webkit-transform 350ms ease;
+  -moz-transition: -moz-transform 350ms ease;
+  transition: transform 350ms ease;
+}
+
+/* hardware acceleration for smoother transitions */
+/* line 64, ../sass/jqm/ui/_panel.sass */
+.ui-panel-animate.ui-panel:not(.ui-panel-display-reveal), .ui-panel-animate.ui-panel:not(.ui-panel-display-reveal) > div, .ui-panel-animate.ui-panel-content-wrap, .ui-panel-animate.ui-panel-content-fixed-toolbar {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* positioning: panel */
+/* panel left  */
+/* line 70, ../sass/jqm/ui/_panel.sass */
+.ui-panel-position-left {
+  left: -17em;
+}
+
+/* animated: panel left (for overlay and push) */
+/* line 74, ../sass/jqm/ui/_panel.sass */
+.ui-panel-animate.ui-panel-position-left.ui-panel-display-overlay, .ui-panel-animate.ui-panel-position-left.ui-panel-display-push {
+  left: 0;
+  -webkit-transform: translate3d(-17em, 0, 0);
+  -moz-transform: translate3d(-17em, 0, 0);
+  transform: translate3d(-17em, 0, 0);
+}
+
+/* panel left open */
+/* line 79, ../sass/jqm/ui/_panel.sass */
+.ui-panel-position-left.ui-panel-display-reveal, .ui-panel-position-left.ui-panel-open {
+  left: 0;
+}
+
+/* animated: panel left open (for overlay and push) */
+/* line 83, ../sass/jqm/ui/_panel.sass */
+.ui-panel-animate.ui-panel-position-left.ui-panel-open.ui-panel-display-overlay, .ui-panel-animate.ui-panel-position-left.ui-panel-open.ui-panel-display-push {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* panel right */
+/* line 87, ../sass/jqm/ui/_panel.sass */
+.ui-panel-position-right {
+  right: -17em;
+}
+
+/* animated: panel right (for overlay and push) */
+/* line 91, ../sass/jqm/ui/_panel.sass */
+.ui-panel-animate.ui-panel-position-right.ui-panel-display-overlay, .ui-panel-animate.ui-panel-position-right.ui-panel-display-push {
+  right: 0;
+  -webkit-transform: translate3d(17em, 0, 0);
+  -moz-transform: translate3d(17em, 0, 0);
+  transform: translate3d(17em, 0, 0);
+}
+
+/* panel right open */
+/* line 96, ../sass/jqm/ui/_panel.sass */
+.ui-panel-position-right.ui-panel-display-reveal, .ui-panel-position-right.ui-panel-open {
+  right: 0;
+}
+
+/* animated: panel right open (for overlay and push) */
+/* line 100, ../sass/jqm/ui/_panel.sass */
+.ui-panel-animate.ui-panel-position-right.ui-panel-open.ui-panel-display-overlay, .ui-panel-animate.ui-panel-position-right.ui-panel-open.ui-panel-display-push {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* positioning: content wrap, fixed toolbars and dismiss */
+/* panel left open */
+/* line 105, ../sass/jqm/ui/_panel.sass */
+.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open, .ui-panel-content-wrap-position-left.ui-panel-content-wrap-open, .ui-panel-dismiss-position-left.ui-panel-dismiss-open {
+  left: 17em;
+  right: -17em;
+}
+
+/* animated: panel left open (for reveal and push) */
+/* line 110, ../sass/jqm/ui/_panel.sass */
+.ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-reveal, .ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push, .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-reveal, .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-push {
+  left: 0;
+  right: 0;
+  -webkit-transform: translate3d(17em, 0, 0);
+  -moz-transform: translate3d(17em, 0, 0);
+  transform: translate3d(17em, 0, 0);
+}
+
+/* panel right open */
+/* line 116, ../sass/jqm/ui/_panel.sass */
+.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-open, .ui-panel-content-wrap-position-right.ui-panel-content-wrap-open, .ui-panel-dismiss-position-right.ui-panel-dismiss-open {
+  left: -17em;
+  right: 17em;
+}
+
+/* animated: panel right open (for reveal and push) */
+/* line 121, ../sass/jqm/ui/_panel.sass */
+.ui-panel-animate.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-reveal, .ui-panel-animate.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push, .ui-panel-animate.ui-panel-content-wrap-position-right.ui-panel-content-wrap-open.ui-panel-content-wrap-display-reveal, .ui-panel-animate.ui-panel-content-wrap-position-right.ui-panel-content-wrap-open.ui-panel-content-wrap-display-push {
+  left: 0;
+  right: 0;
+  -webkit-transform: translate3d(-17em, 0, 0);
+  -moz-transform: translate3d(-17em, 0, 0);
+  transform: translate3d(-17em, 0, 0);
+}
+
+/* negate "panel left/right open" for overlay */
+/* line 127, ../sass/jqm/ui/_panel.sass */
+.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-overlay, .ui-panel-content-wrap-open.ui-panel-content-wrap-display-overlay {
+  left: 0;
+}
+
+/* always disable overflow-x to prevent zoom issue on Android */
+/* line 131, ../sass/jqm/ui/_panel.sass */
+.ui-page-active.ui-page-panel {
+  overflow-x: hidden;
+}
+
+/* shadows and borders */
+/* line 135, ../sass/jqm/ui/_panel.sass */
+.ui-panel-display-reveal {
+  -moz-box-shadow: inset -5px 0px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset -5px 0px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: inset -5px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* line 138, ../sass/jqm/ui/_panel.sass */
+.ui-panel-position-right.ui-panel-display-reveal {
+  -moz-box-shadow: inset 5px 0px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 5px 0px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 5px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* line 141, ../sass/jqm/ui/_panel.sass */
+.ui-panel-position-right.ui-panel-display-overlay {
+  -moz-box-shadow: inset -5px 0px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset -5px 0px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: inset -5px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* line 144, ../sass/jqm/ui/_panel.sass */
+.ui-panel-position-left.ui-panel-display-overlay {
+  -moz-box-shadow: inset 5px 0px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 5px 0px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 5px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* line 147, ../sass/jqm/ui/_panel.sass */
+.ui-panel-display-push.ui-panel-open.ui-panel-position-left {
+  border-right-width: 1px;
+  margin-right: -1px;
+}
+
+/* line 151, ../sass/jqm/ui/_panel.sass */
+.ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push {
+  margin-left: 1px;
+}
+
+/* line 154, ../sass/jqm/ui/_panel.sass */
+.ui-panel-display-push.ui-panel-open.ui-panel-position-right {
+  border-left-width: 1px;
+  margin-left: -1px;
+}
+
+/* line 158, ../sass/jqm/ui/_panel.sass */
+.ui-panel-animate.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push {
+  margin-right: 1px;
+}
+
+/* wrap on wide viewports once open */
+@media (min-width: 55em) {
+  /* line 163, ../sass/jqm/ui/_panel.sass */
+  .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-left, .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-left, .ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-left, .ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-left {
+    margin-right: 17em;
+  }
+
+  /* line 166, ../sass/jqm/ui/_panel.sass */
+  .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-right, .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-right, .ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-right, .ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-right {
+    margin-left: 17em;
+  }
+
+  /* line 169, ../sass/jqm/ui/_panel.sass */
+  .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push, .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal {
+    width: auto;
+  }
+
+  /* line 172, ../sass/jqm/ui/_panel.sass */
+  .ui-responsive-panel .ui-panel-dismiss-display-push {
+    display: none;
+  }
+}
+/*
+ * TODO : Create mixins for the animations (keyframes).
+ */
+/* line 6, ../sass/jqm/_animations.sass */
+.ui-mobile-viewport-transitioning, .ui-mobile-viewport-transitioning .ui-page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/jqm/_animations.sass */
+.ui-page-pre-in {
+  opacity: 0;
+}
+
+/* line 17, ../sass/jqm/_animations.sass */
+.in {
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 350ms;
+  -moz-animation-fill-mode: both;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 350ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+  animation-duration: 350ms;
+}
+
+/* line 20, ../sass/jqm/_animations.sass */
+.out {
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 225ms;
+  -moz-animation-fill-mode: both;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 225ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+  animation-duration: 225ms;
+}
+
+@-webkit-keyframes fadein {
+  /* line 25, ../sass/jqm/_animations.sass */
+  from {
+    opacity: 0;
+  }
+
+  /* line 27, ../sass/jqm/_animations.sass */
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* line 31, ../sass/jqm/_animations.sass */
+  from {
+    opacity: 0;
+  }
+
+  /* line 33, ../sass/jqm/_animations.sass */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  /* line 37, ../sass/jqm/_animations.sass */
+  from {
+    opacity: 0;
+  }
+
+  /* line 39, ../sass/jqm/_animations.sass */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  /* line 43, ../sass/jqm/_animations.sass */
+  from {
+    opacity: 1;
+  }
+
+  /* line 45, ../sass/jqm/_animations.sass */
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeout {
+  /* line 49, ../sass/jqm/_animations.sass */
+  from {
+    opacity: 1;
+  }
+
+  /* line 51, ../sass/jqm/_animations.sass */
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  /* line 55, ../sass/jqm/_animations.sass */
+  from {
+    opacity: 1;
+  }
+
+  /* line 57, ../sass/jqm/_animations.sass */
+  to {
+    opacity: 0;
+  }
+}
+
+/* line 61, ../sass/jqm/_animations.sass */
+.fade.out {
+  opacity: 0;
+  -webkit-animation-duration: 125ms;
+  -moz-animation-duration: 125ms;
+  animation-duration: 125ms;
+  -webkit-animation-name: fadeout;
+  -moz-animation-name: fadeout;
+  animation-name: fadeout;
+}
+
+/* line 66, ../sass/jqm/_animations.sass */
+.fade.in {
+  opacity: 1;
+  -webkit-animation-duration: 225ms;
+  -moz-animation-duration: 225ms;
+  animation-duration: 225ms;
+  -webkit-animation-name: fadein;
+  -moz-animation-name: fadein;
+  animation-name: fadein;
+}
+
+/* line 71, ../sass/jqm/_animations.sass */
+.pop {
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+/* line 74, ../sass/jqm/_animations.sass */
+.pop.in {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-animation-duration: 350ms;
+  -moz-animation-duration: 350ms;
+  animation-duration: 350ms;
+  -webkit-animation-name: popin;
+  -moz-animation-name: popin;
+  animation-name: popin;
+  opacity: 1;
+}
+
+/* line 80, ../sass/jqm/_animations.sass */
+.pop.out {
+  -webkit-animation-duration: 100ms;
+  -moz-animation-duration: 100ms;
+  animation-duration: 100ms;
+  -webkit-animation-name: fadeout;
+  -moz-animation-name: fadeout;
+  animation-name: fadeout;
+  opacity: 0;
+}
+
+/* line 85, ../sass/jqm/_animations.sass */
+.pop.in.reverse {
+  -webkit-animation-name: fadein;
+  -moz-animation-name: fadein;
+  animation-name: fadein;
+}
+
+/* line 88, ../sass/jqm/_animations.sass */
+.pop.out.reverse {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-animation-name: popout;
+  -moz-animation-name: popout;
+  animation-name: popout;
+}
+
+@-webkit-keyframes popin {
+  /* line 93, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: scale(0.8);
+    opacity: 0;
+  }
+
+  /* line 96, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes popin {
+  /* line 102, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: scale(0.8);
+    opacity: 0;
+  }
+
+  /* line 105, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes popin {
+  /* line 111, ../sass/jqm/_animations.sass */
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  /* line 114, ../sass/jqm/_animations.sass */
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes popout {
+  /* line 120, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+
+  /* line 123, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes popout {
+  /* line 129, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: scale(1);
+    opacity: 1;
+  }
+
+  /* line 132, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes popout {
+  /* line 138, ../sass/jqm/_animations.sass */
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  /* line 141, ../sass/jqm/_animations.sass */
+  to {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* keyframes for slidein from sides */
+@-webkit-keyframes slideinfromright {
+  /* line 148, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: translateX(100%);
+  }
+
+  /* line 150, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideinfromright {
+  /* line 154, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: translateX(100%);
+  }
+
+  /* line 156, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+
+@keyframes slideinfromright {
+  /* line 160, ../sass/jqm/_animations.sass */
+  from {
+    transform: translateX(100%);
+  }
+
+  /* line 162, ../sass/jqm/_animations.sass */
+  to {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideinfromleft {
+  /* line 166, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: translateX(-100%);
+  }
+
+  /* line 168, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideinfromleft {
+  /* line 172, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: translateX(-100%);
+  }
+
+  /* line 174, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+
+@keyframes slideinfromleft {
+  /* line 178, ../sass/jqm/_animations.sass */
+  from {
+    transform: translateX(-100%);
+  }
+
+  /* line 180, ../sass/jqm/_animations.sass */
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* keyframes for slideout to sides */
+@-webkit-keyframes slideouttoleft {
+  /* line 185, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 187, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@-moz-keyframes slideouttoleft {
+  /* line 191, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: translateX(0);
+  }
+
+  /* line 193, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@keyframes slideouttoleft {
+  /* line 197, ../sass/jqm/_animations.sass */
+  from {
+    transform: translateX(0);
+  }
+
+  /* line 199, ../sass/jqm/_animations.sass */
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes slideouttoright {
+  /* line 203, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 205, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@-moz-keyframes slideouttoright {
+  /* line 209, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: translateX(0);
+  }
+
+  /* line 211, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: translateX(100%);
+  }
+}
+
+@keyframes slideouttoright {
+  /* line 215, ../sass/jqm/_animations.sass */
+  from {
+    transform: translateX(0);
+  }
+
+  /* line 217, ../sass/jqm/_animations.sass */
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* line 221, ../sass/jqm/_animations.sass */
+.slide.out, .slide.in {
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-duration: 350ms;
+  -moz-animation-duration: 350ms;
+  animation-duration: 350ms;
+}
+
+/* line 225, ../sass/jqm/_animations.sass */
+.slide.out {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation-name: slideouttoleft;
+  -moz-animation-name: slideouttoleft;
+  animation-name: slideouttoleft;
+}
+
+/* line 229, ../sass/jqm/_animations.sass */
+.slide.in {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation-name: slideouttoright;
+  -moz-animation-name: slideouttoright;
+  animation-name: slideouttoright;
+}
+
+/* line 233, ../sass/jqm/_animations.sass */
+.slide.out.reverse {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-animation-name: slideouttoright;
+  -moz-animation-name: slideouttoright;
+  animation-name: slideouttoright;
+}
+
+/* line 237, ../sass/jqm/_animations.sass */
+.slide.in.reverse {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation-name: slideinfromleft;
+  -moz-animation-name: slideinfromleft;
+  animation-name: slideinfromleft;
+}
+
+/* line 241, ../sass/jqm/_animations.sass */
+.slidefade.out {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation-name: slideouttoleft;
+  -moz-animation-name: slideouttoleft;
+  animation-name: slideouttoleft;
+  -webkit-animation-duration: 225ms;
+  -moz-animation-duration: 225ms;
+  animation-duration: 225ms;
+}
+
+/* line 246, ../sass/jqm/_animations.sass */
+.slidefade.in {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation-name: fadein;
+  -moz-animation-name: fadein;
+  animation-name: fadein;
+  -webkit-animation-duration: 200ms;
+  -moz-animation-duration: 200ms;
+  animation-duration: 200ms;
+}
+
+/* line 251, ../sass/jqm/_animations.sass */
+.slidefade.out.reverse {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-animation-name: slideouttoright;
+  -moz-animation-name: slideouttoright;
+  animation-name: slideouttoright;
+  -webkit-animation-duration: 200ms;
+  -moz-animation-duration: 200ms;
+  animation-duration: 200ms;
+}
+
+/* line 256, ../sass/jqm/_animations.sass */
+.slidefade.in.reverse {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation-name: fadein;
+  -moz-animation-name: fadein;
+  animation-name: fadein;
+  -webkit-animation-duration: 200ms;
+  -moz-animation-duration: 200ms;
+  animation-duration: 200ms;
+}
+
+/* slide down */
+/* line 262, ../sass/jqm/_animations.sass */
+.slidedown.out {
+  -webkit-animation-name: fadeout;
+  -moz-animation-name: fadeout;
+  animation-name: fadeout;
+  -webkit-animation-duration: 100ms;
+  -moz-animation-duration: 100ms;
+  animation-duration: 100ms;
+}
+
+/* line 266, ../sass/jqm/_animations.sass */
+.slidedown.in {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-animation-name: slideinfromtop;
+  -moz-animation-name: slideinfromtop;
+  animation-name: slideinfromtop;
+  -webkit-animation-duration: 250ms;
+  -moz-animation-duration: 250ms;
+  animation-duration: 250ms;
+}
+
+/* line 271, ../sass/jqm/_animations.sass */
+.slidedown.in.reverse {
+  -webkit-animation-name: fadein;
+  -moz-animation-name: fadein;
+  animation-name: fadein;
+  -webkit-animation-duration: 150ms;
+  -moz-animation-duration: 150ms;
+  animation-duration: 150ms;
+}
+
+/* line 275, ../sass/jqm/_animations.sass */
+.slidedown.out.reverse {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation-name: slideouttotop;
+  -moz-animation-name: slideouttotop;
+  animation-name: slideouttotop;
+  -webkit-animation-duration: 200ms;
+  -moz-animation-duration: 200ms;
+  animation-duration: 200ms;
+}
+
+@-webkit-keyframes slideinfromtop {
+  /* line 281, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: translateY(-100%);
+  }
+
+  /* line 283, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes slideinfromtop {
+  /* line 287, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: translateY(-100%);
+  }
+
+  /* line 289, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: translateY(0);
+  }
+}
+
+@keyframes slideinfromtop {
+  /* line 293, ../sass/jqm/_animations.sass */
+  from {
+    transform: translateY(-100%);
+  }
+
+  /* line 295, ../sass/jqm/_animations.sass */
+  to {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideouttotop {
+  /* line 299, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 301, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+@-moz-keyframes slideouttotop {
+  /* line 305, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: translateY(0);
+  }
+
+  /* line 307, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: translateY(-100%);
+  }
+}
+
+@keyframes slideouttotop {
+  /* line 311, ../sass/jqm/_animations.sass */
+  from {
+    transform: translateY(0);
+  }
+
+  /* line 313, ../sass/jqm/_animations.sass */
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* slide up */
+/* line 317, ../sass/jqm/_animations.sass */
+.slideup.out {
+  -webkit-animation-name: fadeout;
+  -moz-animation-name: fadeout;
+  animation-name: fadeout;
+  -webkit-animation-duration: 100ms;
+  -moz-animation-duration: 100ms;
+  animation-duration: 100ms;
+}
+
+/* line 321, ../sass/jqm/_animations.sass */
+.slideup.in {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-animation-name: slideinfrombottom;
+  -moz-animation-name: slideinfrombottom;
+  animation-name: slideinfrombottom;
+  -webkit-animation-duration: 250ms;
+  -moz-animation-duration: 250ms;
+  animation-duration: 250ms;
+}
+
+/* line 326, ../sass/jqm/_animations.sass */
+.slideup.in.reverse {
+  -webkit-animation-name: fadein;
+  -moz-animation-name: fadein;
+  animation-name: fadein;
+  -webkit-animation-duration: 150ms;
+  -moz-animation-duration: 150ms;
+  animation-duration: 150ms;
+}
+
+/* line 330, ../sass/jqm/_animations.sass */
+.slideup.out.reverse {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-animation-name: slideouttobottom;
+  -moz-animation-name: slideouttobottom;
+  animation-name: slideouttobottom;
+  -webkit-animation-duration: 200ms;
+  -moz-animation-duration: 200ms;
+  animation-duration: 200ms;
+}
+
+@-webkit-keyframes slideinfrombottom {
+  /* line 336, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: translateY(100%);
+  }
+
+  /* line 338, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes slideinfrombottom {
+  /* line 342, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: translateY(100%);
+  }
+
+  /* line 344, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: translateY(0);
+  }
+}
+
+@keyframes slideinfrombottom {
+  /* line 348, ../sass/jqm/_animations.sass */
+  from {
+    transform: translateY(100%);
+  }
+
+  /* line 350, ../sass/jqm/_animations.sass */
+  to {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideouttobottom {
+  /* line 354, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 356, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: translateY(100%);
+  }
+}
+
+@-moz-keyframes slideouttobottom {
+  /* line 360, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: translateY(0);
+  }
+
+  /* line 362, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: translateY(100%);
+  }
+}
+
+@keyframes slideouttobottom {
+  /* line 366, ../sass/jqm/_animations.sass */
+  from {
+    transform: translateY(0);
+  }
+
+  /* line 368, ../sass/jqm/_animations.sass */
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/* The properties in this rule are only necessary for the 'flip' transition.
+ * We need specify the perspective to create a projection matrix. This will add
+ * some depth as the element flips. The depth number represents the distance of
+ * the viewer from the z-plane. According to the CSS3 spec, 1000 is a moderate
+ * value.
+ */
+/* line 377, ../sass/jqm/_animations.sass */
+.viewport-flip {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  position: absolute;
+}
+
+/* line 381, ../sass/jqm/_animations.sass */
+.flip {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 385, ../sass/jqm/_animations.sass */
+.flip.out {
+  -webkit-transform: rotateY(-90deg) scale(0.9);
+  -moz-transform: rotateY(-90deg) scale(0.9);
+  transform: rotateY(-90deg) scale(0.9);
+  -webkit-animation-name: flipouttoright;
+  -moz-animation-name: flipouttoright;
+  animation-name: flipouttoright;
+  -webkit-animation-duration: 175ms;
+  -moz-animation-duration: 175ms;
+  animation-duration: 175ms;
+}
+
+/* line 390, ../sass/jqm/_animations.sass */
+.flip.in {
+  -webkit-animation-name: flipintoright;
+  -moz-animation-name: flipintoright;
+  animation-name: flipintoright;
+  -webkit-animation-duration: 225ms;
+  -moz-animation-duration: 225ms;
+  animation-duration: 225ms;
+}
+
+/* line 394, ../sass/jqm/_animations.sass */
+.flip.out.reverse {
+  -webkit-transform: rotateY(90deg) scale(0.9);
+  -moz-transform: rotateY(90deg) scale(0.9);
+  transform: rotateY(90deg) scale(0.9);
+  -webkit-animation-name: flipouttoright;
+  -moz-animation-name: flipouttoright;
+  animation-name: flipouttoright;
+}
+
+/* line 398, ../sass/jqm/_animations.sass */
+.flip.in.reverse {
+  -webkit-animation-name: flipintoleft;
+  -moz-animation-name: flipintoleft;
+  animation-name: flipintoleft;
+}
+
+@-webkit-keyframes flipouttoleft {
+  /* line 402, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: rotateY(0);
+  }
+
+  /* line 404, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: rotateY(-90deg) scale(0.9);
+  }
+}
+
+@-moz-keyframes flipouttoleft {
+  /* line 408, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: rotateY(0);
+  }
+
+  /* line 410, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: rotateY(-90deg) scale(0.9);
+  }
+}
+
+@keyframes flipouttoleft {
+  /* line 414, ../sass/jqm/_animations.sass */
+  from {
+    transform: rotateY(0);
+  }
+
+  /* line 416, ../sass/jqm/_animations.sass */
+  to {
+    transform: rotateY(-90deg) scale(0.9);
+  }
+}
+
+@-webkit-keyframes flipouttoright {
+  /* line 420, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: rotateY(0);
+  }
+
+  /* line 422, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: rotateY(90deg) scale(0.9);
+  }
+}
+
+@-moz-keyframes flipouttoright {
+  /* line 426, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: rotateY(0);
+  }
+
+  /* line 428, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: rotateY(90deg) scale(0.9);
+  }
+}
+
+@keyframes flipouttoright {
+  /* line 432, ../sass/jqm/_animations.sass */
+  from {
+    transform: rotateY(0);
+  }
+
+  /* line 434, ../sass/jqm/_animations.sass */
+  to {
+    transform: rotateY(90deg) scale(0.9);
+  }
+}
+
+@-webkit-keyframes flipintoleft {
+  /* line 438, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: rotateY(-90deg) scale(0.9);
+  }
+
+  /* line 440, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: rotateY(0);
+  }
+}
+
+@-moz-keyframes flipintoleft {
+  /* line 444, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: rotateY(-90deg) scale(0.9);
+  }
+
+  /* line 446, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: rotateY(0);
+  }
+}
+
+@keyframes flipintoleft {
+  /* line 450, ../sass/jqm/_animations.sass */
+  from {
+    transform: rotateY(-90deg) scale(0.9);
+  }
+
+  /* line 452, ../sass/jqm/_animations.sass */
+  to {
+    transform: rotateY(0);
+  }
+}
+
+@-webkit-keyframes flipintoright {
+  /* line 456, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: rotateY(90deg) scale(0.9);
+  }
+
+  /* line 458, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: rotateY(0);
+  }
+}
+
+@-moz-keyframes flipintoright {
+  /* line 462, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: rotateY(90deg) scale(0.9);
+  }
+
+  /* line 464, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: rotateY(0);
+  }
+}
+
+@keyframes flipintoright {
+  /* line 468, ../sass/jqm/_animations.sass */
+  from {
+    transform: rotateY(90deg) scale(0.9);
+  }
+
+  /* line 470, ../sass/jqm/_animations.sass */
+  to {
+    transform: rotateY(0);
+  }
+}
+
+/* The properties in this rule are only necessary for the 'flip' transition.
+ * We need specify the perspective to create a projection matrix. This will add
+ * some depth as the element flips. The depth number represents the distance of
+ * the viewer from the z-plane. According to the CSS3 spec, 1000 is a moderate
+ * value.
+ */
+/* line 479, ../sass/jqm/_animations.sass */
+.viewport-turn {
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  -ms-perspective: 200px;
+  perspective: 200px;
+  position: absolute;
+}
+
+/* line 483, ../sass/jqm/_animations.sass */
+.turn {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+/* line 488, ../sass/jqm/_animations.sass */
+.turn.out {
+  -webkit-transform: rotateY(-90deg) scale(0.9);
+  -moz-transform: rotateY(-90deg) scale(0.9);
+  transform: rotateY(-90deg) scale(0.9);
+  -webkit-animation-name: flipouttoleft;
+  -moz-animation-name: flipouttoleft;
+  animation-name: flipouttoleft;
+  -webkit-animation-duration: 125ms;
+  -moz-animation-duration: 125ms;
+  animation-duration: 125ms;
+}
+
+/* line 493, ../sass/jqm/_animations.sass */
+.turn.in {
+  -webkit-animation-name: flipintoright;
+  -moz-animation-name: flipintoright;
+  animation-name: flipintoright;
+  -webkit-animation-duration: 250ms;
+  -moz-animation-duration: 250ms;
+  animation-duration: 250ms;
+}
+
+/* line 497, ../sass/jqm/_animations.sass */
+.turn.out.reverse {
+  -webkit-transform: rotateY(90deg) scale(0.9);
+  -moz-transform: rotateY(90deg) scale(0.9);
+  transform: rotateY(90deg) scale(0.9);
+  -webkit-animation-name: flipouttoright;
+  -moz-animation-name: flipouttoright;
+  animation-name: flipouttoright;
+}
+
+/* line 501, ../sass/jqm/_animations.sass */
+.turn.in.reverse {
+  -webkit-animation-name: flipintoleft;
+  -moz-animation-name: flipintoleft;
+  animation-name: flipintoleft;
+}
+
+@-webkit-keyframes flipouttoleft {
+  /* line 505, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: rotateY(0);
+  }
+
+  /* line 507, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: rotateY(-90deg) scale(0.9);
+  }
+}
+
+@-moz-keyframes flipouttoleft {
+  /* line 511, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: rotateY(0);
+  }
+
+  /* line 513, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: rotateY(-90deg) scale(0.9);
+  }
+}
+
+@keyframes flipouttoleft {
+  /* line 517, ../sass/jqm/_animations.sass */
+  from {
+    transform: rotateY(0);
+  }
+
+  /* line 519, ../sass/jqm/_animations.sass */
+  to {
+    transform: rotateY(-90deg) scale(0.9);
+  }
+}
+
+@-webkit-keyframes flipouttoright {
+  /* line 523, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: rotateY(0);
+  }
+
+  /* line 525, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: rotateY(90deg) scale(0.9);
+  }
+}
+
+@-moz-keyframes flipouttoright {
+  /* line 529, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: rotateY(0);
+  }
+
+  /* line 531, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: rotateY(90deg) scale(0.9);
+  }
+}
+
+@keyframes flipouttoright {
+  /* line 535, ../sass/jqm/_animations.sass */
+  from {
+    transform: rotateY(0);
+  }
+
+  /* line 537, ../sass/jqm/_animations.sass */
+  to {
+    transform: rotateY(90deg) scale(0.9);
+  }
+}
+
+@-webkit-keyframes flipintoleft {
+  /* line 541, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: rotateY(-90deg) scale(0.9);
+  }
+
+  /* line 543, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: rotateY(0);
+  }
+}
+
+@-moz-keyframes flipintoleft {
+  /* line 547, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: rotateY(-90deg) scale(0.9);
+  }
+
+  /* line 549, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: rotateY(0);
+  }
+}
+
+@keyframes flipintoleft {
+  /* line 553, ../sass/jqm/_animations.sass */
+  from {
+    transform: rotateY(-90deg) scale(0.9);
+  }
+
+  /* line 555, ../sass/jqm/_animations.sass */
+  to {
+    transform: rotateY(0);
+  }
+}
+
+@-webkit-keyframes flipintoright {
+  /* line 559, ../sass/jqm/_animations.sass */
+  from {
+    -webkit-transform: rotateY(90deg) scale(0.9);
+  }
+
+  /* line 561, ../sass/jqm/_animations.sass */
+  to {
+    -webkit-transform: rotateY(0);
+  }
+}
+
+@-moz-keyframes flipintoright {
+  /* line 565, ../sass/jqm/_animations.sass */
+  from {
+    -moz-transform: rotateY(90deg) scale(0.9);
+  }
+
+  /* line 567, ../sass/jqm/_animations.sass */
+  to {
+    -moz-transform: rotateY(0);
+  }
+}
+
+@keyframes flipintoright {
+  /* line 571, ../sass/jqm/_animations.sass */
+  from {
+    transform: rotateY(90deg) scale(0.9);
+  }
+
+  /* line 573, ../sass/jqm/_animations.sass */
+  to {
+    transform: rotateY(0);
+  }
+}
+
+/* flow transition */
+/* line 577, ../sass/jqm/_animations.sass */
+.flow {
+  -webkit-transform-origin: 50% 30%;
+  -moz-transform-origin: 50% 30%;
+  transform-origin: 50% 30%;
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* line 581, ../sass/jqm/_animations.sass */
+.ui-dialog.flow {
+  -webkit-transform-origin: none none;
+  -moz-transform-origin: none none;
+  transform-origin: none none;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* line 585, ../sass/jqm/_animations.sass */
+.flow.out {
+  -webkit-transform: translateX(-100%) scale(0.7);
+  -moz-transform: translateX(-100%) scale(0.7);
+  transform: translateX(-100%) scale(0.7);
+  -webkit-animation-name: flowouttoleft;
+  -moz-animation-name: flowouttoleft;
+  animation-name: flowouttoleft;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+/* line 590, ../sass/jqm/_animations.sass */
+.flow.in {
+  -webkit-transform: translateX(0) scale(1);
+  -moz-transform: translateX(0) scale(1);
+  transform: translateX(0) scale(1);
+  -webkit-animation-name: flowinfromright;
+  -moz-animation-name: flowinfromright;
+  animation-name: flowinfromright;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+/* line 595, ../sass/jqm/_animations.sass */
+.flow.out.reverse {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-animation-name: flowouttoright;
+  -moz-animation-name: flowouttoright;
+  animation-name: flowouttoright;
+}
+
+/* line 599, ../sass/jqm/_animations.sass */
+.flow.in.reverse {
+  -webkit-animation-name: flowinfromleft;
+  -moz-animation-name: flowinfromleft;
+  animation-name: flowinfromleft;
+}
+
+@-webkit-keyframes flowouttoleft {
+  /* line 603, ../sass/jqm/_animations.sass */
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+  }
+
+  /* line 605, ../sass/jqm/_animations.sass */
+  60%, 70% {
+    -webkit-transform: translateX(0) scale(0.7);
+  }
+
+  /* line 607, ../sass/jqm/_animations.sass */
+  100% {
+    -webkit-transform: translateX(-100%) scale(0.7);
+  }
+}
+
+@-moz-keyframes flowouttoleft {
+  /* line 611, ../sass/jqm/_animations.sass */
+  0% {
+    -moz-transform: translateX(0) scale(1);
+  }
+
+  /* line 613, ../sass/jqm/_animations.sass */
+  60%, 70% {
+    -moz-transform: translateX(0) scale(0.7);
+  }
+
+  /* line 615, ../sass/jqm/_animations.sass */
+  100% {
+    -moz-transform: translateX(-100%) scale(0.7);
+  }
+}
+
+@keyframes flowouttoleft {
+  /* line 619, ../sass/jqm/_animations.sass */
+  0% {
+    transform: translateX(0) scale(1);
+  }
+
+  /* line 621, ../sass/jqm/_animations.sass */
+  60%, 70% {
+    transform: translateX(0) scale(0.7);
+  }
+
+  /* line 623, ../sass/jqm/_animations.sass */
+  100% {
+    transform: translateX(-100%) scale(0.7);
+  }
+}
+
+@-webkit-keyframes flowouttoright {
+  /* line 627, ../sass/jqm/_animations.sass */
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+  }
+
+  /* line 629, ../sass/jqm/_animations.sass */
+  60%, 70% {
+    -webkit-transform: translateX(0) scale(0.7);
+  }
+
+  /* line 631, ../sass/jqm/_animations.sass */
+  100% {
+    -webkit-transform: translateX(100%) scale(0.7);
+  }
+}
+
+@-moz-keyframes flowouttoright {
+  /* line 635, ../sass/jqm/_animations.sass */
+  0% {
+    -moz-transform: translateX(0) scale(1);
+  }
+
+  /* line 637, ../sass/jqm/_animations.sass */
+  60%, 70% {
+    -moz-transform: translateX(0) scale(0.7);
+  }
+
+  /* line 639, ../sass/jqm/_animations.sass */
+  100% {
+    -moz-transform: translateX(100%) scale(0.7);
+  }
+}
+
+@keyframes flowouttoright {
+  /* line 643, ../sass/jqm/_animations.sass */
+  0% {
+    transform: translateX(0) scale(1);
+  }
+
+  /* line 645, ../sass/jqm/_animations.sass */
+  60%, 70% {
+    transform: translateX(0) scale(0.7);
+  }
+
+  /* line 647, ../sass/jqm/_animations.sass */
+  100% {
+    transform: translateX(100%) scale(0.7);
+  }
+}
+
+@-webkit-keyframes flowinfromleft {
+  /* line 651, ../sass/jqm/_animations.sass */
+  0% {
+    -webkit-transform: translateX(-100%) scale(0.7);
+  }
+
+  /* line 653, ../sass/jqm/_animations.sass */
+  30%, 40% {
+    -webkit-transform: translateX(0) scale(0.7);
+  }
+
+  /* line 655, ../sass/jqm/_animations.sass */
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+  }
+}
+
+@-moz-keyframes flowinfromleft {
+  /* line 659, ../sass/jqm/_animations.sass */
+  0% {
+    -moz-transform: translateX(-100%) scale(0.7);
+  }
+
+  /* line 661, ../sass/jqm/_animations.sass */
+  30%, 40% {
+    -moz-transform: translateX(0) scale(0.7);
+  }
+
+  /* line 663, ../sass/jqm/_animations.sass */
+  100% {
+    -moz-transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes flowinfromleft {
+  /* line 667, ../sass/jqm/_animations.sass */
+  0% {
+    transform: translateX(-100%) scale(0.7);
+  }
+
+  /* line 669, ../sass/jqm/_animations.sass */
+  30%, 40% {
+    transform: translateX(0) scale(0.7);
+  }
+
+  /* line 671, ../sass/jqm/_animations.sass */
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+@-webkit-keyframes flowinfromright {
+  /* line 675, ../sass/jqm/_animations.sass */
+  0% {
+    -webkit-transform: translateX(100%) scale(0.7);
+  }
+
+  /* line 677, ../sass/jqm/_animations.sass */
+  30%, 40% {
+    -webkit-transform: translateX(0) scale(0.7);
+  }
+
+  /* line 679, ../sass/jqm/_animations.sass */
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+  }
+}
+
+@-moz-keyframes flowinfromright {
+  /* line 683, ../sass/jqm/_animations.sass */
+  0% {
+    -moz-transform: translateX(100%) scale(0.7);
+  }
+
+  /* line 685, ../sass/jqm/_animations.sass */
+  30%, 40% {
+    -moz-transform: translateX(0) scale(0.7);
+  }
+
+  /* line 687, ../sass/jqm/_animations.sass */
+  100% {
+    -moz-transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes flowinfromright {
+  /* line 691, ../sass/jqm/_animations.sass */
+  0% {
+    transform: translateX(100%) scale(0.7);
+  }
+
+  /* line 693, ../sass/jqm/_animations.sass */
+  30%, 40% {
+    transform: translateX(0) scale(0.7);
+  }
+
+  /* line 695, ../sass/jqm/_animations.sass */
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* unset box shadow in browsers that don't do it right */
+/* line 4, ../sass/jqm/_misc.sass */
+.ui-mobile-nosupport-boxshadow * {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* ...and bring back focus */
+/* line 9, ../sass/jqm/_misc.sass */
+.ui-mobile-nosupport-boxshadow .ui-focus, .ui-mobile-nosupport-boxshadow .ui-btn:focus, .ui-mobile-nosupport-boxshadow .ui-link-inherit:focus {
+  outline-width: 1px;
+  outline-style: auto;
+}
+
+/* some unsets - more probably needed */
+/* line 14, ../sass/jqm/_misc.sass */
+.ui-mobile, .ui-mobile body {
+  height: 99.9%;
+}
+
+/* line 17, ../sass/jqm/_misc.sass */
+.ui-mobile fieldset, .ui-page {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 22, ../sass/jqm/_misc.sass */
+.ui-mobile a img, .ui-mobile fieldset {
+  border-width: 0;
+}
+
+/* responsive page widths */
+/* line 26, ../sass/jqm/_misc.sass */
+.ui-mobile-viewport {
+  margin: 0;
+  overflow-x: visible;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Issue #2066 */
+/* line 34, ../sass/jqm/_misc.sass */
+body.ui-mobile-viewport, div.ui-mobile-viewport {
+  overflow-x: hidden;
+}
+
+/* "page" containers - full-screen views, one should always be in view post-pageload */
+/* line 38, ../sass/jqm/_misc.sass */
+.ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page {
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  display: none;
+  border: 0;
+}
+
+/* line 47, ../sass/jqm/_misc.sass */
+.ui-mobile .ui-page-active {
+  display: block;
+  overflow: visible;
+}
+
+/* on ios4, setting focus on the page element causes flashing during transitions when there is an outline, so we turn off outlines */
+/* line 52, ../sass/jqm/_misc.sass */
+.ui-page {
+  outline: none;
+}
+
+/*orientations from js are available */
+@media screen and (orientation: portrait) {
+  /* line 57, ../sass/jqm/_misc.sass */
+  .ui-mobile, .ui-mobile .ui-page {
+    min-height: 420px;
+  }
+}
+@media screen and (orientation: landscape) {
+  /* line 61, ../sass/jqm/_misc.sass */
+  .ui-mobile, .ui-mobile .ui-page {
+    min-height: 300px;
+  }
+}
+/*fouc */
+/* line 65, ../sass/jqm/_misc.sass */
+.ui-mobile-rendering > * {
+  visibility: hidden;
+}
+
+/* workarounds for other widgets */
+/* line 69, ../sass/jqm/_misc.sass */
+.ui-android-2x-fixed .ui-li-has-thumb {
+  -webkit-transform: translate3d(0, 0, 0);
+}

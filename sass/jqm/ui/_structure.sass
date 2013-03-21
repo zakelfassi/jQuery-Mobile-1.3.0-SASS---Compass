@@ -1,0 +1,48 @@
+// File : jqm/ui/_structure.sass
+
+a.ui-link-inherit
+  text-decoration: none !important
+
+/* Active class used as the "on" state across all themes */
+.ui-btn-active
+  border: $global-active-border
+  font-weight: bold
+  text-decoration: none
+  font-family: $global-font-family
+  color: $global-active-color
+  cursor: pointer
+  @include text-shadow($global-active-shadow-x, $global-active-shadow-y, $global-active-shadow-radius, $global-active-shadow-color)
+  @include vertical-gradient($global-active-background-color, $global-active-background-start, $global-active-background-end)
+
+  &:visited, &:hover, a.ui-link-inherit
+    color: $global-active-color
+
+/* button inner top highlight */
+.ui-btn-inner
+  border-top: 1px solid #fff
+  border-color: rgba(255,255,255,.3)
+
+/* corner rounding classes */
+.ui-corner-all
+  @include border-radius($global-radii-blocks)
+
+/* radius clip workaround for cleaning up corner trapping */
+.ui-corner-all, .ui-btn-corner-all
+  -webkit-background-clip: padding
+  background-clip: padding-box
+
+/* Form field separator */
+.ui-br
+  border-color: rgb(130,130,130)
+  border-color: rgba(130,130,130,.3)
+  border-style: solid
+
+/* Interaction cues */
+.ui-disabled
+  filter: Alpha(Opacity=30)
+  opacity: .3
+  zoom: 1
+
+  .ui-disabled a
+    cursor: default !important
+    pointer-events: none

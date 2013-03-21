@@ -1,0 +1,130 @@
+// Mixins
+
+// Animations
+@mixin animation-fill-mode($mode, $function, $duration)
+  -webkit-animation-fill-mode: $mode
+  -webkit-animation-timing-function: $function
+  -webkit-animation-duration: $duration
+  -moz-animation-fill-mode: $mode
+  -moz-animation-timing-function: $function
+  -moz-animation-duration: $duration
+  animation-fill-mode: $mode
+  animation-timing-function: $function
+  animation-duration: $duration
+
+@mixin animation-duration($duration)
+  -webkit-animation-duration: $duration
+  -moz-animation-duration: $duration
+  animation-duration: $duration
+
+@mixin animation($name)
+  -webkit-animation-name: $name
+  -moz-animation-name: $name
+  animation-name: $name
+
+@mixin transition($attr, $duration, $type)
+  -webkit-transition: #{$attr} $duration $type
+  -moz-transition: #{$attr} $duration $type
+  -o-transition: #{$attr} $duration $type
+  transition: #{$attr} $duration $type
+
+@mixin animation-timing-function($timing-function)
+  -webkit-animation-timing-function: $timing-function
+  -moz-animation-timing-function: $timing-function
+  animation-timing-function: $timing-function
+
+@mixin transform($transform)
+  -webkit-transform: #{$transform}
+  -moz-transform: #{$transform}
+  transform: #{$transform}
+
+@mixin transform-origin($x, $y)
+  -webkit-transform-origin: $x $y
+  -moz-transform-origin: $x $y
+  transform-origin: $x $y
+
+@mixin perspective($z)
+  -webkit-perspective: $z
+  -moz-perspective: $z
+  -ms-perspective: $z
+  perspective: $z
+
+@mixin backface-visibility($v)
+  -webkit-backface-visibility: $v
+  -moz-backface-visibility: $v
+  backface-visibility: $v
+
+
+// CSS3 PROPERTIES
+
+// Border Radius
+@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+
+// Box shadow
+@mixin box-shadow($x, $y, $offset, $rgba)
+  -moz-box-shadow: $x $y $offset $rgba
+  -webkit-box-shadow: $x $y $offset $rgba
+  box-shadow: $x $y $offset $rgba
+
+@mixin box-shadow-inset($x, $y, $offset, $rgba)
+  -moz-box-shadow: inset $x $y $offset $rgba
+  -webkit-box-shadow: inset $x $y $offset $rgba
+  box-shadow: inset $x $y $offset $rgba
+
+@mixin box-shadow-none()
+  -moz-box-shadow: none !important
+  -webkit-box-shadow: none !important
+  box-shadow: none !important
+
+@mixin box-sizing($type)
+  -webkit-box-sizing: #{$type}
+  -moz-box-sizing: #{$type}
+  -ms-box-sizing: #{$type}
+  box-sizing: #{$type}
+
+// Text shadow
+@mixin text-shadow($x, $y, $radius, $color)
+  text-shadow: $x $y $radius $color
+
+// Opacity
+@mixin opacity($opacity)
+  opacity: $opacity / 100
+  filter: alpha(opacity=$opacity)
+
+
+// Background-size
+@mixin background-size($x, $y)
+  -moz-background-size: $x $y
+  -o-background-size: $x $y
+  -webkit-background-size: $x $y
+  background-size: $x $y
+
+// User select
+@mixin user-select($type)
+  -moz-user-select: #{$type}
+  -webkit-user-select: #{$type}
+  -ms-user-select: #{$type}
+
+// BACKGROUNDS
+
+@mixin vertical-gradient($defaultColor, $start, $end)
+  background: $defaultColor
+  background-image: -webkit-gradient(linear, left top, left bottom, from( $start), to( $end))
+  background-image: -webkit-linear-gradient( $start, $end)
+  background-image: -moz-linear-gradient( $start, $end)
+  background-image: -ms-linear-gradient( $start, $end)
+  background-image: -o-linear-gradient( $start, $end)
+  background-image: linear-gradient( $start, $end)
+
+
+// Table styles
+@mixin table-priority($n)
+  @media screen and (min-width: ($n+1)*10em)
+    .ui-table-columntoggle
+      &.ui-responsive
+        th, td
+          &.ui-table-priority-#{$n}
+            display: table-cell

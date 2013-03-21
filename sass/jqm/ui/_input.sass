@@ -1,0 +1,186 @@
+// File : jqm/ui/_input.sass
+
+.ui-field-contain
+  max-width: 100%
+
+  &, fieldset.ui-field-contain
+    padding: .8em 0
+    margin: 0
+    border-width: 0 0 1px 0
+    overflow: visible
+
+  &:last-child
+    border-bottom-width: 0
+
+
+label
+  &.ui-input-text
+    font-size: 16px
+    line-height: 1.4
+    display: block
+    font-weight: normal
+    margin: 0 0 .3em
+
+input, textarea
+  &.ui-input-text
+    background-image: none
+    padding: .4em
+    margin: .5em 0
+    min-height: 1.4em
+    line-height: 1.4em
+    font-size: 16px
+    display: block
+    width: 100%
+    outline: 0
+
+  .ui-mini
+    font-size: 14px
+
+div
+  &.ui-input-text
+    padding: 0 .4em
+
+    input, textarea
+      &.ui-input-text
+        border: none
+        width: 100%
+        padding: .4em 0
+        margin: 0
+        display: block
+        background: transparent none
+        outline: 0 !important
+
+  &.ui-input-has-clear
+    padding: 0 30px 0 .4em
+
+input, textarea, div
+  &.ui-input-text
+    &.ui-mini
+      margin: .25em 0
+
+.ui-field-contain
+  input, textarea, div
+    &.ui-input-text
+      margin: 0
+
+  .ui-input-search
+    margin: 0
+
+input
+  &.ui-input-text
+    -webkit-appearance: none
+
+.ui-mini
+  input
+    font-size: 14px
+
+textarea
+  &.ui-input-text
+    height: 50px
+    @include transition(height, 200ms, linear)
+    @include box-sizing(border-box)
+
+  &.ui-mini
+    height: 45px
+
+.ui-input-search
+  padding: 0 30px
+
+  input
+    &.ui-input-text
+      border: none
+      width: 100%
+      padding: .4em 0
+      margin: 0
+      display: block
+      background: transparent none
+      outline: 0 !important
+
+  &, div.ui-input-text
+    margin: .5em 0
+    background-image: none
+    position: relative
+
+  &.ui-mini
+    margin: .25em 0
+
+.ui-icon-searchfield
+  &:after
+    position: absolute
+    left: 7px
+    top: 50%
+    margin-top: -9px
+    content: ""
+    width: 18px
+    height: 18px
+    opacity: .5
+
+.ui-input-search, .ui-input-text
+  .ui-input-clear
+    position: absolute
+    right: 0
+    top: 50%
+    margin-top: -13px
+
+  .ui-input-clear-hidden
+    display: none
+
+.ui-mini
+  .ui-input-clear
+    margin-top: -14px
+    right: -3px
+
+
+
+/* Resolves issue #5166: Added to support issue introduced in Firefox 15. We can likely remove this in the future. */
+input::-moz-placeholder, textarea::-moz-placeholder
+  color: #aaa
+
+/* Resolves issue #5131: Width of textinput depends on its type, for Android 4.1 */
+input[type=number]::-webkit-outer-spin-button
+  margin: 0
+
+
+@media all and (min-width: 28em)
+  .ui-mobile
+    fieldset
+      &.ui-field-contain
+        border-width: 0
+        padding: 0
+        margin: 1em 0
+
+  .ui-field-contain
+    border-width: 0
+    padding: 0
+    margin: 1em 0
+
+    label
+      &.ui-input-text
+        vertical-align: top
+        display: inline-block
+        width: 20%
+        margin: 0 2% 0 0
+
+  input, textarea, div
+    &.ui-input-text
+      width: 78%
+      display: inline-block
+
+  .ui-input-search
+    width: 78%
+    display: inline-block
+
+    .ui-input-search, div.ui-input-text
+      @include box-sizing(border-box)
+
+      input
+        &.ui-input-text
+          width: 100%
+
+  .ui-hide-label
+    input, textarea, div
+      &.ui-input-text
+        width: 100%
+
+    .ui-input-search
+      width: 100%

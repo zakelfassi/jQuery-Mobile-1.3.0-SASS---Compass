@@ -1,0 +1,106 @@
+// File : jqm/ui/_popup.sass
+
+.ui-popup-open 
+  .ui-header-fixed, .ui-footer-fixed
+    position: absolute !important  /* See line #553 of popup.js */
+
+.ui-popup-screen
+  background-image: url(data:image/gifbase64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==) /* Necessary to set some form of background to ensure element is clickable in IE6/7. While legacy IE won't understand the data-URI'd image, it ensures no additional requests occur in all other browsers with little overhead. */
+  top: 0px
+  left: 0px
+  right: 0px
+  bottom: 1px
+  position: absolute
+  @include opacity(0)
+  z-index: 1099
+
+  &.in
+    @include opacity(50)
+
+  &.out
+    @include opacity(0)
+
+.ui-popup-container
+  z-index: 1100
+  display: inline-block
+  position: absolute
+  padding: 0
+  outline: 0
+
+  .ui-content
+    & > p, & > h1, & > h2, & > h3, & > h4, & > h5, & > h6
+      margin: .5em 0
+
+    & > span
+      margin: 0
+
+    & > p:first-child, & > h1:first-child, & > h2:first-child, & > h3:first-child, & > h4:first-child, & > h5:first-child, & > h6:first-child
+      margin-top: 0
+
+    & > p:last-child, & > h1:last-child, & > h2:last-child, & > h3:last-child, & > h4:last-child, & > h5:last-child, & > h6:last-child
+      margin-bottom: 0
+
+.ui-popup
+  position: relative
+
+  &.ui-content, .ui-content
+    overflow: visible
+
+  & > p, & > h1, & > h2, & > h3, & > h4, & > h5, & > h6
+    margin: .5em 7px
+
+  & > span
+    display: block
+    margin: .5em 7px
+
+  .ui-title
+    font-size: 16px
+    font-weight: bold
+    margin-top: .5em
+    margin-bottom: .5em
+
+  & > img
+    width: auto
+    height: auto
+    max-width: 100%
+    max-height: 100%
+    vertical-align: middle
+
+  &:not(.ui-content) > img:only-child, &:not(.ui-content) > .ui-btn-left:first-child + img:last-child, &:not(.ui-content) > .ui-btn-right:first-child + img:last-child
+    -webkit-border-radius: inherit
+    border-radius: inherit
+
+  iframe
+    vertical-align: middle
+
+  & > .ui-btn-left
+    left: -9px
+   
+  & > .ui-btn-right
+    right: -9px 
+
+.ui-popup-hidden
+  top: -99999px
+  left: -9999px 
+
+
+@media all and (min-width: 28em)
+  .ui-popup
+    .ui-field-contain
+      label.ui-submit, .ui-controlgroup-label, label.ui-select, label.ui-input-text
+        font-size: 16px
+        line-height: 1.4
+        display: block
+        font-weight: normal
+        margin: 0 0 .3em
+
+      .ui-btn.ui-submit, .ui-controlgroup-controls, .ui-select, input.ui-input-text, textarea.ui-input-text, .ui-input-search
+        width: 100%
+        display: block
+
+
+    & > .ui-btn-left, & > .ui-btn-right
+      position: absolute
+      top: -9px
+      margin: 0
+      z-index: 1101

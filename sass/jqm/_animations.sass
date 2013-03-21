@@ -1,0 +1,696 @@
+// File : jqm/_animations.sass
+/**
+ * TODO : Create mixins for the animations (keyframes).
+ */
+
+.ui-mobile-viewport-transitioning, .ui-mobile-viewport-transitioning .ui-page
+  width: 100%
+  height: 100%
+  overflow: hidden
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+.ui-page-pre-in
+  opacity: 0
+
+.in
+  @include animation-fill-mode(both, ease-out, 350ms)
+
+.out
+  @include animation-fill-mode(both, ease-in, 225ms)
+
+
+@-webkit-keyframes fadein
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@-moz-keyframes fadein
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes fadein
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@-webkit-keyframes fadeout
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+@-moz-keyframes fadeout
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+@keyframes fadeout
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+
+.fade.out
+  opacity: 0
+  @include animation-duration(125ms)
+  @include animation(fadeout)
+
+.fade.in
+  opacity: 1
+  @include animation-duration(225ms)
+  @include animation(fadein)
+
+.pop
+  @include transform-origin(50%, 50%)
+
+.pop.in 
+  @include transform(scale(1))
+  @include animation-duration(350ms)
+  @include animation(popin)
+  opacity: 1
+
+.pop.out
+  @include animation-duration(100ms)
+  @include animation(fadeout)
+  opacity: 0
+
+.pop.in.reverse
+  @include animation(fadein)
+
+.pop.out.reverse
+  @include transform(scale(.8))
+  @include animation(popout)
+
+@-webkit-keyframes popin
+  from
+    -webkit-transform: scale(.8)
+    opacity: 0
+  to
+    -webkit-transform: scale(1)
+    opacity: 1
+    
+
+@-moz-keyframes popin
+  from
+    -moz-transform: scale(.8)
+    opacity: 0
+  to
+    -moz-transform: scale(1)
+    opacity: 1
+    
+
+@keyframes popin
+  from
+    transform: scale(.8)
+    opacity: 0
+  to
+    transform: scale(1)
+    opacity: 1
+    
+
+@-webkit-keyframes popout
+  from
+    -webkit-transform: scale(1)
+    opacity: 1
+  to
+    -webkit-transform: scale(.8)
+    opacity: 0
+    
+
+@-moz-keyframes popout
+  from
+    -moz-transform: scale(1)
+    opacity: 1
+  to
+    -moz-transform: scale(.8)
+    opacity: 0
+    
+
+@keyframes popout
+  from
+    transform: scale(1)
+    opacity: 1
+  to
+    transform: scale(.8)
+    opacity: 0
+    
+
+/* keyframes for slidein from sides */
+@-webkit-keyframes slideinfromright
+  from
+    -webkit-transform: translateX(100%)
+  to
+    -webkit-transform: translateX(0)
+
+@-moz-keyframes slideinfromright
+  from
+    -moz-transform: translateX(100%)
+  to
+    -moz-transform: translateX(0)
+
+@keyframes slideinfromright
+  from
+    transform: translateX(100%)
+  to
+    transform: translateX(0)
+
+@-webkit-keyframes slideinfromleft
+  from
+    -webkit-transform: translateX(-100%)
+  to
+    -webkit-transform: translateX(0)
+
+@-moz-keyframes slideinfromleft
+  from
+    -moz-transform: translateX(-100%)
+  to
+    -moz-transform: translateX(0)
+
+@keyframes slideinfromleft
+  from
+    transform: translateX(-100%)
+  to
+    transform: translateX(0)
+
+/* keyframes for slideout to sides */
+@-webkit-keyframes slideouttoleft
+  from
+    -webkit-transform: translateX(0)
+  to
+    -webkit-transform: translateX(-100%)
+
+@-moz-keyframes slideouttoleft
+  from
+    -moz-transform: translateX(0)
+  to
+    -moz-transform: translateX(-100%)
+
+@keyframes slideouttoleft
+  from
+    transform: translateX(0)
+  to
+    transform: translateX(-100%)
+
+@-webkit-keyframes slideouttoright
+  from
+    -webkit-transform: translateX(0)
+  to
+    -webkit-transform: translateX(100%)
+
+@-moz-keyframes slideouttoright
+  from
+    -moz-transform: translateX(0)
+  to
+    -moz-transform: translateX(100%)
+
+@keyframes slideouttoright
+  from
+    transform: translateX(0)
+  to
+    transform: translateX(100%)
+
+
+.slide.out, .slide.in
+  @include animation-timing-function(ease-out)
+  @include animation-duration(350ms)
+
+.slide.out
+  @include transform(translateX(-100%))
+  @include animation(slideouttoleft)
+
+.slide.in
+  @include transform(translateX(0))
+  @include animation(slideouttoright)
+
+.slide.out.reverse
+  @include transform(translateX(100%))
+  @include animation(slideouttoright)
+
+.slide.in.reverse
+  @include transform(translateX(0))
+  @include animation(slideinfromleft)
+
+.slidefade.out
+  @include transform(translateX(-100%))
+  @include animation(slideouttoleft)
+  @include animation-duration(225ms)
+
+.slidefade.in
+  @include transform(translateX(0))
+  @include animation(fadein)
+  @include animation-duration(200ms)
+
+.slidefade.out.reverse
+  @include transform(translateX(100%))
+  @include animation(slideouttoright)
+  @include animation-duration(200ms)
+
+.slidefade.in.reverse
+  @include transform(translateX(0))
+  @include animation(fadein)
+  @include animation-duration(200ms)
+
+/* slide down */
+.slidedown.out
+  @include animation(fadeout)
+  @include animation-duration(100ms)
+
+.slidedown.in
+  @include transform(translateY(0))
+  @include animation(slideinfromtop)
+  @include animation-duration(250ms)
+
+.slidedown.in.reverse
+  @include animation(fadein)
+  @include animation-duration(150ms)
+
+.slidedown.out.reverse
+  @include transform(translateY(-100%))
+  @include animation(slideouttotop)
+  @include animation-duration(200ms)
+
+@-webkit-keyframes slideinfromtop
+  from
+    -webkit-transform: translateY(-100%)
+  to
+    -webkit-transform: translateY(0)
+
+@-moz-keyframes slideinfromtop
+  from
+    -moz-transform: translateY(-100%)
+  to
+    -moz-transform: translateY(0)
+
+@keyframes slideinfromtop
+  from
+    transform: translateY(-100%)
+  to
+    transform: translateY(0)
+
+@-webkit-keyframes slideouttotop
+  from
+    -webkit-transform: translateY(0)
+  to
+    -webkit-transform: translateY(-100%)
+
+@-moz-keyframes slideouttotop
+  from
+    -moz-transform: translateY(0)
+  to
+    -moz-transform: translateY(-100%)
+
+@keyframes slideouttotop
+  from
+    transform: translateY(0)
+  to
+    transform: translateY(-100%)
+
+/* slide up */
+.slideup.out
+  @include animation(fadeout)
+  @include animation-duration(100ms)
+
+.slideup.in
+  @include transform(translateY(0))
+  @include animation(slideinfrombottom)
+  @include animation-duration(250ms)
+
+.slideup.in.reverse
+  @include animation(fadein)
+  @include animation-duration(150ms)
+
+.slideup.out.reverse
+  @include transform(translateY(100%))
+  @include animation(slideouttobottom)
+  @include animation-duration(200ms)
+
+@-webkit-keyframes slideinfrombottom
+  from
+    -webkit-transform: translateY(100%)
+  to
+    -webkit-transform: translateY(0)
+
+@-moz-keyframes slideinfrombottom
+  from
+    -moz-transform: translateY(100%)
+  to
+    -moz-transform: translateY(0)
+
+@keyframes slideinfrombottom
+  from
+    transform: translateY(100%)
+  to
+    transform: translateY(0)
+
+@-webkit-keyframes slideouttobottom
+  from
+    -webkit-transform: translateY(0)
+  to
+    -webkit-transform: translateY(100%)
+
+@-moz-keyframes slideouttobottom
+  from
+    -moz-transform: translateY(0)
+  to
+    -moz-transform: translateY(100%)
+
+@keyframes slideouttobottom
+  from
+    transform: translateY(0)
+  to
+    transform: translateY(100%)
+
+/* The properties in this rule are only necessary for the 'flip' transition.
+ * We need specify the perspective to create a projection matrix. This will add
+ * some depth as the element flips. The depth number represents the distance of
+ * the viewer from the z-plane. According to the CSS3 spec, 1000 is a moderate
+ * value.
+ */
+.viewport-flip
+  @include perspective(1000)
+  position: absolute
+
+.flip
+  @include transform(translateX(0))
+  @include backface-visibility(hidden)
+
+.flip.out
+  @include transform(rotateY(-90deg) scale(.9))
+  @include animation(flipouttoright)
+  @include animation-duration(175ms)
+
+.flip.in
+  @include animation(flipintoright)
+  @include animation-duration(225ms)
+
+.flip.out.reverse
+  @include transform(rotateY(90deg) scale(.9))
+  @include animation(flipouttoright)
+
+.flip.in.reverse
+  @include animation(flipintoleft)
+
+@-webkit-keyframes flipouttoleft
+  from
+    -webkit-transform: rotateY(0)
+  to
+    -webkit-transform: rotateY(-90deg) scale(.9)
+
+@-moz-keyframes flipouttoleft
+  from
+    -moz-transform: rotateY(0)
+  to
+    -moz-transform: rotateY(-90deg) scale(.9)
+
+@keyframes flipouttoleft
+  from
+    transform: rotateY(0)
+  to
+    transform: rotateY(-90deg) scale(.9)
+
+@-webkit-keyframes flipouttoright
+  from
+    -webkit-transform: rotateY(0) 
+  to
+    -webkit-transform: rotateY(90deg) scale(.9)
+
+@-moz-keyframes flipouttoright
+  from
+    -moz-transform: rotateY(0)
+  to
+    -moz-transform: rotateY(90deg) scale(.9)
+
+@keyframes flipouttoright
+  from
+    transform: rotateY(0)
+  to
+    transform: rotateY(90deg) scale(.9)
+
+@-webkit-keyframes flipintoleft
+  from
+    -webkit-transform: rotateY(-90deg) scale(.9)
+  to
+    -webkit-transform: rotateY(0)
+
+@-moz-keyframes flipintoleft
+  from
+    -moz-transform: rotateY(-90deg) scale(.9)
+  to
+    -moz-transform: rotateY(0)
+
+@keyframes flipintoleft
+  from
+    transform: rotateY(-90deg) scale(.9)
+  to
+    transform: rotateY(0)
+
+@-webkit-keyframes flipintoright
+  from
+    -webkit-transform: rotateY(90deg) scale(.9)
+  to
+    -webkit-transform: rotateY(0)
+
+@-moz-keyframes flipintoright
+  from
+    -moz-transform: rotateY(90deg) scale(.9)
+  to
+    -moz-transform: rotateY(0)
+
+@keyframes flipintoright
+  from
+    transform: rotateY(90deg) scale(.9)
+  to
+    transform: rotateY(0)
+
+/* The properties in this rule are only necessary for the 'flip' transition.
+ * We need specify the perspective to create a projection matrix. This will add
+ * some depth as the element flips. The depth number represents the distance of
+ * the viewer from the z-plane. According to the CSS3 spec, 1000 is a moderate
+ * value.
+ */
+.viewport-turn
+  @include perspective(200px)
+  position: absolute
+
+.turn
+  @include backface-visibility(hidden)
+  @include transform(translateX(0))
+  @include transform-origin(0, 0)
+
+.turn.out
+  @include transform(rotateY(-90deg) scale(.9))
+  @include animation(flipouttoleft)
+  @include animation-duration(125ms)
+
+.turn.in
+  @include animation(flipintoright)
+  @include animation-duration(250ms)
+
+.turn.out.reverse
+  @include transform(rotateY(90deg) scale(.9))
+  @include animation(flipouttoright)
+
+.turn.in.reverse
+  @include animation(flipintoleft)
+
+@-webkit-keyframes flipouttoleft
+  from
+    -webkit-transform: rotateY(0)
+  to
+    -webkit-transform: rotateY(-90deg) scale(.9)
+
+@-moz-keyframes flipouttoleft
+  from
+    -moz-transform: rotateY(0)
+  to
+    -moz-transform: rotateY(-90deg) scale(.9)
+
+@keyframes flipouttoleft
+  from
+    transform: rotateY(0)
+  to
+    transform: rotateY(-90deg) scale(.9)
+
+@-webkit-keyframes flipouttoright
+  from
+    -webkit-transform: rotateY(0) 
+  to
+    -webkit-transform: rotateY(90deg) scale(.9)
+
+@-moz-keyframes flipouttoright
+  from
+    -moz-transform: rotateY(0)
+  to
+    -moz-transform: rotateY(90deg) scale(.9)
+
+@keyframes flipouttoright
+  from
+    transform: rotateY(0)
+  to
+    transform: rotateY(90deg) scale(.9)
+
+@-webkit-keyframes flipintoleft
+  from
+    -webkit-transform: rotateY(-90deg) scale(.9)
+  to
+    -webkit-transform: rotateY(0)
+
+@-moz-keyframes flipintoleft
+  from
+    -moz-transform: rotateY(-90deg) scale(.9)
+  to
+    -moz-transform: rotateY(0)
+
+@keyframes flipintoleft
+  from
+    transform: rotateY(-90deg) scale(.9)
+  to
+    transform: rotateY(0)
+
+@-webkit-keyframes flipintoright
+  from
+    -webkit-transform: rotateY(90deg) scale(.9)
+  to
+    -webkit-transform: rotateY(0)
+
+@-moz-keyframes flipintoright
+  from
+    -moz-transform: rotateY(90deg) scale(.9)
+  to
+    -moz-transform: rotateY(0)
+
+@keyframes flipintoright
+  from
+    transform: rotateY(90deg) scale(.9)
+  to
+    transform: rotateY(0)
+
+/* flow transition */
+.flow
+  @include transform-origin(50%, 30%)
+  @include box-shadow(0,0,20px, rgba(0,0,0,.4))
+
+.ui-dialog.flow
+  @include transform-origin(none, none)
+  @include box-shadow-none()
+
+.flow.out
+  @include transform(translateX(-100%) scale(.7))
+  @include animation(flowouttoleft)
+  @include animation-timing-function(ease)
+
+.flow.in
+  @include transform(translateX(0) scale(1))
+  @include animation(flowinfromright)
+  @include animation-timing-function(ease)
+
+.flow.out.reverse
+  @include transform(translateX(100%))
+  @include animation(flowouttoright)
+
+.flow.in.reverse
+  @include animation(flowinfromleft)
+
+@-webkit-keyframes flowouttoleft
+  0%
+    -webkit-transform: translateX(0) scale(1)
+  60%, 70%
+    -webkit-transform: translateX(0) scale(.7)
+  100%
+    -webkit-transform: translateX(-100%) scale(.7)
+
+@-moz-keyframes flowouttoleft
+  0% 
+    -moz-transform: translateX(0) scale(1)
+  60%, 70% 
+    -moz-transform: translateX(0) scale(.7)
+  100% 
+    -moz-transform:  translateX(-100%) scale(.7)
+
+@keyframes flowouttoleft
+  0%
+    transform: translateX(0) scale(1)
+  60%, 70%
+    transform: translateX(0) scale(.7)
+  100%
+    transform:  translateX(-100%) scale(.7)
+
+@-webkit-keyframes flowouttoright
+  0%
+    -webkit-transform: translateX(0) scale(1)
+  60%, 70%
+    -webkit-transform: translateX(0) scale(.7)
+  100%
+    -webkit-transform:  translateX(100%) scale(.7)
+
+@-moz-keyframes flowouttoright
+  0%
+    -moz-transform: translateX(0) scale(1)
+  60%, 70%
+    -moz-transform: translateX(0) scale(.7)
+  100%
+    -moz-transform:  translateX(100%) scale(.7)
+
+@keyframes flowouttoright
+  0%
+    transform: translateX(0) scale(1)
+  60%, 70%
+    transform: translateX(0) scale(.7)
+  100%
+    transform:  translateX(100%) scale(.7)
+
+@-webkit-keyframes flowinfromleft
+  0%
+    -webkit-transform: translateX(-100%) scale(.7)
+  30%, 40%
+    -webkit-transform: translateX(0) scale(.7)
+  100%
+    -webkit-transform: translateX(0) scale(1)
+
+@-moz-keyframes flowinfromleft
+  0%
+    -moz-transform: translateX(-100%) scale(.7)
+  30%, 40%
+    -moz-transform: translateX(0) scale(.7)
+  100%
+    -moz-transform: translateX(0) scale(1)
+
+@keyframes flowinfromleft
+  0%
+    transform: translateX(-100%) scale(.7)
+  30%, 40%
+    transform: translateX(0) scale(.7)
+  100%
+    transform: translateX(0) scale(1)
+
+@-webkit-keyframes flowinfromright
+  0%
+    -webkit-transform: translateX(100%) scale(.7)
+  30%, 40%
+    -webkit-transform: translateX(0) scale(.7)
+  100%
+    -webkit-transform: translateX(0) scale(1)
+
+@-moz-keyframes flowinfromright
+  0%
+    -moz-transform: translateX(100%) scale(.7)
+  30%, 40%
+    -moz-transform: translateX(0) scale(.7)
+  100%
+    -moz-transform: translateX(0) scale(1)
+
+@keyframes flowinfromright
+  0%
+    transform: translateX(100%) scale(.7)
+  30%, 40%
+    transform: translateX(0) scale(.7)
+  100%
+    transform: translateX(0) scale(1)

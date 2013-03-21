@@ -1,0 +1,71 @@
+//File : jqm/_misc.sass
+
+/* unset box shadow in browsers that don't do it right*/
+.ui-mobile-nosupport-boxshadow *
+  @include box-shadow-none()
+
+/* ...and bring back focus */
+.ui-mobile-nosupport-boxshadow
+  .ui-focus, .ui-btn:focus, .ui-link-inherit:focus
+    outline-width: 1px
+    outline-style: auto
+
+/* some unsets - more probably needed */
+.ui-mobile, .ui-mobile body
+  height: 99.9%
+
+.ui-mobile fieldset, .ui-page
+  padding: 0
+  margin: 0
+
+.ui-mobile
+  a img, fieldset
+    border-width: 0
+
+/* responsive page widths */
+.ui-mobile-viewport
+  margin: 0
+  overflow-x: visible
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: none
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+/* Issue #2066 */
+body.ui-mobile-viewport, div.ui-mobile-viewport
+  overflow-x: hidden
+
+/* "page" containers - full-screen views, one should always be in view post-pageload */
+.ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page
+  top: 0
+  left: 0
+  width: 100%
+  min-height: 100%
+  position: absolute
+  display: none
+  border: 0
+
+.ui-mobile .ui-page-active
+  display: block
+  overflow: visible
+
+/* on ios4, setting focus on the page element causes flashing during transitions when there is an outline, so we turn off outlines */
+.ui-page
+  outline: none
+
+/*orientations from js are available */
+@media screen and (orientation: portrait)
+  .ui-mobile, .ui-mobile .ui-page
+    min-height: 420px
+
+@media screen and (orientation: landscape)
+  .ui-mobile, .ui-mobile .ui-page
+    min-height: 300px
+
+/*fouc*/
+.ui-mobile-rendering > *
+  visibility: hidden
+
+/* workarounds for other widgets */
+.ui-android-2x-fixed .ui-li-has-thumb
+  -webkit-transform: translate3d(0,0,0)
+

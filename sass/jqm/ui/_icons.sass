@@ -1,0 +1,261 @@
+// File : jqm/ui/_icons.sass
+
+/* Icons */
+
+/* icons sizing */
+.ui-icon
+  width: 18px
+  height: 18px
+
+.ui-icon, .ui-icon-searchfield:after
+  background-color: $global-icon-color
+  background-color: $global-icon-disk
+  background-image: $global-icon-set
+  background-repeat: no-repeat
+  @include border-radius(9px)
+
+/* Alt icon color */
+.ui-icon-alt .ui-icon, .ui-icon-alt .ui-icon-searchfield:after
+  background-color: $global-alt-icon-color
+  background-color: $global-alt-icon-disk
+  background-image: $global-alt-icon-set
+  background-repeat: no-repeat
+
+/* No disc */
+.ui-icon-nodisc .ui-icon, .ui-icon-nodisc .ui-icon-searchfield:after, .ui-icon-nodisc .ui-icon-alt .ui-icon, .ui-icon-nodisc .ui-icon-alt .ui-icon-searchfield:after
+  background-color: transparent
+
+/* Icon sprite */
+/* plus minus */
+.ui-icon-plus
+  background-position:  -1px -1px
+
+.ui-icon-minus
+  background-position:  -37px -1px
+
+/* delete/close */
+.ui-icon-delete
+  background-position:  -73px -1px
+
+/* arrows */
+.ui-icon-arrow-r
+  background-position:  -108px -1px
+
+.ui-icon-arrow-l
+  background-position:  -144px -1px
+
+.ui-icon-arrow-u
+  background-position:  -180px -1px
+
+.ui-icon-arrow-d
+  background-position:  -216px -1px
+
+/* misc */
+.ui-icon-check
+  background-position:  -252px -1px
+
+.ui-icon-gear
+  background-position:  -288px -1px
+
+.ui-icon-refresh
+  background-position:  -323px -1px
+
+.ui-icon-forward
+  background-position:  -360px -1px
+
+.ui-icon-back
+  background-position:  -396px -1px
+
+.ui-icon-grid
+  background-position:  -432px -1px
+
+.ui-icon-star
+  background-position:  -467px -1px
+
+.ui-icon-alert
+  background-position:  -503px -1px
+
+.ui-icon-info
+  background-position:  -539px -1px
+
+.ui-icon-home
+  background-position:  -575px -1px
+
+/* search */
+.ui-icon-search, .ui-icon-searchfield:after
+  background-position:  -611px -1px
+
+/* checkbox radio */
+.ui-icon-checkbox-on
+  background-position:  -647px -1px
+
+.ui-icon-checkbox-off
+  background-position:  -683px -1px
+
+.ui-icon-radio-on
+  background-position:  -718px -1px
+
+.ui-icon-radio-off
+  background-position:  -754px -1px
+
+/* menu edit */
+.ui-icon-bars
+  background-position:  -788px -1px
+
+.ui-icon-edit
+  background-position:  -824px -1px
+
+/* HD/"retina" sprite */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-resolution: 200dpi)
+  .ui-icon-plus, .ui-icon-minus, .ui-icon-delete, .ui-icon-arrow-r, .ui-icon-arrow-l, .ui-icon-arrow-u, .ui-icon-arrow-d, .ui-icon-check, .ui-icon-gear, .ui-icon-refresh, .ui-icon-forward, .ui-icon-back, .ui-icon-grid, .ui-icon-star, .ui-icon-alert, .ui-icon-info, .ui-icon-home, .ui-icon-bars, .ui-icon-edit, .ui-icon-search, .ui-icon-searchfield:after, .ui-icon-checkbox-off, .ui-icon-checkbox-on, .ui-icon-radio-off, .ui-icon-radio-on
+    background-image: $global-hd-icon-set
+    @include background-size(864px, 18px)
+
+  .ui-icon-alt .ui-icon
+    background-image: $global-hd-alt-icon-set
+  
+  .ui-icon-plus
+    background-position:  0px 50%
+  
+  .ui-icon-minus
+    background-position:  -36px 50%
+  
+  .ui-icon-delete
+    background-position:  -72px 50%
+  
+  .ui-icon-arrow-r
+    background-position:  -108px 50%
+  
+  .ui-icon-arrow-l
+    background-position:  -144px 50%
+  
+  .ui-icon-arrow-u
+    background-position:  -179px 50%
+  
+  .ui-icon-arrow-d
+    background-position:  -215px 50%
+  
+  .ui-icon-check
+    background-position:  -252px 50%
+  
+  .ui-icon-gear
+    background-position:  -287px 50%
+  
+  .ui-icon-refresh
+    background-position:  -323px 50%
+  
+  .ui-icon-forward
+    background-position:  -360px 50%
+  
+  .ui-icon-back
+    background-position:  -395px 50%
+  
+  .ui-icon-grid
+    background-position:  -431px 50%
+  
+  .ui-icon-star
+    background-position:  -467px 50%
+  
+  .ui-icon-alert
+    background-position:  -503px 50%
+  
+  .ui-icon-info
+    background-position:  -538px 50%
+  
+  .ui-icon-home
+    background-position:  -575px 50%
+  
+  .ui-icon-search,
+  .ui-icon-searchfield:after
+    background-position:  -611px 50%
+  
+  .ui-icon-checkbox-on
+    background-position:  -647px 50%
+  
+  .ui-icon-checkbox-off
+    background-position:  -683px 50%
+  
+  .ui-icon-radio-on
+    background-position:  -718px 50%
+  
+  .ui-icon-radio-off
+    background-position:  -754px 50%
+  
+  .ui-icon-bars
+    background-position:  -788px 50%
+  
+  .ui-icon-edit
+    background-position:  -824px 50%
+//End Of Retina stuff.
+
+/* checks,radios */
+.ui-checkbox .ui-icon, .ui-selectmenu-list .ui-icon
+  -webkit-border-radius: 3px
+  border-radius: 3px
+
+.ui-icon-checkbox-off, .ui-icon-radio-off
+  background-color: transparent  
+
+.ui-checkbox-on .ui-icon, .ui-radio-on .ui-icon
+  background-color: $global-active-background-color /* NOTE: this hex should match the active state color. It's repeated here for cascade */
+
+/* loading icon */
+.ui-icon-loading
+  background: $global-loading-icon
+  background-size: $global-loading-icon-background-size
+
+
+/*btn icon positioning*/
+.ui-btn-icon-notext .ui-icon
+  display: block
+  z-index: 0
+
+.ui-btn-icon-left, .ui-btn-icon-right
+  & > .ui-btn-inner > .ui-icon
+    position: absolute
+    top: 50%
+    margin-top: -9px
+
+.ui-btn-icon-top, .ui-btn-icon-bottom
+  .ui-btn-inner
+    .ui-icon
+      position: absolute
+      left: 50%
+      margin-left: -9px
+
+.ui-btn-icon-left
+  .ui-icon
+    left: 10px
+
+.ui-btn-icon-right
+  .ui-icon
+    right: 10px
+
+.ui-btn-icon-top
+  .ui-icon
+    top: 10px
+
+.ui-btn-icon-bottom
+  .ui-icon
+    top: auto
+    bottom: 10px
+
+.ui-header, .ui-footer, .ui-mini
+  .ui-btn-icon-left
+    .ui-icon
+      left: 5px
+
+.ui-header, .ui-footer, .ui-mini
+  .ui-btn-icon-right
+    .ui-icon
+      right: 5px
+
+.ui-header, .ui-footer, .ui-mini
+  .ui-btn-icon-top
+    .ui-icon
+      top: 5px
+
+.ui-header, .ui-footer, .ui-mini
+  .ui-btn-icon-bottom
+    .ui-icon
+      bottom: 5px

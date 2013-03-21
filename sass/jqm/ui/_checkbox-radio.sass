@@ -1,0 +1,94 @@
+// File : jqm/ui/_checkbox-radio.sass
+
+.ui-checkbox, .ui-radio
+  position: relative
+  clear: both
+  margin: 0
+  z-index: 1
+
+.ui-checkbox, .ui-radio
+  .ui-btn
+    text-align: left
+    z-index: 2
+
+  .ui-btn-inner
+    white-space: normal
+
+  .ui-btn-icon-left
+    .ui-btn-inner
+      padding-left: 45px
+
+    .ui-icon
+      left: 15px
+
+  .ui-btn-icon-right
+    .ui-btn-inner
+      padding-right: 45px
+
+    .ui-icon
+      right: 15px
+
+  .ui-btn-icon-top
+    .ui-btn-inner
+      padding-right: 0
+      padding-left: 0
+      text-align: center
+
+  .ui-btn-icon-bottom
+    .ui-btn-inner
+      padding-right: 0
+      padding-left: 0
+      text-align: center
+
+    .ui-icon
+      top: 10px
+      bottom: 10px
+
+  input
+    position: absolute
+    left: 20px
+    top: 50%
+    width: 10px
+    height: 10px
+    margin: -5px 0 0 0
+    outline: 0 !important
+    z-index: 1
+
+  .ui-mini
+    &.ui-btn-icon-left
+      .ui-btn-inner
+        padding-left: 36px
+
+      .ui-icon
+        left: 9px
+
+    &.ui-btn-icon-right
+      .ui-btn-inner
+        padding-right: 36px
+
+      .ui-icon
+        right: 9px
+
+  .ui-icon
+    top: 1.1em
+
+
+// Shared with control group.
+.ui-controlgroup
+  .ui-checkbox, .ui-radio
+    .ui-btn
+      margin: 0
+
+.ui-controlgroup-horizontal
+
+  .ui-checkbox, .ui-radio
+    .ui-icon
+      display: none
+
+    .ui-btn-inner
+      padding: .6em 20px
+
+    .ui-mini
+      .ui-btn-inner
+        padding: .55em 11px .5em
+

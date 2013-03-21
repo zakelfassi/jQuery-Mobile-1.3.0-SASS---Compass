@@ -1,0 +1,97 @@
+// File : jqm/swatches/_generator.sass
+
+@mixin generate-swatch($theme-name)
+  //Bar
+  .ui-bar-#{$theme-name}
+    border: $bar-border
+    color: $bar-color
+    font-weight: bold
+    @include text-shadow($bar-shadow-x, $bar-shadow-y, $bar-shadow-radius, $bar-shadow-color)
+    @include vertical-gradient($bar-background-color, $bar-background-start, $bar-background-end)
+    font-family: $global-font-family
+
+    input, select, textarea, button
+      font-family: $global-font-family
+
+    .ui-link-inherit
+      color: $bar-color
+
+    a.ui-link
+      color: $bar-link-color
+      font-weight: bold
+      &:visited
+        color: $bar-link-visited
+      &:hover
+        color: $bar-link-hover
+      &:active
+        color: $bar-link-active
+
+  //Body
+  .ui-overlay-#{$theme-name}
+    border: $body-border
+    color: $body-color
+    font-weight: normal
+    @include text-shadow($body-shadow-x, $body-shadow-y, $body-shadow-radius, $body-shadow-color)
+    @include vertical-gradient($body-background-color, $body-background-start, $body-background-end)
+    background-image: none
+    border-width: 0
+
+  .ui-body-#{$theme-name}
+    border: $body-border
+    color: $body-color
+    font-weight: normal
+    @include text-shadow($body-shadow-x, $body-shadow-y, $body-shadow-radius, $body-shadow-color)
+    @include vertical-gradient($body-background-color, $body-background-start, $body-background-end)
+
+    input, select, textarea, button
+      font-family: $global-font-family
+
+    .ui-link-inherit
+      color: $body-color
+
+    .ui-link
+      color: $body-link-color
+      font-weight: bold
+      &:visited
+        color: $body-link-visited
+      &:hover
+        color: $body-link-hover
+      &:active
+        color: $body-link-active
+
+  //Button Up
+  .ui-btn-up-#{$theme-name}
+    font-family: $global-font-family
+    text-decoration: none
+    border: $bup-border
+    font-weight: bold
+    color: $bup-color
+    @include text-shadow($bup-shadow-x, $bup-shadow-y, $bup-shadow-radius, $bup-shadow-color)
+    @include vertical-gradient($bup-background-color, $bup-background-start, $bup-background-end)
+
+    &:visited, a.ui-link-inherit
+      color: $bup-color
+
+  .ui-btn-hover-#{$theme-name}
+    font-family: $global-font-family
+    text-decoration: none
+    border: $bhover-border
+    font-weight: bold
+    color: $bhover-color
+    @include text-shadow($bhover-shadow-x, $bhover-shadow-y, $bhover-shadow-radius, $bhover-shadow-color)
+    @include vertical-gradient($bhover-background-color, $bhover-background-start, $bhover-background-end)
+
+    &:visited, &:hover, a.ui-link-inherit
+      color: $bhover-color
+
+  .ui-btn-down-#{$theme-name}
+    font-family: $global-font-family
+    text-decoration: none
+    border: $bdown-border
+    font-weight: bold
+    color: $bdown-color
+    @include text-shadow($bdown-shadow-x, $bdown-shadow-y, $bdown-shadow-radius, $bdown-shadow-color)
+    @include vertical-gradient($bdown-background-color, $bdown-background-start, $bdown-background-end)
+
+    &:visited, &:hover, a.ui-link-inherit
+      color: $bdown-color
